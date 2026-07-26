@@ -1,0 +1,47 @@
+tracking_error:
+  definition: Annualized standard deviation of the portfolio's active returns versus its benchmark.
+  formula: std(portfolio_return - benchmark_return) * sqrt(12)
+  version: "1.0"
+  notes: Computed on MONTHLY active returns, annualized with sqrt(12). Gross of fees.
+
+active_return:
+  definition: Portfolio return minus benchmark return over the same period.
+  formula: portfolio_return - benchmark_return
+  version: "1.0"
+  notes: Always net of the SAME benchmark used for tracking error.
+
+information_ratio:
+  definition: Active return per unit of active risk.
+  formula: mean(active_return) / tracking_error
+  version: "1.0"
+  notes: Uses the tracking_error and active_return definitions above. Higher is better.
+
+sharpe_ratio:
+  definition: Excess return over the risk-free rate per unit of total risk.
+  formula: (portfolio_return - risk_free_rate) / std(portfolio_return)
+  version: "1.0"
+  notes: Total risk (not active risk). Annualized. Risk-free = 3-month T-bill.
+
+active_share:
+  definition: The fraction of portfolio holdings that differ from the benchmark.
+  formula: 0.5 * sum(abs(weight_portfolio_i - weight_benchmark_i))
+  version: "1.0"
+  notes: Ranges 0-100%. High active share = more benchmark-independent. Not a risk measure by itself.
+
+brinson_allocation:
+  definition: The portion of active return from over/under-weighting sectors versus the benchmark.
+  formula: sum((weight_portfolio_i - weight_benchmark_i) * (benchmark_return_i - benchmark_total_return))
+  version: "1.0"
+  notes: Brinson-Fachler. Answers "did we add value by sector allocation?"
+
+brinson_selection:
+  definition: The portion of active return from picking better securities within each sector.
+  formula: sum(weight_benchmark_i * (portfolio_return_i - benchmark_return_i))
+  version: "1.0"
+  notes: Answers "did we add value by security selection within sectors?"
+
+max_drawdown:
+  definition: The largest peak-to-trough decline in portfolio value over a period.
+  formula: min((value_t - running_max_value) / running_max_value)
+  version: "1.0"
+  notes: Reported as a negative percentage. Measures downside pain, not volatility.

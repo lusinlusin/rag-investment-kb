@@ -1,0 +1,8 @@
+# RAG toy dependencies.  Install with:  pip install -r requirements.txt
+chromadb==1.5.9          # vector store + default local embeddings (all-MiniLM-L6-v2)
+pypdf==6.14.2            # read PDF narrative text
+pdfplumber==0.11.10     # extract PDF *tables* (pypdf mangles tables into number-soup)
+PyYAML==6.0.3           # read the governed metric layer (data/metrics.yaml)
+python-dotenv==1.2.2    # load .env (RAG_PROVIDER + API keys)
+openai==2.46.0          # OpenAI + DeepSeek (DeepSeek is OpenAI-compatible)
+anthropic==0.117.1      # Claude

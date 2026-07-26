@@ -1,0 +1,13 @@
+.venv/
+.env
+chroma_db/
+__pycache__/
+*.db
+.DS_Store
+.claude/
+
+# Kept private for now — except the one demo script re-included below
+review/*
+!review/compare_search_vs_rag.py
+RAG_toy_build_blueprint.md
+data/docs/*.pdf
