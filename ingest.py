@@ -46,31 +46,81 @@ def _to_markdown(rows):
     return "\n".join(lines)
 
 
+# --- text-line fallback for tables pdfplumber's column grid mangles ----------------
+# One value cell: a number/percent/currency (75, 12,702, $139, (149), 15%), an "impact"
+# pair like 7/(7) or (5)/11, or N/A.
+_NUM_TOKEN = re.compile(
+    r"^\(?-?\$?[\d,]+\.?\d*%?\)?$"      # 75  12,702  $139  (149)  15%
+    r"|^[\d,()\-]+/[\d,()\-]+$"         # 7/(7)  660/(654)  (5)/11
+    r"|^N/A$"
+)
+
+
+def _split_text_row(line):
+    """Turn one clean text line into [label, value, value, ...], or None if it is not a
+    data row. 'British Pound  75 $ 139 $ 7/(7)' -> ['British Pound', '75', '139', '7/(7)'].
+    Bare '$' are dropped as decoration; the label is the text before the first number.
+    """
+    tokens = line.replace("$", " ").split()
+    first = next((i for i, t in enumerate(tokens) if _NUM_TOKEN.match(t)), None)
+    if not first:                       # None (no numbers) or 0 (no text label) -> not a row
+        return None
+    label, values = " ".join(tokens[:first]), tokens[first:]
+    numeric = sum(1 for t in values if _NUM_TOKEN.match(t))
+    if numeric < 2 or len(label.split()) > 5 or not any(c.isalpha() for c in label):
+        return None                     # need a short text label + at least two numeric values
+    return [label] + values
+
+
+def _text_line_tables(page_text):
+    """Group consecutive data rows in a page's text into tables (each a list of
+    cell-lists, ready for _to_markdown). Requiring >=2 rows in a row keeps a stray
+    number-y prose line from being mistaken for a one-row table.
+    """
+    tables, run = [], []
+    for line in page_text.splitlines():
+        row = _split_text_row(line)
+        if row:
+            run.append(row)
+            continue
+        if len(run) >= 2:
+            tables.append(run)
+        run = []
+    if len(run) >= 2:
+        tables.append(run)
+    return tables
+
+
 def load_tables(path):
     """Extract each PDF table as a clean, aligned text block, tagged with its page.
 
-    pdfplumber's "text" strategy recovers borderless financial tables that pypdf
-    turns to number-soup — but it also slices surrounding prose into fake cells. So we
-    keep only rows that look like real data (a text label + at least two numeric cells)
-    and drop the prose noise. Returns a list of (page_number, block_text).
+    pdfplumber's "text" strategy recovers many borderless financial tables that pypdf
+    turns to number-soup — but it also slices surrounding prose into fake cells, so we
+    keep only rows that look like real data (a text label + >=2 numeric cells) and drop
+    the prose noise. When that strategy mis-places the columns badly enough that a page
+    yields no table at all, we fall back to parsing the page's clean text lines directly
+    (_text_line_tables). Returns a list of (page_number, block_text).
     """
     settings = {"vertical_strategy": "text", "horizontal_strategy": "text"}
-    # Lead each table with its page's prose (a few sentences) so the block carries the
-    # natural-language words a question matches on — a bare grid of numbers embeds
-    # poorly, so a good caption alone isn't enough. pypdf keeps reading order, so its
-    # page text starts with the section title/intro that describes the table.
-    leads = []
-    for page in pypdf.PdfReader(path).pages:
-        prose = " ".join((page.extract_text() or "").split())
-        leads.append(prose[:400])
+    # Full pypdf page text is kept for the text-line fallback below; `leads[i]` is the
+    # natural-language prose prepended to page i+1's tables so the block carries words a
+    # question matches on (a bare grid of numbers embeds poorly). A table often sits at
+    # the TOP of a page while the sentence describing it ("...foreign currency exposure
+    # ... is presented below") ends the PREVIOUS page — so the lead is the tail of the
+    # previous page plus the head of this one, not this page's prose alone.
+    page_texts = [(page.extract_text() or "") for page in pypdf.PdfReader(path).pages]
+    proses = [" ".join(t.split()) for t in page_texts]
+    leads = [((proses[i - 1][-300:] if i else "") + " " + proses[i][:350]).strip()
+             for i in range(len(proses))]
     blocks = []
     with pdfplumber.open(path) as pdf:
         for pageno, page in enumerate(pdf.pages, 1):
             lead = leads[pageno - 1] if pageno - 1 < len(leads) else ""
+            page_had_table = False
             try:
                 tables = page.extract_tables(settings)
             except Exception:
-                continue  # skip pages pdfplumber can't grid up
+                tables = []  # pdfplumber couldn't grid this page up; fall back below
             for tbl in tables:
                 rows = []
                 for row in tbl:
@@ -80,6 +130,16 @@ def load_tables(path):
                     if len(cells) >= 2 and numeric >= 2 and any(ch.isalpha() for ch in cells[0]):
                         rows.append(cells)   # keep as a list of cells for Markdown
                 if len(rows) >= 2:   # a real table has at least a couple of data rows
+                    block = f"{lead}\n\nTable on page {pageno}:\n{_to_markdown(rows)}"
+                    blocks.append((pageno, block))
+                    page_had_table = True
+            # Fallback: pdfplumber's "text" grid can mis-place the column lines (splitting
+            # words, gluing numbers) so no row survives the filter above. When a page
+            # produced no table that way, re-parse its clean pypdf text lines directly —
+            # this is what rescues, e.g., the foreign-currency exposure table.
+            if not page_had_table:
+                text = page_texts[pageno - 1] if pageno - 1 < len(page_texts) else ""
+                for rows in _text_line_tables(text):
                     block = f"{lead}\n\nTable on page {pageno}:\n{_to_markdown(rows)}"
                     blocks.append((pageno, block))
     return blocks

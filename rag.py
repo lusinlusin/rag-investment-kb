@@ -17,12 +17,18 @@ SYSTEM = """You answer questions about an investment firm's reports and metric d
 Rules:
 - Use ONLY the provided context. If the answer is not in the context, reply exactly:
   "I don't have that in the provided data."
-- When you use a metric definition, say it comes from the governed metric layer and include its version.
-- Cite the source of each fact in brackets, e.g. [source: governed_metric_layer]."""
+- Answer only what is asked; don't volunteer extra definitions or background.
+- Cite each fact by copying, VERBATIM, the [source: ...] tag on the chunk it came from.
+  Never invent a source. Call something a governed metric definition ONLY if its tag
+  literally reads [source: governed_metric_layer, version: ...], and then quote that version.
+- If the answer covers several rows or items, list every one as a plain bulleted list
+  ("- Name: value", one per line) — don't collapse to a total. Do NOT use Markdown
+  tables; the answer is read in a plain terminal where they render as unreadable pipes."""
 
 
-def answer(question: str, k: int = 4) -> str:
-    # R (retrieve) — pull the k chunks most relevant to the question, same as query.py.
+def answer(question: str, k: int = 6) -> str:
+    # R (retrieve) — pull the k chunks most relevant to the question. k=6 (not 3-4) gives
+    # a big single table chunk room to make the cut against many competing prose fragments.
     res = _col.query(query_texts=[question], n_results=k)
     chunks, metas = res["documents"][0], res["metadatas"][0]
     # A (augment) — stitch the chunks into one context block, tagging each with its

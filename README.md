@@ -73,10 +73,11 @@ cp .env.example .env
 python ingest.py
 ```
 
-> **Note:** source PDFs are **not** included in this repo — drop your own into
-> `data/docs/` before running `ingest.py`. The governed metric layer
-> (`data/metrics.yaml`) *is* included, so the pipeline runs with or without a PDF (you
-> just won't get document/table chunks until you add one).
+> **Note:** source PDFs are **not** included in this repo. The demo uses HOOPP's publicly
+> available [2025 Annual Report](https://hoopp.com/docs/default-source/investments-library/annual-reports/hoopp-2025-annual-report.pdf) — download it into `data/docs/` (or drop in
+> your own) before running `ingest.py`. The governed metric layer (`data/metrics.yaml`) *is*
+> included, so the pipeline runs with or without a PDF (you just won't get document/table
+> chunks until you add one).
 
 Embeddings run locally, so `ingest.py` and `query.py` need **no API key** — only answer
 generation (`rag.py` / `ask.py`) calls a provider.
@@ -105,6 +106,18 @@ python review/compare_search_vs_rag.py "what is tracking error" "what was the fu
 The comparison script makes the value of the **G** step concrete: the left side hands back
 raw chunks you read yourself; the right side is the LLM's cited answer over those same chunks
 (and its refusal when the answer isn't there).
+
+## Example
+
+This demo takes HOOPP's publicly available [2025 Annual Report](https://hoopp.com/docs/default-source/investments-library/annual-reports/hoopp-2025-annual-report.pdf) (PDF) as its example
+source document — the document behind every `[source: ...]` citation below. Running
+`python ask.py` against it:
+
+![Example run of ask.py: grounded answers with per-fact source citations, a table read back in full, a refusal when the data doesn't cover the question, and a governed-metric definition tagged with its version.](example.png)
+
+Note the per-fact `[source: ...]` citations, the full table read back row by row, the
+*"I don't have that in the provided data."* refusal, and the governed metric answered with
+its `version: 1.0`.
 
 ## Design notes
 
