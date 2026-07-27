@@ -1,5 +1,11 @@
 # RAG Toy — Investment Knowledge Base
 
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white&style=flat-square)
+![RAG](https://img.shields.io/badge/RAG-Retrieval--Augmented%20Generation-4B8BBE?style=flat-square)
+![ChromaDB](https://img.shields.io/badge/Vector%20store-ChromaDB-FF9900?style=flat-square)
+![LLM](https://img.shields.io/badge/LLM-DeepSeek%20%7C%20OpenAI%20%7C%20Claude-412991?style=flat-square)
+![Last commit](https://img.shields.io/github/last-commit/lusinlusin/rag-investment-kb?style=flat-square)
+
 A small, deliberately-readable **Retrieval-Augmented Generation (RAG)** demo that answers
 questions about an investment firm's reports and metric definitions — grounded in the
 source data, with citations, and refusing to answer when the data doesn't contain it.
@@ -109,15 +115,15 @@ raw chunks you read yourself; the right side is the LLM's cited answer over thos
 
 ## Example
 
-This demo takes HOOPP's publicly available [2025 Annual Report](https://hoopp.com/docs/default-source/investments-library/annual-reports/hoopp-2025-annual-report.pdf) (PDF) as its example
-source document — the document behind every `[source: ...]` citation below. Running
-`python ask.py` against it:
+`python ask.py` answering a series of questions against the annual report:
 
 ![Example run of ask.py: grounded answers with per-fact source citations, a table read back in full, a refusal when the data doesn't cover the question, and a governed-metric definition tagged with its version.](example.png)
 
 Note the per-fact `[source: ...]` citations, the full table read back row by row, the
 *"I don't have that in the provided data."* refusal, and the governed metric answered with
 its `version: 1.0`.
+
+> *Source: HOOPP's publicly available [2025 Annual Report](https://hoopp.com/docs/default-source/investments-library/annual-reports/hoopp-2025-annual-report.pdf) (PDF) — the document behind every `[source: ...]` citation shown.*
 
 ## Design notes
 
