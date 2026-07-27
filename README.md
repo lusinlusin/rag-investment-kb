@@ -79,12 +79,6 @@ cp .env.example .env
 python ingest.py
 ```
 
-> **Note:** source PDFs are **not** included in this repo. The demo uses HOOPP's publicly
-> available [2025 Annual Report](https://hoopp.com/docs/default-source/investments-library/annual-reports/hoopp-2025-annual-report.pdf) — download it into `data/docs/` (or drop in
-> your own) before running `ingest.py`. The governed metric layer (`data/metrics.yaml`) *is*
-> included, so the pipeline runs with or without a PDF (you just won't get document/table
-> chunks until you add one).
-
 Embeddings run locally, so `ingest.py` and `query.py` need **no API key** — only answer
 generation (`rag.py` / `ask.py`) calls a provider.
 
@@ -123,7 +117,11 @@ Note the per-fact `[source: ...]` citations, the full table read back row by row
 *"I don't have that in the provided data."* refusal, and the governed metric answered with
 its `version: 1.0`.
 
-> *Source: HOOPP's publicly available [2025 Annual Report](https://hoopp.com/docs/default-source/investments-library/annual-reports/hoopp-2025-annual-report.pdf) (PDF) — the document behind every `[source: ...]` citation shown.*
+> **Note:** the demo uses HOOPP's publicly available [2025 Annual Report](https://hoopp.com/docs/default-source/investments-library/annual-reports/hoopp-2025-annual-report.pdf) (PDF) — the
+> document behind every `[source: ...]` citation shown. Source PDFs are **not** included in
+> this repo; download it into `data/docs/` (or drop in your own) before running `ingest.py`.
+> The governed metric layer (`data/metrics.yaml`) *is* included, so the pipeline runs with or
+> without a PDF (you just won't get document/table chunks until you add one).
 
 ## Design notes
 
