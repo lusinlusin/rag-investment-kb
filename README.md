@@ -79,6 +79,8 @@ cp .env.example .env
 python ingest.py
 ```
 
+> **Heads-up:** `ingest.py` needs a PDF in `data/docs/` first — none is bundled; see [Example](#example) for the one used here and how to add your own.
+
 Embeddings run locally, so `ingest.py` and `query.py` need **no API key** — only answer
 generation (`rag.py` / `ask.py`) calls a provider.
 
