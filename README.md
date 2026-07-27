@@ -110,7 +110,7 @@ raw chunks you read yourself; the right side is the LLM's cited answer over thos
 (and its refusal when the answer isn't there).
 
 ## Example
-
+Take HOOPP [2025 Annual Report](https://hoopp.com/docs/default-source/investments-library/annual-reports/hoopp-2025-annual-report.pdf) (PDF) as example
 `python ask.py` answering a series of questions against the annual report:
 
 ![Example run of ask.py: grounded answers with per-fact source citations, a table read back in full, a refusal when the data doesn't cover the question, and a governed-metric definition tagged with its version.](example.png)
@@ -119,11 +119,7 @@ Note the per-fact `[source: ...]` citations, the full table read back row by row
 *"I don't have that in the provided data."* refusal, and the governed metric answered with
 its `version: 1.0`.
 
-> **Note:** the demo uses HOOPP's publicly available [2025 Annual Report](https://hoopp.com/docs/default-source/investments-library/annual-reports/hoopp-2025-annual-report.pdf) (PDF) — the
-> document behind every `[source: ...]` citation shown. Source PDFs are **not** included in
-> this repo; download it into `data/docs/` (or drop in your own) before running `ingest.py`.
-> The governed metric layer (`data/metrics.yaml`) *is* included, so the pipeline runs with or
-> without a PDF (you just won't get document/table chunks until you add one).
+> **Note:** the PDF isn't bundled — download it into `data/docs/` (or drop in your own) before running `ingest.py`. `data/metrics.yaml` *is* included, so the pipeline still runs without a PDF.
 
 ## Design notes
 
