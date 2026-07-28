@@ -19,18 +19,24 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from rag import answer, _col          # noqa: E402
+from rag import answer, _col, _cite   # noqa: E402
 from llm import describe              # noqa: E402
 
-K = 3                 # how many chunks to show for the retrieval-only half
+K = 6                 # how many chunks to show for the retrieval-only half
 PREVIEW = 200         # Only affects how many chars are PRINTED (bump up to see full text, e.g. 800).
                       # Does NOT affect retrieval or what's fed to the LLM — those always get the full chunk.
 
+# DEFAULT_QUESTIONS = [
+#     "What is our official definition of tracking error?",   # governed metric layer
+#     "What was the funded status, and as of when?",          # PDF annual-report narrative
+#     "What is the portfolio manager's dog's name?",          # not in the KB -> should refuse
+# ]
+
 DEFAULT_QUESTIONS = [
-    "What is our official definition of tracking error?",   # governed metric layer
-    "What was the funded status, and as of when?",          # PDF annual-report narrative
-    "What is the portfolio manager's dog's name?",          # not in the KB -> should refuse
+    "what is the foreign currecy and its exposure",   # governed metric layer
+    "Wwhat are the foreign currencies and thier exposures",          # PDF annual-report narrative
 ]
+
 
 
 def retrieval_only(question):
@@ -39,7 +45,7 @@ def retrieval_only(question):
     hits = zip(res["documents"][0], res["metadatas"][0], res["distances"][0])
     for rank, (doc, meta, dist) in enumerate(hits, 1):
         preview = doc.replace("\n", " ").strip()[:PREVIEW]
-        print(f"    #{rank}  distance={dist:.3f}  [{meta['source']}]")
+        print(f"    #{rank}  distance={dist:.3f}  {_cite(meta)}")
         print(f"        {preview}{'…' if len(doc) > PREVIEW else ''}")
 
 

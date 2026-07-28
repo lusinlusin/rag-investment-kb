@@ -26,19 +26,28 @@ Rules:
   tables; the answer is read in a plain terminal where they render as unreadable pipes."""
 
 
+def _cite(m):
+    """Build the [source: ...] tag for a chunk, distinguishing the three kinds so the
+    answer's citations reveal whether a fact came from the PDF prose (text), an extracted
+    table (+ page), or the governed metric layer (+ version)."""
+    src = m["source"]
+    kind = m.get("type")
+    if kind == "metric":
+        return f"[source: {src}, version: {m.get('version', '?')}]"
+    if kind == "table":
+        return f"[source: {src}, table - page {m.get('page', '?')}]"
+    return f"[source: {src}, text]"   # document = PDF narrative prose
+
+
 def answer(question: str, k: int = 6) -> str:
     # R (retrieve) — pull the k chunks most relevant to the question. k=6 (not 3-4) gives
     # a big single table chunk room to make the cut against many competing prose fragments.
     res = _col.query(query_texts=[question], n_results=k)
     chunks, metas = res["documents"][0], res["metadatas"][0]
-    # A (augment) — stitch the chunks into one context block, tagging each with its
-    # source (and version, for governed metrics) so the model can cite where facts came from.
-    context = "\n\n".join(
-        f"[source: {m['source']}"
-        + (f", version: {m['version']}" if m.get("type") == "metric" else "")
-        + f"] {c}"
-        for c, m in zip(chunks, metas)
-    )
+    # A (augment) — stitch the chunks into one context block, tagging each with a source
+    # label that distinguishes prose / table / metric (see _cite) so the model's citations
+    # reveal which kind each fact came from.
+    context = "\n\n".join(f"{_cite(m)} {c}" for c, m in zip(chunks, metas))
     # G (generate) — the model answers from this context ONLY (see SYSTEM rules above).
     prompt = f"Context:\n{context}\n\nQuestion: {question}"
     return complete(SYSTEM, prompt)
