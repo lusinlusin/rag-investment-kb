@@ -157,60 +157,65 @@ def chunk(text, size=800, overlap=150):
     return [c.strip() for c in out if c.strip()]
 
 
-client = chromadb.PersistentClient(path=str(HERE / "chroma_db"))  # on-disk store under ./chroma_db
-# No embedding_function is given, so the collection uses Chroma's default local
-# model (all-MiniLM-L6-v2, 384-dim). query.py / rag.py open it the same way, so
-# questions get embedded by the SAME model — required for distances to be meaningful.
-col = client.get_or_create_collection("investment_kb")
+def main():
+    client = chromadb.PersistentClient(path=str(HERE / "chroma_db"))  # on-disk store under ./chroma_db
+    # No embedding_function is given, so the collection uses Chroma's default local
+    # model (all-MiniLM-L6-v2, 384-dim). query.py / rag.py open it the same way, so
+    # questions get embedded by the SAME model — required for distances to be meaningful.
+    col = client.get_or_create_collection("investment_kb")
 
-docs, ids, metas = [], [], []
+    docs, ids, metas = [], [], []
 
-# (1) governed metric layer — one chunk per metric definition (never split, so a
-# definition is always retrieved whole). Stable id lets re-runs upsert in place.
-with open(HERE / "data" / "metrics.yaml") as f:
-    metrics = yaml.safe_load(f)
-for name, d in metrics.items():
-    docs.append(
-        f"Metric: {name}. Definition: {d['definition']} "
-        f"Formula: {d['formula']}. Notes: {d.get('notes', '')}"
+    # (1) governed metric layer — one chunk per metric definition (never split, so a
+    # definition is always retrieved whole). Stable id lets re-runs upsert in place.
+    with open(HERE / "data" / "metrics.yaml") as f:
+        metrics = yaml.safe_load(f)
+    for name, d in metrics.items():
+        docs.append(
+            f"Metric: {name}. Definition: {d['definition']} "
+            f"Formula: {d['formula']}. Notes: {d.get('notes', '')}"
+        )
+        ids.append(f"metric::{name}")
+        metas.append({"source": "governed_metric_layer", "type": "metric", "version": d.get("version", "1.0")})
+
+    # (2) unstructured documents — narrative prose (pypdf) + tables (pdfplumber)
+    pdf_paths = sorted(glob.glob(str(HERE / "data" / "docs" / "*.pdf")))
+    doc_chunks = table_chunks = 0
+    for path in pdf_paths:
+        fname = os.path.basename(path)
+        # (2a) narrative prose, chunked
+        for i, ch in enumerate(chunk(load_pdf(path))):
+            docs.append(ch)
+            ids.append(f"{fname}::{i}")
+            metas.append({"source": fname, "type": "document"})
+            doc_chunks += 1
+        # (2b) tables — one chunk per table, never split (a table must stay whole)
+        for j, (pageno, block) in enumerate(load_tables(path)):
+            docs.append(block)
+            ids.append(f"{fname}::table::{j}")
+            metas.append({"source": fname, "type": "table", "page": pageno})
+            table_chunks += 1
+
+    # Re-run semantics: every run re-reads and re-embeds ALL documents (full overwrite,
+    # not incremental). Stable ids + upsert mean unchanged records are overwritten in
+    # place, so re-running never duplicates. Caveat: deleting a file from data/docs/ does
+    # NOT remove its old chunks here (upsert only adds/overwrites) — to rebuild from
+    # scratch, delete the chroma_db/ folder first, then run this.
+    #
+    # Upsert in batches (stays well under Chroma's per-call limit).
+    BATCH = 1000
+    for i in range(0, len(docs), BATCH):
+        # Only documents are passed (no embeddings=), so Chroma embeds each one with
+        # the collection's default model here, then stores text + metadata in
+        # chroma.sqlite3 and the resulting vectors in the HNSW index (chroma_db/<uuid>/*.bin).
+        col.upsert(documents=docs[i:i + BATCH], ids=ids[i:i + BATCH], metadatas=metas[i:i + BATCH])
+
+    print(
+        f"Ingested {len(metrics)} governed metrics + {doc_chunks} document chunks "
+        f"+ {table_chunks} table chunks from {len(pdf_paths)} PDF(s) "
+        f"-> {col.count()} total in collection."
     )
-    ids.append(f"metric::{name}")
-    metas.append({"source": "governed_metric_layer", "type": "metric", "version": d.get("version", "1.0")})
 
-# (2) unstructured documents — narrative prose (pypdf) + tables (pdfplumber)
-pdf_paths = sorted(glob.glob(str(HERE / "data" / "docs" / "*.pdf")))
-doc_chunks = table_chunks = 0
-for path in pdf_paths:
-    fname = os.path.basename(path)
-    # (2a) narrative prose, chunked
-    for i, ch in enumerate(chunk(load_pdf(path))):
-        docs.append(ch)
-        ids.append(f"{fname}::{i}")
-        metas.append({"source": fname, "type": "document"})
-        doc_chunks += 1
-    # (2b) tables — one chunk per table, never split (a table must stay whole)
-    for j, (pageno, block) in enumerate(load_tables(path)):
-        docs.append(block)
-        ids.append(f"{fname}::table::{j}")
-        metas.append({"source": fname, "type": "table", "page": pageno})
-        table_chunks += 1
 
-# Re-run semantics: every run re-reads and re-embeds ALL documents (full overwrite,
-# not incremental). Stable ids + upsert mean unchanged records are overwritten in
-# place, so re-running never duplicates. Caveat: deleting a file from data/docs/ does
-# NOT remove its old chunks here (upsert only adds/overwrites) — to rebuild from
-# scratch, delete the chroma_db/ folder first, then run this.
-#
-# Upsert in batches (stays well under Chroma's per-call limit).
-BATCH = 1000
-for i in range(0, len(docs), BATCH):
-    # Only documents are passed (no embeddings=), so Chroma embeds each one with
-    # the collection's default model here, then stores text + metadata in
-    # chroma.sqlite3 and the resulting vectors in the HNSW index (chroma_db/<uuid>/*.bin).
-    col.upsert(documents=docs[i:i + BATCH], ids=ids[i:i + BATCH], metadatas=metas[i:i + BATCH])
-
-print(
-    f"Ingested {len(metrics)} governed metrics + {doc_chunks} document chunks "
-    f"+ {table_chunks} table chunks from {len(pdf_paths)} PDF(s) "
-    f"-> {col.count()} total in collection."
-)
+if __name__ == "__main__":
+    main()

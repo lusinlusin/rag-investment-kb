@@ -11,3 +11,16 @@ review/*
 !review/compare_search_vs_rag.py
 RAG_toy_build_blueprint.md
 data/docs/*.pdf
+
+# Experiments: derived artifacts (rebuilt by experiments/harness.py). The chunk cache holds
+# report text extracted from the PDFs, which are not redistributed either.
+experiments/chroma_exp/
+experiments/cache/
+# LaTeX build by-products (report.tex, figures/, tables/ and report.pdf are kept)
+report/*.aux
+report/*.log
+report/*.out
+report/*.toc
+report/*.fls
+report/*.fdb_latexmk
+report/*.synctex.gz

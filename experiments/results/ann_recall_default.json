@@ -1,0 +1,6 @@
+{
+ "_note": "Measured with Chroma's default HNSW settings (ef_search=100, ef_construction=100, max_neighbors=16), before the fix.",
+ "exp_hoopp": {"recall": 1.0, "q_with_miss": 0, "top1_missing": 0, "n": 61},
+ "exp_all": {"recall": 1.0, "q_with_miss": 0, "top1_missing": 0, "n": 61},
+ "exp_all_ctx": {"recall": 0.989, "q_with_miss": 2, "top1_missing": 1, "n": 61}
+}

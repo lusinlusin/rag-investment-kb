@@ -1,0 +1,6255 @@
+[
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "H01",
+  "variant": "casual",
+  "question": "hoopp 2025 perf vs bmk?",
+  "answer": "- Net return: 7.7% [source: hoopp-2025.pdf (HOOPP), table - page 29]\n- Benchmark: 8.6% [source: hoopp-2025.pdf (HOOPP), table - page 29]\n- Relative performance: -0.9% [source: hoopp-2025.pdf (HOOPP), table - page 29]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::374",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 99
+   },
+   {
+    "id": "hoopp-2025.pdf::table::5",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 29
+   },
+   {
+    "id": "hoopp-2025.pdf::58",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 25
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7
+   },
+   {
+    "id": "hoopp-2025.pdf::204",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 61
+   },
+   {
+    "id": "hoopp-2025.pdf::4",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 4
+   },
+   {
+    "id": "hoopp-2025.pdf::0",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 1
+   },
+   {
+    "id": "hoopp-2025.pdf::13",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8
+   }
+  ],
+  "retrieval": {
+   "n_hits": 8,
+   "fund_mix": {
+    "hoopp": 8
+   },
+   "type_mix": {
+    "document": 7,
+    "table": 1,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": false,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 3,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "H01",
+  "variant": "typo",
+  "question": "waht was HOOPPs net retrun in 2025 compared to benchmrak",
+  "answer": "- HOOPP net return in 2025: 7.7% [source: hoopp-2025.pdf (HOOPP), text - page 29]\n- Benchmark: 8.6% [source: hoopp-2025.pdf (HOOPP), text - page 29]\n- Relative performance: -0.9% [source: hoopp-2025.pdf (HOOPP), text - page 29]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::105",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 38
+   },
+   {
+    "id": "hoopp-2025.pdf::72",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29
+   },
+   {
+    "id": "omers-2025.pdf::94",
+    "fund": "omers",
+    "type": "document",
+    "page": 37
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31
+   },
+   {
+    "id": "omers-2025.pdf::101",
+    "fund": "omers",
+    "type": "document",
+    "page": 40
+   },
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28
+   },
+   {
+    "id": "omers-2025.pdf::107",
+    "fund": "omers",
+    "type": "document",
+    "page": 42
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7
+   },
+   {
+    "id": "hoopp-2025.pdf::table::5",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 29
+   },
+   {
+    "id": "aimco-2025.pdf::78",
+    "fund": "aimco",
+    "type": "document",
+    "page": 27
+   },
+   {
+    "id": "aimco-2025.pdf::table::5",
+    "fund": "aimco",
+    "type": "table",
+    "page": 30
+   },
+   {
+    "id": "omers-2025.pdf::104",
+    "fund": "omers",
+    "type": "document",
+    "page": 41
+   }
+  ],
+  "retrieval": {
+   "n_hits": 12,
+   "fund_mix": {
+    "hoopp": 6,
+    "omers": 4,
+    "aimco": 2
+   },
+   "type_mix": {
+    "document": 10,
+    "table": 2,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 0.5,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 3,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "H01",
+  "variant": "chinese",
+  "question": "HOOPP 2025年的净回报率是多少？和基准相比如何？",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7
+   },
+   {
+    "id": "hoopp-2025.pdf::0",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 1
+   },
+   {
+    "id": "hoopp-2025.pdf::13",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8
+   },
+   {
+    "id": "hoopp-2025.pdf::3",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 4
+   },
+   {
+    "id": "hoopp-2025.pdf::163",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 52
+   },
+   {
+    "id": "hoopp-2025.pdf::41",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 18
+   },
+   {
+    "id": "hoopp-2025.pdf::159",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 52
+   },
+   {
+    "id": "hoopp-2025.pdf::30",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 14
+   }
+  ],
+  "retrieval": {
+   "n_hits": 8,
+   "fund_mix": {
+    "hoopp": 8
+   },
+   "type_mix": {
+    "document": 8,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": false,
+   "gold_hit_all": false,
+   "gold_hit_frac": 0.0
+  },
+  "grade": {
+   "correct": false,
+   "partial": 0.0,
+   "groups_matched": [
+    false,
+    false
+   ],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 0,
+   "cited_funds": [],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": true
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "H02",
+  "variant": "casual",
+  "question": "is hoopp still fully funded? smoothed ratio now vs last yr",
+  "answer": "Yes — HOOPP remains fully funded. As at December 31, 2025 the Plan was 109% funded, meaning that for every dollar owed in pension benefits, now and in the future, it held $1.09 in assets [source: hoopp-2025.pdf (HOOPP), text - page 10]. HOOPP has been fully funded since 2009 [source: hoopp-2025.pdf (HOOPP), text - page 10].\n\nSmoothed funded ratio:\n- 2025 (smoothed asset value basis): 109%\n- 2024 value: 111%\n[source: hoopp-2025.pdf (HOOPP), text - page 21]\n\nThe report notes the smoothed funded ratio declined modestly from 2024, reflecting higher‑than‑assumed wage growth for members and continued recognition of investment losses from 2022, which are smoothed over a five‑year period [source: hoopp-2025.pdf (HOOPP), text - page 23].",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23
+   },
+   {
+    "id": "hoopp-2025.pdf::58",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 25
+   },
+   {
+    "id": "hoopp-2025.pdf::47",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 21
+   },
+   {
+    "id": "hoopp-2025.pdf::17",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 10
+   },
+   {
+    "id": "hoopp-2025.pdf::48",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 21
+   },
+   {
+    "id": "hoopp-2025.pdf::46",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 20
+   },
+   {
+    "id": "hoopp-2025.pdf::56",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 24
+   },
+   {
+    "id": "hoopp-2025.pdf::298",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 82
+   }
+  ],
+  "retrieval": {
+   "n_hits": 8,
+   "fund_mix": {
+    "hoopp": 8
+   },
+   "type_mix": {
+    "document": 8,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 4,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "H02",
+  "variant": "typo",
+  "question": "HOOPP funded staus end of 2025 smothed basis and prior yaer",
+  "answer": "- 2025 smoothed asset value basis funded ratio: 109% [source: hoopp-2025.pdf (HOOPP), text - page 21]\n- 2024 smoothed asset value basis funded ratio: 111% [source: hoopp-2025.pdf (HOOPP), text - page 21]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23
+   },
+   {
+    "id": "hoopp-2025.pdf::17",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 10
+   },
+   {
+    "id": "hoopp-2025.pdf::299",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 82
+   },
+   {
+    "id": "hoopp-2025.pdf::298",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 82
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7
+   },
+   {
+    "id": "hoopp-2025.pdf::47",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 21
+   },
+   {
+    "id": "hoopp-2025.pdf::58",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 25
+   },
+   {
+    "id": "hoopp-2025.pdf::table::4",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 24
+   }
+  ],
+  "retrieval": {
+   "n_hits": 8,
+   "fund_mix": {
+    "hoopp": 8
+   },
+   "type_mix": {
+    "document": 7,
+    "table": 1,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 2,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "H02",
+  "variant": "chinese",
+  "question": "HOOPP 2025年底按平滑基础计算的融资比率是多少？上一年呢？",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7
+   },
+   {
+    "id": "hoopp-2025.pdf::0",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 1
+   },
+   {
+    "id": "hoopp-2025.pdf::57",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 24
+   },
+   {
+    "id": "hoopp-2025.pdf::163",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 52
+   },
+   {
+    "id": "hoopp-2025.pdf::3",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 4
+   },
+   {
+    "id": "hoopp-2025.pdf::15",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 9
+   },
+   {
+    "id": "hoopp-2025.pdf::41",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 18
+   },
+   {
+    "id": "hoopp-2025.pdf::159",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 52
+   }
+  ],
+  "retrieval": {
+   "n_hits": 8,
+   "fund_mix": {
+    "hoopp": 8
+   },
+   "type_mix": {
+    "document": 8,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": false,
+   "gold_hit_all": false,
+   "gold_hit_frac": 0.0
+  },
+  "grade": {
+   "correct": false,
+   "partial": 0.0,
+   "groups_matched": [
+    false,
+    false
+   ],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 0,
+   "cited_funds": [],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": true
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "H09",
+  "variant": "casual",
+  "question": "hoopp usd fx exposure in cad",
+  "answer": "- 2025 — United States Dollars: local currency 9,256 (millions); Canadian dollar equivalent $12,702 (millions); impact of +/- 5% change: 634/(628) [source: hoopp-2025.pdf (HOOPP), text - page 83]\n- 2024 — United States Dollars: local currency 10,839 (millions); Canadian dollar equivalent $15,591 (millions); impact of +/- 5% change: 796/(776) [source: hoopp-2025.pdf (HOOPP), text - page 83]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::255",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 73
+   },
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28
+   },
+   {
+    "id": "hoopp-2025.pdf::70",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28
+   },
+   {
+    "id": "hoopp-2025.pdf::307",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 84
+   },
+   {
+    "id": "hoopp-2025.pdf::85",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 33
+   },
+   {
+    "id": "hoopp-2025.pdf::305",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 83
+   },
+   {
+    "id": "hoopp-2025.pdf::318",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 86
+   },
+   {
+    "id": "hoopp-2025.pdf::306",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 83
+   }
+  ],
+  "retrieval": {
+   "n_hits": 8,
+   "fund_mix": {
+    "hoopp": 8
+   },
+   "type_mix": {
+    "document": 8,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 2,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "H09",
+  "variant": "typo",
+  "question": "HOOPP US dolar foriegn curency exposure end 2025",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::70",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28
+   },
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28
+   },
+   {
+    "id": "hoopp-2025.pdf::89",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 34
+   },
+   {
+    "id": "hoopp-2025.pdf::119",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 42
+   },
+   {
+    "id": "hoopp-2025.pdf::356",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 95
+   },
+   {
+    "id": "hoopp-2025.pdf::41",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 18
+   },
+   {
+    "id": "hoopp-2025.pdf::404",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 108
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7
+   }
+  ],
+  "retrieval": {
+   "n_hits": 8,
+   "fund_mix": {
+    "hoopp": 8
+   },
+   "type_mix": {
+    "document": 8,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": false,
+   "gold_hit_all": false,
+   "gold_hit_frac": 0.0
+  },
+  "grade": {
+   "correct": false,
+   "partial": 0.0,
+   "groups_matched": [
+    false
+   ],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 0,
+   "cited_funds": [],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": true
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "H09",
+  "variant": "chinese",
+  "question": "HOOPP 2025年底的美元外汇敞口是多少（加元计）？",
+  "answer": "HOOPP 2025年底的美元（United States Dollars）外汇敞口，加元等值金额为 12,702 百万加元（本地货币 9,256 百万美元），±5% 汇率变动的影响为 634/(628) 百万加元。\n\n[source: hoopp-2025.pdf (HOOPP), table - page 84]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7
+   },
+   {
+    "id": "hoopp-2025.pdf::15",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 9
+   },
+   {
+    "id": "hoopp-2025.pdf::3",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 4
+   },
+   {
+    "id": "hoopp-2025.pdf::304",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 83
+   },
+   {
+    "id": "hoopp-2025.pdf::41",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 18
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31
+   },
+   {
+    "id": "hoopp-2025.pdf::30",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 14
+   },
+   {
+    "id": "hoopp-2025.pdf::table::27",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 84
+   }
+  ],
+  "retrieval": {
+   "n_hits": 8,
+   "fund_mix": {
+    "hoopp": 8
+   },
+   "type_mix": {
+    "document": 7,
+    "table": 1,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "A01",
+  "variant": "casual",
+  "question": "aimco balanced fund 2025 return & bmk",
+  "answer": "- 2025 Balanced Fund Net Investment Rate of Return: 7.6% [source: aimco-2025.pdf (AIMCo), text - page 15]\n- 2025 excess return vs benchmark: -2.7% [source: aimco-2025.pdf (AIMCo), table - page 58]\n\nThe benchmark’s return itself is not stated in the provided data; the context only says the Balanced Fund “trailed its benchmark” [source: aimco-2025.pdf (AIMCo), text - page 13].",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::4",
+    "fund": "aimco",
+    "type": "document",
+    "page": 3
+   },
+   {
+    "id": "aimco-2025.pdf::27",
+    "fund": "aimco",
+    "type": "document",
+    "page": 15
+   },
+   {
+    "id": "aimco-2025.pdf::140",
+    "fund": "aimco",
+    "type": "document",
+    "page": 58
+   },
+   {
+    "id": "aimco-2025.pdf::5",
+    "fund": "aimco",
+    "type": "document",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::22",
+    "fund": "aimco",
+    "type": "document",
+    "page": 13
+   },
+   {
+    "id": "aimco-2025.pdf::table::10",
+    "fund": "aimco",
+    "type": "table",
+    "page": 58
+   },
+   {
+    "id": "aimco-2025.pdf::table::0",
+    "fund": "aimco",
+    "type": "table",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::220",
+    "fund": "aimco",
+    "type": "document",
+    "page": 87
+   }
+  ],
+  "retrieval": {
+   "n_hits": 8,
+   "fund_mix": {
+    "aimco": 8
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 2,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": false,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": false,
+   "partial": 0.5,
+   "groups_matched": [
+    true,
+    false
+   ],
+   "refused_strict": false,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 3,
+   "cited_funds": [
+    "aimco"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "A01",
+  "variant": "typo",
+  "question": "AIMCo balnced fund net retrun 2025 and its benchmrk",
+  "answer": "- Balanced Fund 2025 net return: 7.6% [source: aimco-2025.pdf (AIMCo), text - page 16]\n- Balanced Fund 2025 benchmark: 10.3% [source: aimco-2025.pdf (AIMCo), text - page 16]",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::4",
+    "fund": "aimco",
+    "type": "document",
+    "page": 3
+   },
+   {
+    "id": "aimco-2025.pdf::29",
+    "fund": "aimco",
+    "type": "document",
+    "page": 15
+   },
+   {
+    "id": "aimco-2025.pdf::140",
+    "fund": "aimco",
+    "type": "document",
+    "page": 58
+   },
+   {
+    "id": "aimco-2025.pdf::27",
+    "fund": "aimco",
+    "type": "document",
+    "page": 15
+   },
+   {
+    "id": "aimco-2025.pdf::30",
+    "fund": "aimco",
+    "type": "document",
+    "page": 16
+   },
+   {
+    "id": "aimco-2025.pdf::90",
+    "fund": "aimco",
+    "type": "document",
+    "page": 32
+   },
+   {
+    "id": "aimco-2025.pdf::22",
+    "fund": "aimco",
+    "type": "document",
+    "page": 13
+   },
+   {
+    "id": "aimco-2025.pdf::5",
+    "fund": "aimco",
+    "type": "document",
+    "page": 4
+   }
+  ],
+  "retrieval": {
+   "n_hits": 8,
+   "fund_mix": {
+    "aimco": 8
+   },
+   "type_mix": {
+    "document": 8,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": false,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 2,
+   "cited_funds": [
+    "aimco"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "A01",
+  "variant": "chinese",
+  "question": "AIMCo 平衡基金2025年的净回报率和基准分别是多少？",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::table::4",
+    "fund": "aimco",
+    "type": "table",
+    "page": 28
+   },
+   {
+    "id": "aimco-2025.pdf::168",
+    "fund": "aimco",
+    "type": "document",
+    "page": 69
+   },
+   {
+    "id": "aimco-2025.pdf::80",
+    "fund": "aimco",
+    "type": "document",
+    "page": 28
+   },
+   {
+    "id": "aimco-2025.pdf::124",
+    "fund": "aimco",
+    "type": "document",
+    "page": 51
+   },
+   {
+    "id": "aimco-2025.pdf::89",
+    "fund": "aimco",
+    "type": "document",
+    "page": 32
+   },
+   {
+    "id": "aimco-2025.pdf::14",
+    "fund": "aimco",
+    "type": "document",
+    "page": 10
+   },
+   {
+    "id": "aimco-2025.pdf::69",
+    "fund": "aimco",
+    "type": "document",
+    "page": 24
+   },
+   {
+    "id": "aimco-2025.pdf::39",
+    "fund": "aimco",
+    "type": "document",
+    "page": 16
+   }
+  ],
+  "retrieval": {
+   "n_hits": 8,
+   "fund_mix": {
+    "aimco": 8
+   },
+   "type_mix": {
+    "document": 7,
+    "table": 1,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": false,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": false,
+   "partial": 0.0,
+   "groups_matched": [
+    false,
+    false
+   ],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 0,
+   "cited_funds": [],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": true
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "A06",
+  "variant": "casual",
+  "question": "aimco PE perf 2025 vs bmk",
+  "answer": "For AIMCo Private Equity, 2025:\n\n- Net Return: 4.5%\n- Benchmark Return: 17.4%\n- Excess Return: (12.9)%\n\n[source: aimco-2025.pdf (AIMCo), text - page 27]\n\nNote as stated in that source: \"All return information is exclusive of ATRF’s segregated account; as well as Relationship Investing and Venture Capital as those are deemed non-core.\"\n\n[source: aimco-2025.pdf (AIMCo), text - page 27]",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::39",
+    "fund": "aimco",
+    "type": "document",
+    "page": 16
+   },
+   {
+    "id": "aimco-2025.pdf::142",
+    "fund": "aimco",
+    "type": "document",
+    "page": 59
+   },
+   {
+    "id": "aimco-2025.pdf::29",
+    "fund": "aimco",
+    "type": "document",
+    "page": 15
+   },
+   {
+    "id": "aimco-2025.pdf::140",
+    "fund": "aimco",
+    "type": "document",
+    "page": 58
+   },
+   {
+    "id": "aimco-2025.pdf::table::18",
+    "fund": "aimco",
+    "type": "table",
+    "page": 69
+   },
+   {
+    "id": "aimco-2025.pdf::203",
+    "fund": "aimco",
+    "type": "document",
+    "page": 82
+   },
+   {
+    "id": "aimco-2025.pdf::79",
+    "fund": "aimco",
+    "type": "document",
+    "page": 27
+   },
+   {
+    "id": "aimco-2025.pdf::168",
+    "fund": "aimco",
+    "type": "document",
+    "page": 69
+   }
+  ],
+  "retrieval": {
+   "n_hits": 8,
+   "fund_mix": {
+    "aimco": 8
+   },
+   "type_mix": {
+    "document": 7,
+    "table": 1,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 2,
+   "cited_funds": [
+    "aimco"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "A06",
+  "variant": "typo",
+  "question": "AIMCo privte equity retrun 2025 and benchmark",
+  "answer": "- AIMCo private equity 2025 return: 4.5% [source: aimco-2025.pdf (AIMCo), text - page 27]\n- Benchmark return: 17.4% [source: aimco-2025.pdf (AIMCo), text - page 27]",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::77",
+    "fund": "aimco",
+    "type": "document",
+    "page": 27
+   },
+   {
+    "id": "aimco-2025.pdf::36",
+    "fund": "aimco",
+    "type": "document",
+    "page": 16
+   },
+   {
+    "id": "aimco-2025.pdf::39",
+    "fund": "aimco",
+    "type": "document",
+    "page": 16
+   },
+   {
+    "id": "aimco-2025.pdf::35",
+    "fund": "aimco",
+    "type": "document",
+    "page": 16
+   },
+   {
+    "id": "aimco-2025.pdf::37",
+    "fund": "aimco",
+    "type": "document",
+    "page": 16
+   },
+   {
+    "id": "aimco-2025.pdf::49",
+    "fund": "aimco",
+    "type": "document",
+    "page": 19
+   },
+   {
+    "id": "aimco-2025.pdf::69",
+    "fund": "aimco",
+    "type": "document",
+    "page": 24
+   },
+   {
+    "id": "aimco-2025.pdf::79",
+    "fund": "aimco",
+    "type": "document",
+    "page": 27
+   }
+  ],
+  "retrieval": {
+   "n_hits": 8,
+   "fund_mix": {
+    "aimco": 8
+   },
+   "type_mix": {
+    "document": 8,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 2,
+   "cited_funds": [
+    "aimco"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "A06",
+  "variant": "chinese",
+  "question": "AIMCo 私募股权2025年的回报率和基准是多少？",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::121",
+    "fund": "aimco",
+    "type": "document",
+    "page": 49
+   },
+   {
+    "id": "aimco-2025.pdf::101",
+    "fund": "aimco",
+    "type": "document",
+    "page": 38
+   },
+   {
+    "id": "aimco-2025.pdf::168",
+    "fund": "aimco",
+    "type": "document",
+    "page": 69
+   },
+   {
+    "id": "aimco-2025.pdf::2",
+    "fund": "aimco",
+    "type": "document",
+    "page": 2
+   },
+   {
+    "id": "aimco-2025.pdf::124",
+    "fund": "aimco",
+    "type": "document",
+    "page": 51
+   },
+   {
+    "id": "aimco-2025.pdf::69",
+    "fund": "aimco",
+    "type": "document",
+    "page": 24
+   },
+   {
+    "id": "aimco-2025.pdf::14",
+    "fund": "aimco",
+    "type": "document",
+    "page": 10
+   },
+   {
+    "id": "aimco-2025.pdf::21",
+    "fund": "aimco",
+    "type": "document",
+    "page": 11
+   }
+  ],
+  "retrieval": {
+   "n_hits": 8,
+   "fund_mix": {
+    "aimco": 8
+   },
+   "type_mix": {
+    "document": 8,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": false,
+   "gold_hit_all": false,
+   "gold_hit_frac": 0.0
+  },
+  "grade": {
+   "correct": false,
+   "partial": 0.0,
+   "groups_matched": [
+    false,
+    false
+   ],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 0,
+   "cited_funds": [],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": true
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "O02",
+  "variant": "casual",
+  "question": "omers funding level eoy 2025 (smoothed / FV)",
+  "answer": "- Smoothed funded ratio: 99% at December 31, 2025 [source: omers-2025.pdf (OMERS), text - page 21]\n- Fair value funded ratio: 96% at December 31, 2025 [source: omers-2025.pdf (OMERS), text - page 22]",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::56",
+    "fund": "omers",
+    "type": "document",
+    "page": 21
+   },
+   {
+    "id": "omers-2025.pdf::57",
+    "fund": "omers",
+    "type": "document",
+    "page": 21
+   },
+   {
+    "id": "omers-2025.pdf::61",
+    "fund": "omers",
+    "type": "document",
+    "page": 22
+   },
+   {
+    "id": "omers-2025.pdf::59",
+    "fund": "omers",
+    "type": "document",
+    "page": 21
+   },
+   {
+    "id": "omers-2025.pdf::144",
+    "fund": "omers",
+    "type": "document",
+    "page": 52
+   },
+   {
+    "id": "omers-2025.pdf::169",
+    "fund": "omers",
+    "type": "document",
+    "page": 57
+   },
+   {
+    "id": "omers-2025.pdf::410",
+    "fund": "omers",
+    "type": "document",
+    "page": 118
+   },
+   {
+    "id": "omers-2025.pdf::168",
+    "fund": "omers",
+    "type": "document",
+    "page": 57
+   }
+  ],
+  "retrieval": {
+   "n_hits": 8,
+   "fund_mix": {
+    "omers": 8
+   },
+   "type_mix": {
+    "document": 8,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 2,
+   "cited_funds": [
+    "omers"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "O02",
+  "variant": "typo",
+  "question": "OMERS fundd ratio end 2025 smoothed and fair valeu basis",
+  "answer": "- Smoothed value of assets basis: 99% at December 31, 2025 [source: omers-2025.pdf (OMERS), text - page 21]\n- Fair value basis: 96% at December 31, 2025 [source: omers-2025.pdf (OMERS), text - page 22]",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::169",
+    "fund": "omers",
+    "type": "document",
+    "page": 57
+   },
+   {
+    "id": "omers-2025.pdf::56",
+    "fund": "omers",
+    "type": "document",
+    "page": 21
+   },
+   {
+    "id": "omers-2025.pdf::61",
+    "fund": "omers",
+    "type": "document",
+    "page": 22
+   },
+   {
+    "id": "omers-2025.pdf::57",
+    "fund": "omers",
+    "type": "document",
+    "page": 21
+   },
+   {
+    "id": "omers-2025.pdf::168",
+    "fund": "omers",
+    "type": "document",
+    "page": 57
+   },
+   {
+    "id": "omers-2025.pdf::59",
+    "fund": "omers",
+    "type": "document",
+    "page": 21
+   },
+   {
+    "id": "omers-2025.pdf::55",
+    "fund": "omers",
+    "type": "document",
+    "page": 20
+   },
+   {
+    "id": "omers-2025.pdf::60",
+    "fund": "omers",
+    "type": "document",
+    "page": 22
+   }
+  ],
+  "retrieval": {
+   "n_hits": 8,
+   "fund_mix": {
+    "omers": 8
+   },
+   "type_mix": {
+    "document": 8,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 2,
+   "cited_funds": [
+    "omers"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "O02",
+  "variant": "chinese",
+  "question": "OMERS 2025年底按平滑基础和公允价值基础的融资比率分别是多少？",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::15",
+    "fund": "omers",
+    "type": "document",
+    "page": 5
+   },
+   {
+    "id": "omers-2025.pdf::204",
+    "fund": "omers",
+    "type": "document",
+    "page": 68
+   },
+   {
+    "id": "omers-2025.pdf::33",
+    "fund": "omers",
+    "type": "document",
+    "page": 10
+   },
+   {
+    "id": "omers-2025.pdf::205",
+    "fund": "omers",
+    "type": "document",
+    "page": 69
+   },
+   {
+    "id": "omers-2025.pdf::518",
+    "fund": "omers",
+    "type": "document",
+    "page": 153
+   },
+   {
+    "id": "omers-2025.pdf::3",
+    "fund": "omers",
+    "type": "document",
+    "page": 2
+   },
+   {
+    "id": "omers-2025.pdf::519",
+    "fund": "omers",
+    "type": "document",
+    "page": 153
+   },
+   {
+    "id": "omers-2025.pdf::54",
+    "fund": "omers",
+    "type": "document",
+    "page": 20
+   }
+  ],
+  "retrieval": {
+   "n_hits": 8,
+   "fund_mix": {
+    "omers": 8
+   },
+   "type_mix": {
+    "document": 8,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": false,
+   "gold_hit_all": false,
+   "gold_hit_frac": 0.0
+  },
+  "grade": {
+   "correct": false,
+   "partial": 0.0,
+   "groups_matched": [
+    false,
+    false
+   ],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 0,
+   "cited_funds": [],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": true
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "O05",
+  "variant": "casual",
+  "question": "omers fx exposure + hit to returns",
+  "answer": "OMERS reports:\n\n- Exposure to foreign currencies, net of hedging effects, resulted in $1.7 billion of unrealized foreign currency losses. This detracted 1.3% from OMERS’s net investment return for the year, primarily due to the weakening of the U.S. dollar by 4.7% and partially offset by diversification benefits from strengthening of the euro and pound sterling. [source: omers-2025.pdf (OMERS), text - page 30]\n- This compares to $5.0 billion or 4.0% of unrealized foreign currency gains in OMERS’s 2024 net investment return. [source: omers-2025.pdf (OMERS), text - page 30]\n- United States Dollar: $51,540 / 35% in 2025; $46,005 / 33% in 2024. [source: omers-2025.pdf (OMERS), text - page 82]\n- Euro: $4,555 / 3% in 2025; $10,619 / 7% in 2024. [source: omers-2025.pdf (OMERS), text - page 82]\n- Australian Dollar: $4,099 / 3% in 2025; $4,286 / 3% in 2024. [source: omers-2025.pdf (OMERS), text - page 82]\n- Indian Rupee: $1,687 / 1% in 2025; $1,769 / 1% in 2024. [source: omers-2025.pdf (OMERS), text - page 82]\n- Hong Kong Dollar: $809 / 1% in 2025; $1,599 in 2024. [source: omers-2025.pdf (OMERS), text - page 82]",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::table::7",
+    "fund": "omers",
+    "type": "table",
+    "page": 31
+   },
+   {
+    "id": "omers-2025.pdf::82",
+    "fund": "omers",
+    "type": "document",
+    "page": 30
+   },
+   {
+    "id": "omers-2025.pdf::80",
+    "fund": "omers",
+    "type": "document",
+    "page": 29
+   },
+   {
+    "id": "omers-2025.pdf::268",
+    "fund": "omers",
+    "type": "document",
+    "page": 82
+   },
+   {
+    "id": "omers-2025.pdf::134",
+    "fund": "omers",
+    "type": "document",
+    "page": 49
+   },
+   {
+    "id": "omers-2025.pdf::83",
+    "fund": "omers",
+    "type": "document",
+    "page": 30
+   },
+   {
+    "id": "omers-2025.pdf::98",
+    "fund": "omers",
+    "type": "document",
+    "page": 38
+   },
+   {
+    "id": "omers-2025.pdf::396",
+    "fund": "omers",
+    "type": "document",
+    "page": 115
+   }
+  ],
+  "retrieval": {
+   "n_hits": 8,
+   "fund_mix": {
+    "omers": 8
+   },
+   "type_mix": {
+    "document": 7,
+    "table": 1,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": false,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": false,
+   "partial": 0.5,
+   "groups_matched": [
+    false,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 7,
+   "cited_funds": [
+    "omers"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "O05",
+  "variant": "typo",
+  "question": "OMERS foriegn curency exposure 2025 and impact on retrun",
+  "answer": "OMERS 2025 foreign currency exposure (after currency hedging):\n- Total foreign currency exposure: $65,608 (44%) [source: omers-2025.pdf (OMERS), table - page 83]\n- United States Dollar: $51,540 (35%) [source: omers-2025.pdf (OMERS), table - page 83]\n- Euro: $4,555 (3%) [source: omers-2025.pdf (OMERS), table - page 83]\n- Australian Dollar: $4,099 (3%) [source: omers-2025.pdf (OMERS), table - page 83]\n- Indian Rupee: $1,687 (1%) [source: omers-2025.pdf (OMERS), table - page 83]\n- Hong Kong Dollar: $809 (1%) [source: omers-2025.pdf (OMERS), table - page 83]\n- British Pound Sterling: $363 (—) [source: omers-2025.pdf (OMERS), table - page 83]\n- Swedish Krona: $56 (—) [source: omers-2025.pdf (OMERS), table - page 83]\n- All Other: $2,499 (1%) [source: omers-2025.pdf (OMERS), table - page 83]\n- Net investment exposure exposed to foreign currencies: 45% [source: omers-2025.pdf (OMERS), text - page 30]\n\nImpact on 2025 return:\n- Active decision to hedge foreign currencies protected 0.7% of return for the year. [source: omers-2025.pdf (OMERS), text - page 30]\n- Exposure to foreign currencies, net of hedging effects, resulted in $1.7 billion of unrealized foreign currency losses. [source: omers-2025.pdf (OMERS), text - page 30]\n- This detracted 1.3% from net investment return for the year, primarily due to the weakening of the U.S. dollar by 4.7% and partially offset by diversification benefits from strengthening of the euro and pound sterling. [source: omers-2025.pdf (OMERS), text - page 30]",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::82",
+    "fund": "omers",
+    "type": "document",
+    "page": 30
+   },
+   {
+    "id": "omers-2025.pdf::table::7",
+    "fund": "omers",
+    "type": "table",
+    "page": 31
+   },
+   {
+    "id": "omers-2025.pdf::table::28",
+    "fund": "omers",
+    "type": "table",
+    "page": 83
+   },
+   {
+    "id": "omers-2025.pdf::268",
+    "fund": "omers",
+    "type": "document",
+    "page": 82
+   },
+   {
+    "id": "omers-2025.pdf::81",
+    "fund": "omers",
+    "type": "document",
+    "page": 30
+   },
+   {
+    "id": "omers-2025.pdf::375",
+    "fund": "omers",
+    "type": "document",
+    "page": 110
+   },
+   {
+    "id": "omers-2025.pdf::519",
+    "fund": "omers",
+    "type": "document",
+    "page": 153
+   },
+   {
+    "id": "omers-2025.pdf::344",
+    "fund": "omers",
+    "type": "document",
+    "page": 103
+   }
+  ],
+  "retrieval": {
+   "n_hits": 8,
+   "fund_mix": {
+    "omers": 8
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 2,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 13,
+   "cited_funds": [
+    "omers"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "O05",
+  "variant": "chinese",
+  "question": "OMERS 2025年底外币敞口占多少？汇率变动对回报有什么影响？",
+  "answer": "**2025年底外币敞口**\n\n- 外币净敞口合计：65,608（百万加元），占总净投资资产的 44%（2025年12月31日；2024年为 75,229 / 52%）[source: omers-2025.pdf (OMERS), text - page 82]\n- 净投资资产总额：148,776（百万加元），占 100% [source: omers-2025.pdf (OMERS), table - page 83]\n\n**汇率变动对回报的影响**\n\nI don't have that in the provided data.\n\n（上下文仅说明：AC 集中管理外汇策略并承担一定的外汇风险，是在整体投资组合目标框架内衡量与考虑的，未给出汇率变动对回报的具体影响数值 [source: omers-2025.pdf (OMERS), text - page 82]）",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::518",
+    "fund": "omers",
+    "type": "document",
+    "page": 153
+   },
+   {
+    "id": "omers-2025.pdf::204",
+    "fund": "omers",
+    "type": "document",
+    "page": 68
+   },
+   {
+    "id": "omers-2025.pdf::table::28",
+    "fund": "omers",
+    "type": "table",
+    "page": 83
+   },
+   {
+    "id": "omers-2025.pdf::205",
+    "fund": "omers",
+    "type": "document",
+    "page": 69
+   },
+   {
+    "id": "omers-2025.pdf::268",
+    "fund": "omers",
+    "type": "document",
+    "page": 82
+   },
+   {
+    "id": "omers-2025.pdf::3",
+    "fund": "omers",
+    "type": "document",
+    "page": 2
+   },
+   {
+    "id": "omers-2025.pdf::519",
+    "fund": "omers",
+    "type": "document",
+    "page": 153
+   },
+   {
+    "id": "omers-2025.pdf::54",
+    "fund": "omers",
+    "type": "document",
+    "page": 20
+   }
+  ],
+  "retrieval": {
+   "n_hits": 8,
+   "fund_mix": {
+    "omers": 8
+   },
+   "type_mix": {
+    "document": 7,
+    "table": 1,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": false,
+   "gold_hit_all": false,
+   "gold_hit_frac": 0.0
+  },
+  "grade": {
+   "correct": false,
+   "partial": 0.0,
+   "groups_matched": [
+    false,
+    false
+   ],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 3,
+   "cited_funds": [
+    "omers"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": true
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "X01",
+  "variant": "casual",
+  "question": "2025 returns: hoopp vs aimco vs omers",
+  "answer": "- HOOPP: I don't have that in the provided data.\n- AIMCo: 7.6% rate of return on the Balanced Fund in 2025 [source: aimco-2025.pdf (AIMCo), text - page 8]\n- OMERS: net return for 2025 was 6.0% [source: omers-2025.pdf (OMERS), text - page 5]; net return after all investment costs for the year ended December 31, 2025 was 6.0%, with a Total Gross Return for the OMERS Primary Plan of 6.59% [source: omers-2025.pdf (OMERS), text - page 96]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31
+   },
+   {
+    "id": "hoopp-2025.pdf::58",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 25
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7
+   },
+   {
+    "id": "hoopp-2025.pdf::45",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 20
+   },
+   {
+    "id": "aimco-2025.pdf::39",
+    "fund": "aimco",
+    "type": "document",
+    "page": 16
+   },
+   {
+    "id": "aimco-2025.pdf::9",
+    "fund": "aimco",
+    "type": "document",
+    "page": 8
+   },
+   {
+    "id": "aimco-2025.pdf::142",
+    "fund": "aimco",
+    "type": "document",
+    "page": 59
+   },
+   {
+    "id": "aimco-2025.pdf::90",
+    "fund": "aimco",
+    "type": "document",
+    "page": 32
+   },
+   {
+    "id": "omers-2025.pdf::321",
+    "fund": "omers",
+    "type": "document",
+    "page": 96
+   },
+   {
+    "id": "omers-2025.pdf::68",
+    "fund": "omers",
+    "type": "document",
+    "page": 24
+   },
+   {
+    "id": "omers-2025.pdf::16",
+    "fund": "omers",
+    "type": "document",
+    "page": 5
+   },
+   {
+    "id": "omers-2025.pdf::46",
+    "fund": "omers",
+    "type": "document",
+    "page": 17
+   }
+  ],
+  "retrieval": {
+   "n_hits": 12,
+   "fund_mix": {
+    "hoopp": 4,
+    "aimco": 4,
+    "omers": 4
+   },
+   "type_mix": {
+    "document": 12,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": false,
+   "gold_hit_frac": 0.6666666666666666
+  },
+  "grade": {
+   "correct": false,
+   "partial": 0.667,
+   "groups_matched": [
+    false,
+    true,
+    true
+   ],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 3,
+   "cited_funds": [
+    "aimco",
+    "omers"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": true
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "X01",
+  "variant": "typo",
+  "question": "compair 2025 net retruns HOOPP AIMCo OMERS",
+  "answer": "- HOOPP: 7.7% net return [source: hoopp-2025.pdf (HOOPP), text - page 4]\n- AIMCo: 7.5% Total AIMCo Net Investment Rate of Return [source: aimco-2025.pdf (AIMCo), text - page 3]\n- OMERS: 6.0% net return [source: omers-2025.pdf (OMERS), text - page 13]\n\nComparison: HOOPP highest at 7.7%, AIMCo next at 7.5%, OMERS lowest at 6.0%.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::table::5",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 29
+   },
+   {
+    "id": "hoopp-2025.pdf::248",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 70
+   },
+   {
+    "id": "hoopp-2025.pdf::4",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 4
+   },
+   {
+    "id": "hoopp-2025.pdf::28",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 13
+   },
+   {
+    "id": "aimco-2025.pdf::69",
+    "fund": "aimco",
+    "type": "document",
+    "page": 24
+   },
+   {
+    "id": "aimco-2025.pdf::4",
+    "fund": "aimco",
+    "type": "document",
+    "page": 3
+   },
+   {
+    "id": "aimco-2025.pdf::102",
+    "fund": "aimco",
+    "type": "document",
+    "page": 38
+   },
+   {
+    "id": "aimco-2025.pdf::27",
+    "fund": "aimco",
+    "type": "document",
+    "page": 15
+   },
+   {
+    "id": "omers-2025.pdf::333",
+    "fund": "omers",
+    "type": "document",
+    "page": 99
+   },
+   {
+    "id": "omers-2025.pdf::317",
+    "fund": "omers",
+    "type": "document",
+    "page": 94
+   },
+   {
+    "id": "omers-2025.pdf::41",
+    "fund": "omers",
+    "type": "document",
+    "page": 13
+   },
+   {
+    "id": "omers-2025.pdf::229",
+    "fund": "omers",
+    "type": "document",
+    "page": 73
+   }
+  ],
+  "retrieval": {
+   "n_hits": 12,
+   "fund_mix": {
+    "hoopp": 4,
+    "aimco": 4,
+    "omers": 4
+   },
+   "type_mix": {
+    "document": 11,
+    "table": 1,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 3,
+   "cited_funds": [
+    "aimco",
+    "hoopp",
+    "omers"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "paraphrase",
+  "id": "X01",
+  "variant": "chinese",
+  "question": "比较 HOOPP、AIMCo 和 OMERS 2025年的净回报率。",
+  "answer": "**AIMCo**\n- 2025年 Balanced Fund 绝对投资回报率：7.6% [source: aimco-2025.pdf (AIMCo), text - page 51]\n\n**HOOPP**\n- I don't have that in the provided data.\n\n**OMERS**\n- I don't have that in the provided data.\n\n说明：所给数据中只为 AIMCo 列出了回报数字（且其表述为 “absolute investment return … on the Balanced Fund”，并非明确的“净回报率”）；HOOPP 与 OMERS 的相关内容中未出现 2025 年回报率数值，因此无法进行三者的净回报率比较。",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7
+   },
+   {
+    "id": "hoopp-2025.pdf::0",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 1
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31
+   },
+   {
+    "id": "hoopp-2025.pdf::3",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::2",
+    "fund": "aimco",
+    "type": "document",
+    "page": 2
+   },
+   {
+    "id": "aimco-2025.pdf::168",
+    "fund": "aimco",
+    "type": "document",
+    "page": 69
+   },
+   {
+    "id": "aimco-2025.pdf::1",
+    "fund": "aimco",
+    "type": "document",
+    "page": 2
+   },
+   {
+    "id": "aimco-2025.pdf::124",
+    "fund": "aimco",
+    "type": "document",
+    "page": 51
+   },
+   {
+    "id": "omers-2025.pdf::15",
+    "fund": "omers",
+    "type": "document",
+    "page": 5
+   },
+   {
+    "id": "omers-2025.pdf::204",
+    "fund": "omers",
+    "type": "document",
+    "page": 68
+   },
+   {
+    "id": "omers-2025.pdf::40",
+    "fund": "omers",
+    "type": "document",
+    "page": 12
+   },
+   {
+    "id": "omers-2025.pdf::205",
+    "fund": "omers",
+    "type": "document",
+    "page": 69
+   }
+  ],
+  "retrieval": {
+   "n_hits": 12,
+   "fund_mix": {
+    "hoopp": 4,
+    "aimco": 4,
+    "omers": 4
+   },
+   "type_mix": {
+    "document": 12,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": false,
+   "gold_hit_all": false,
+   "gold_hit_frac": 0.0
+  },
+  "grade": {
+   "correct": false,
+   "partial": 0.333,
+   "groups_matched": [
+    false,
+    true,
+    false
+   ],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "aimco"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": true
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "H01",
+  "variant": "ablation",
+  "question": "What was HOOPP's net return in 2025, and how did it compare with its benchmark?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "metric::brinson_allocation",
+    "fund": "governed",
+    "type": "metric",
+    "page": null
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31
+   },
+   {
+    "id": "metric::brinson_selection",
+    "fund": "governed",
+    "type": "metric",
+    "page": null
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 4
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "H01",
+  "variant": "7.7->9.0",
+  "question": "What was HOOPP's net return in 2025, and how did it compare with its benchmark?",
+  "answer": "- HOOPP 2025 net return: 9.0% [source: hoopp-2025.pdf (HOOPP), text - page 29]\n- Benchmark: 8.6% [source: hoopp-2025.pdf (HOOPP), text - page 29]\n- Relative performance: -0.9% [source: hoopp-2025.pdf (HOOPP), text - page 29]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::72",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29
+   },
+   {
+    "id": "hoopp-2025.pdf::table::5",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 29
+   },
+   {
+    "id": "hoopp-2025.pdf::73",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29
+   },
+   {
+    "id": "metric::brinson_allocation",
+    "fund": "governed",
+    "type": "metric",
+    "page": null
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31
+   },
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28
+   },
+   {
+    "id": "metric::brinson_selection",
+    "fund": "governed",
+    "type": "metric",
+    "page": null
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "H02",
+  "variant": "ablation",
+  "question": "What was HOOPP's funded status at the end of 2025 on a smoothed basis, and what was it a year earlier?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::54",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23
+   },
+   {
+    "id": "hoopp-2025.pdf::299",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 82
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7
+   },
+   {
+    "id": "hoopp-2025.pdf::46",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 20
+   },
+   {
+    "id": "hoopp-2025.pdf::58",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 25
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 5
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "H02",
+  "variant": "109->122",
+  "question": "What was HOOPP's funded status at the end of 2025 on a smoothed basis, and what was it a year earlier?",
+  "answer": "- 2025 (smoothed asset value basis): 122%\n- 2024 (smoothed asset value basis): 111%\n\n[source: hoopp-2025.pdf (HOOPP), text - page 21]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23
+   },
+   {
+    "id": "hoopp-2025.pdf::47",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 21
+   },
+   {
+    "id": "hoopp-2025.pdf::54",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23
+   },
+   {
+    "id": "hoopp-2025.pdf::299",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 82
+   },
+   {
+    "id": "hoopp-2025.pdf::5",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 6
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7
+   },
+   {
+    "id": "hoopp-2025.pdf::46",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 20
+   },
+   {
+    "id": "hoopp-2025.pdf::58",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 25
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "H03",
+  "variant": "ablation",
+  "question": "What were HOOPP's net assets at December 31, 2025?",
+  "answer": "HOOPP's actuarial valuation disclosed a smoothed value of net assets of $131,607 million determined at December 31, 2025 (alongside going concern pension obligations of $120,833 million).\n\n- Smoothed value of net assets: $131,607 million [source: hoopp-2025.pdf (HOOPP), text - page 52]\n\nNote: the context reports this as the \"smoothed value of net assets\" from the valuation; it does not state a separate figure for net assets available for benefits at December 31, 2025.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::282",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 79
+   },
+   {
+    "id": "hoopp-2025.pdf::159",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 52
+   },
+   {
+    "id": "hoopp-2025.pdf::163",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 52
+   },
+   {
+    "id": "hoopp-2025.pdf::345",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 92
+   },
+   {
+    "id": "hoopp-2025.pdf::173",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 54
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31
+   },
+   {
+    "id": "hoopp-2025.pdf::284",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 80
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 7
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "H03",
+  "variant": "131.9->133.2",
+  "question": "What were HOOPP's net assets at December 31, 2025?",
+  "answer": "- Net assets: $133.2B [source: hoopp-2025.pdf (HOOPP), text - page 28]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::282",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 79
+   },
+   {
+    "id": "hoopp-2025.pdf::159",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 52
+   },
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28
+   },
+   {
+    "id": "hoopp-2025.pdf::163",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 52
+   },
+   {
+    "id": "hoopp-2025.pdf::345",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 92
+   },
+   {
+    "id": "hoopp-2025.pdf::173",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 54
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31
+   },
+   {
+    "id": "hoopp-2025.pdf::284",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 80
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "H04",
+  "variant": "ablation",
+  "question": "Which asset class contributed the most to HOOPP's net investment income in 2025, and what was its return?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::table::5",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 29
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 1
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "H05",
+  "variant": "ablation",
+  "question": "How did each of HOOPP's private markets asset classes perform in 2025?",
+  "answer": "- Private equities: $593 million net investment income [source: hoopp-2025.pdf (HOOPP), text - page 37]\n- Real estate: $174 million net investment income [source: hoopp-2025.pdf (HOOPP), text - page 37]\n- Infrastructure: $134 million net investment income [source: hoopp-2025.pdf (HOOPP), text - page 37]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::399",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 106
+   },
+   {
+    "id": "hoopp-2025.pdf::74",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29
+   },
+   {
+    "id": "hoopp-2025.pdf::84",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 32
+   },
+   {
+    "id": "hoopp-2025.pdf::101",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 37
+   }
+  ],
+  "grade": {
+   "refused": false,
+   "gold_leak": false,
+   "n_kept": 4
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "H05",
+  "variant": "1.1->2.4",
+  "question": "How did each of HOOPP's private markets asset classes perform in 2025?",
+  "answer": "HOOPP's private markets asset classes, 2025 (net investment income in $ billions / net investment return):\n\n- Real estate: $0.2 billion / 2.4% [source: hoopp-2025.pdf (HOOPP), text - page 30]\n- Private equity: $0.6 billion / 3.6% [source: hoopp-2025.pdf (HOOPP), text - page 30]\n- Infrastructure: $0.1 billion / 1.8% [source: hoopp-2025.pdf (HOOPP), text - page 30]\n- Private credit: $0.1 billion / 0.9% [source: hoopp-2025.pdf (HOOPP), text - page 30]\n\nNote: asset class returns and net investment income are calculated before deducting investment operating expenses. [source: hoopp-2025.pdf (HOOPP), text - page 30]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::table::6",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 30
+   },
+   {
+    "id": "hoopp-2025.pdf::75",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 30
+   },
+   {
+    "id": "hoopp-2025.pdf::399",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 106
+   },
+   {
+    "id": "hoopp-2025.pdf::74",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29
+   },
+   {
+    "id": "hoopp-2025.pdf::73",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29
+   },
+   {
+    "id": "hoopp-2025.pdf::84",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 32
+   },
+   {
+    "id": "hoopp-2025.pdf::101",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 37
+   },
+   {
+    "id": "hoopp-2025.pdf::76",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 30
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "H06",
+  "variant": "ablation",
+  "question": "What is HOOPP's 10-year annualized net return, and how does it compare with the benchmark?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::5",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 6
+   },
+   {
+    "id": "hoopp-2025.pdf::74",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29
+   },
+   {
+    "id": "metric::tracking_error",
+    "fund": "governed",
+    "type": "metric",
+    "page": null
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 3
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "H06",
+  "variant": "7.8->9.1",
+  "question": "What is HOOPP's 10-year annualized net return, and how does it compare with the benchmark?",
+  "answer": "- 10-year annualized net return: 9.1% [source: hoopp-2025.pdf (HOOPP), text - page 28] [HOOPP (Healthcare of Ontario Pension Plan) - 2025 Annual Report - page 28]\n- 10-year benchmark: 5.9% [source: hoopp-2025.pdf (HOOPP), text - page 29] [HOOPP (Healthcare of Ontario Pension Plan) - 2025 Annual Report - page 29]\n- 10-year relative performance: 1.9% [source: hoopp-2025.pdf (HOOPP), text - page 29] [HOOPP (Healthcare of Ontario Pension Plan) - 2025 Annual Report - page 29]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::table::5",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 29
+   },
+   {
+    "id": "hoopp-2025.pdf::72",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29
+   },
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28
+   },
+   {
+    "id": "hoopp-2025.pdf::403",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 107
+   },
+   {
+    "id": "hoopp-2025.pdf::5",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 6
+   },
+   {
+    "id": "hoopp-2025.pdf::74",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29
+   },
+   {
+    "id": "metric::tracking_error",
+    "fund": "governed",
+    "type": "metric",
+    "page": null
+   },
+   {
+    "id": "hoopp-2025.pdf::73",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "H07",
+  "variant": "ablation",
+  "question": "If the discount rate assumption fell by one percentage point, what would happen to HOOPP's pension obligations?",
+  "answer": "A one‑percentage‑point decrease in the discount rate assumption would increase HOOPP's pension obligations: \"A higher discount rate reduces the present value of liabilities and can make the Plan appear better funded, while a lower rate increases liabilities and can reveal funding shortfalls.\" [source: hoopp-2025.pdf (HOOPP), text - page 22]\n\nThe dollar amount of that increase is not in the provided data — the page 23 text refers to a sensitivity table (\"how an increase or decrease of one percentage point in the discount rate assumption would affect HOOPP’s pension obligations\") [source: hoopp-2025.pdf (HOOPP), table - page 23], but the figures from that sensitivity table are not included in the provided context.\n\nI don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::table::3",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 23
+   },
+   {
+    "id": "hoopp-2025.pdf::51",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22
+   },
+   {
+    "id": "hoopp-2025.pdf::50",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22
+   },
+   {
+    "id": "hoopp-2025.pdf::303",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 83
+   },
+   {
+    "id": "hoopp-2025.pdf::296",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 82
+   },
+   {
+    "id": "hoopp-2025.pdf::333",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 90
+   },
+   {
+    "id": "hoopp-2025.pdf::159",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 52
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 7
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "H07",
+  "variant": "142.6->143.9",
+  "question": "If the discount rate assumption fell by one percentage point, what would happen to HOOPP's pension obligations?",
+  "answer": "If the discount rate assumption fell by one percentage point, HOOPP’s pension obligations would increase by 18%, to $143.9 billion (discount rate assumption of 4.65%) [source: hoopp-2025.pdf (HOOPP), text - page 22].",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::52",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22
+   },
+   {
+    "id": "hoopp-2025.pdf::table::3",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 23
+   },
+   {
+    "id": "hoopp-2025.pdf::51",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22
+   },
+   {
+    "id": "hoopp-2025.pdf::50",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22
+   },
+   {
+    "id": "hoopp-2025.pdf::303",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 83
+   },
+   {
+    "id": "hoopp-2025.pdf::296",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 82
+   },
+   {
+    "id": "hoopp-2025.pdf::333",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 90
+   },
+   {
+    "id": "hoopp-2025.pdf::159",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 52
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "H08",
+  "variant": "ablation",
+  "question": "What discount rate did HOOPP use to value its pension obligations at the end of 2025?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::50",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22
+   },
+   {
+    "id": "hoopp-2025.pdf::345",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 92
+   },
+   {
+    "id": "hoopp-2025.pdf::333",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 90
+   },
+   {
+    "id": "hoopp-2025.pdf::339",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 91
+   },
+   {
+    "id": "hoopp-2025.pdf::303",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 83
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 5
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "H08",
+  "variant": "5.65->6.95",
+  "question": "What discount rate did HOOPP use to value its pension obligations at the end of 2025?",
+  "answer": "HOOPP’s 2025 discount rate was 6.95%, unchanged from 2024. [source: hoopp-2025.pdf (HOOPP), text - page 22]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::52",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22
+   },
+   {
+    "id": "hoopp-2025.pdf::50",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22
+   },
+   {
+    "id": "hoopp-2025.pdf::table::3",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 23
+   },
+   {
+    "id": "hoopp-2025.pdf::51",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22
+   },
+   {
+    "id": "hoopp-2025.pdf::345",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 92
+   },
+   {
+    "id": "hoopp-2025.pdf::333",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 90
+   },
+   {
+    "id": "hoopp-2025.pdf::339",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 91
+   },
+   {
+    "id": "hoopp-2025.pdf::303",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 83
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "H09",
+  "variant": "ablation",
+  "question": "What was HOOPP's US dollar foreign currency exposure at the end of 2025 in Canadian dollars?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::305",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 83
+   },
+   {
+    "id": "hoopp-2025.pdf::307",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 84
+   },
+   {
+    "id": "hoopp-2025.pdf::304",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 83
+   },
+   {
+    "id": "hoopp-2025.pdf::308",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 84
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 4
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "H09",
+  "variant": "12,702->14,019",
+  "question": "What was HOOPP's US dollar foreign currency exposure at the end of 2025 in Canadian dollars?",
+  "answer": "HOOPP's US dollar foreign currency exposure at the end of 2025 was $14,019 million Canadian dollars [source: hoopp-2025.pdf (HOOPP), table - page 84].",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::306",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 83
+   },
+   {
+    "id": "hoopp-2025.pdf::305",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 83
+   },
+   {
+    "id": "hoopp-2025.pdf::table::28",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 84
+   },
+   {
+    "id": "hoopp-2025.pdf::table::26",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 84
+   },
+   {
+    "id": "hoopp-2025.pdf::table::27",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 84
+   },
+   {
+    "id": "hoopp-2025.pdf::307",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 84
+   },
+   {
+    "id": "hoopp-2025.pdf::304",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 83
+   },
+   {
+    "id": "hoopp-2025.pdf::308",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 84
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "H10",
+  "variant": "ablation",
+  "question": "What were HOOPP's investment operating expenses in 2025, in dollars and basis points?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::204",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 61
+   },
+   {
+    "id": "hoopp-2025.pdf::105",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 38
+   },
+   {
+    "id": "hoopp-2025.pdf::55",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23
+   },
+   {
+    "id": "hoopp-2025.pdf::table::4",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 24
+   },
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 5
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "H10",
+  "variant": "382->395",
+  "question": "What were HOOPP's investment operating expenses in 2025, in dollars and basis points?",
+  "answer": "HOOPP's investment operating expenses in 2025 were $395 million, or 30 bps. [source: hoopp-2025.pdf (HOOPP), text - page 38]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::103",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 38
+   },
+   {
+    "id": "hoopp-2025.pdf::204",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 61
+   },
+   {
+    "id": "hoopp-2025.pdf::104",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 38
+   },
+   {
+    "id": "hoopp-2025.pdf::331",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 89
+   },
+   {
+    "id": "hoopp-2025.pdf::105",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 38
+   },
+   {
+    "id": "hoopp-2025.pdf::55",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23
+   },
+   {
+    "id": "hoopp-2025.pdf::table::4",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 24
+   },
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "H11",
+  "variant": "ablation",
+  "question": "How many members and participating employers did HOOPP have at the end of 2025?",
+  "answer": "- Participating employers: more than 870 across the province [source: hoopp-2025.pdf (HOOPP), text - page 10]\n- Members: I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::29",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 13
+   },
+   {
+    "id": "hoopp-2025.pdf::27",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 12
+   },
+   {
+    "id": "hoopp-2025.pdf::22",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 10
+   },
+   {
+    "id": "hoopp-2025.pdf::36",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 17
+   },
+   {
+    "id": "hoopp-2025.pdf::30",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 14
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7
+   },
+   {
+    "id": "hoopp-2025.pdf::45",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 20
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 7
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "H12",
+  "variant": "ablation",
+  "question": "Have HOOPP's contribution rates changed recently, and are changes planned?",
+  "answer": "No. HOOPP’s contribution rates have remained unchanged for more than two decades [source: hoopp-2025.pdf (HOOPP), text - page 8]. I don't have that in the provided data on whether changes are planned.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::302",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 83
+   },
+   {
+    "id": "hoopp-2025.pdf::11",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8
+   },
+   {
+    "id": "hoopp-2025.pdf::299",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 82
+   },
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23
+   },
+   {
+    "id": "hoopp-2025.pdf::58",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 25
+   },
+   {
+    "id": "hoopp-2025.pdf::52",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 6
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "H12",
+  "variant": "2004->2017",
+  "question": "Have HOOPP's contribution rates changed recently, and are changes planned?",
+  "answer": "- Contribution rates have not changed since 2017 and will remain at current levels until at least the end of 2027. [source: hoopp-2025.pdf (HOOPP), text - page 20]\n- Contribution rates have remained unchanged for more than two decades. [source: hoopp-2025.pdf (HOOPP), text - page 8]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::44",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 19
+   },
+   {
+    "id": "hoopp-2025.pdf::302",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 83
+   },
+   {
+    "id": "hoopp-2025.pdf::11",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8
+   },
+   {
+    "id": "hoopp-2025.pdf::299",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 82
+   },
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23
+   },
+   {
+    "id": "hoopp-2025.pdf::58",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 25
+   },
+   {
+    "id": "hoopp-2025.pdf::45",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 20
+   },
+   {
+    "id": "hoopp-2025.pdf::52",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "H13",
+  "variant": "ablation",
+  "question": "What was HOOPP's geographic exposure at the end of 2025?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::69",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 27
+   },
+   {
+    "id": "hoopp-2025.pdf::15",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 9
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7
+   },
+   {
+    "id": "hoopp-2025.pdf::67",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 27
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 5
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "H13",
+  "variant": "49->62",
+  "question": "What was HOOPP's geographic exposure at the end of 2025?",
+  "answer": "- Canada: 62% [source: hoopp-2025.pdf (HOOPP), text - page 28]\n- U.S.: 29% [source: hoopp-2025.pdf (HOOPP), text - page 28]\n- Europe: 13% [source: hoopp-2025.pdf (HOOPP), text - page 28]\n- Asia-Pacific: 7% [source: hoopp-2025.pdf (HOOPP), text - page 28]\n- Other: 2% [source: hoopp-2025.pdf (HOOPP), text - page 28]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28
+   },
+   {
+    "id": "hoopp-2025.pdf::70",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28
+   },
+   {
+    "id": "hoopp-2025.pdf::69",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 27
+   },
+   {
+    "id": "hoopp-2025.pdf::15",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 9
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7
+   },
+   {
+    "id": "hoopp-2025.pdf::table::5",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 29
+   },
+   {
+    "id": "hoopp-2025.pdf::67",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 27
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "H14",
+  "variant": "ablation",
+  "question": "Who is HOOPP's President and CEO?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::10",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8
+   },
+   {
+    "id": "hoopp-2025.pdf::13",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8
+   },
+   {
+    "id": "hoopp-2025.pdf::142",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 48
+   },
+   {
+    "id": "hoopp-2025.pdf::0",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 1
+   },
+   {
+    "id": "hoopp-2025.pdf::table::0",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 3
+   },
+   {
+    "id": "hoopp-2025.pdf::41",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 18
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 6
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "H15",
+  "variant": "ablation",
+  "question": "What was HOOPP's real return in 2025, and was it within the plan's target range?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::15",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 9
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7
+   },
+   {
+    "id": "hoopp-2025.pdf::9",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8
+   },
+   {
+    "id": "hoopp-2025.pdf::79",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31
+   },
+   {
+    "id": "hoopp-2025.pdf::78",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 6
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "H15",
+  "variant": "5.3->6.6",
+  "question": "What was HOOPP's real return in 2025, and was it within the plan's target range?",
+  "answer": "HOOPP’s 2025 real return was **6.6%**, and the report describes it as “within the 4.5%–6.5% real return target set out in HOOPP’s 2030 Strategic Plan” [source: hoopp-2025.pdf (HOOPP), text - page 29]. Note that 6.6% is numerically above the stated 6.5% upper bound.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::72",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29
+   },
+   {
+    "id": "hoopp-2025.pdf::table::5",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 29
+   },
+   {
+    "id": "hoopp-2025.pdf::15",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 9
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7
+   },
+   {
+    "id": "hoopp-2025.pdf::9",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8
+   },
+   {
+    "id": "hoopp-2025.pdf::79",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31
+   },
+   {
+    "id": "hoopp-2025.pdf::78",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "A01",
+  "variant": "ablation",
+  "question": "What was AIMCo's 2025 Balanced Fund net return, and what was its benchmark?",
+  "answer": "",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::30",
+    "fund": "aimco",
+    "type": "document",
+    "page": 16
+   }
+  ],
+  "grade": {
+   "refused": false,
+   "gold_leak": false,
+   "n_kept": 1
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "A01",
+  "variant": "7.6->8.9",
+  "question": "What was AIMCo's 2025 Balanced Fund net return, and what was its benchmark?",
+  "answer": "- 2025 Balanced Fund net return: 8.9% [source: aimco-2025.pdf (AIMCo), text - page 13]\n- 2025 Balanced Fund benchmark: 10.3% [source: aimco-2025.pdf (AIMCo), text - page 16]",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::22",
+    "fund": "aimco",
+    "type": "document",
+    "page": 13
+   },
+   {
+    "id": "aimco-2025.pdf::27",
+    "fund": "aimco",
+    "type": "document",
+    "page": 15
+   },
+   {
+    "id": "aimco-2025.pdf::140",
+    "fund": "aimco",
+    "type": "document",
+    "page": 58
+   },
+   {
+    "id": "aimco-2025.pdf::30",
+    "fund": "aimco",
+    "type": "document",
+    "page": 16
+   },
+   {
+    "id": "aimco-2025.pdf::4",
+    "fund": "aimco",
+    "type": "document",
+    "page": 3
+   },
+   {
+    "id": "aimco-2025.pdf::5",
+    "fund": "aimco",
+    "type": "document",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::table::10",
+    "fund": "aimco",
+    "type": "table",
+    "page": 58
+   },
+   {
+    "id": "aimco-2025.pdf::141",
+    "fund": "aimco",
+    "type": "document",
+    "page": 58
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "A02",
+  "variant": "ablation",
+  "question": "How much were AIMCo's assets under management at the end of 2025?",
+  "answer": "At March 31, 2025, AIMCo’s assets under management were $180.8 billion (2025: $180,813,915 thousand).\n\n[source: aimco-2025.pdf (AIMCo), text - page 92]",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::168",
+    "fund": "aimco",
+    "type": "document",
+    "page": 69
+   },
+   {
+    "id": "aimco-2025.pdf::table::19",
+    "fund": "aimco",
+    "type": "table",
+    "page": 70
+   },
+   {
+    "id": "aimco-2025.pdf::240",
+    "fund": "aimco",
+    "type": "document",
+    "page": 92
+   },
+   {
+    "id": "aimco-2025.pdf::244",
+    "fund": "aimco",
+    "type": "document",
+    "page": 93
+   },
+   {
+    "id": "aimco-2025.pdf::242",
+    "fund": "aimco",
+    "type": "document",
+    "page": 93
+   }
+  ],
+  "grade": {
+   "refused": false,
+   "gold_leak": false,
+   "n_kept": 5
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "A02",
+  "variant": "194.7->196.0",
+  "question": "How much were AIMCo's assets under management at the end of 2025?",
+  "answer": "AIMCo’s assets under management at December 31, 2025 were **$196.0 billion**. [source: aimco-2025.pdf (AIMCo), text - page 4]",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::168",
+    "fund": "aimco",
+    "type": "document",
+    "page": 69
+   },
+   {
+    "id": "aimco-2025.pdf::table::19",
+    "fund": "aimco",
+    "type": "table",
+    "page": 70
+   },
+   {
+    "id": "aimco-2025.pdf::255",
+    "fund": "aimco",
+    "type": "document",
+    "page": 96
+   },
+   {
+    "id": "aimco-2025.pdf::240",
+    "fund": "aimco",
+    "type": "document",
+    "page": 92
+   },
+   {
+    "id": "aimco-2025.pdf::table::0",
+    "fund": "aimco",
+    "type": "table",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::4",
+    "fund": "aimco",
+    "type": "document",
+    "page": 3
+   },
+   {
+    "id": "aimco-2025.pdf::244",
+    "fund": "aimco",
+    "type": "document",
+    "page": 93
+   },
+   {
+    "id": "aimco-2025.pdf::242",
+    "fund": "aimco",
+    "type": "document",
+    "page": 93
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "A03",
+  "variant": "ablation",
+  "question": "What is the ten-year annualized net return of AIMCo's Balanced Fund?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::table::0",
+    "fund": "aimco",
+    "type": "table",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::140",
+    "fund": "aimco",
+    "type": "document",
+    "page": 58
+   },
+   {
+    "id": "aimco-2025.pdf::table::10",
+    "fund": "aimco",
+    "type": "table",
+    "page": 58
+   },
+   {
+    "id": "aimco-2025.pdf::79",
+    "fund": "aimco",
+    "type": "document",
+    "page": 27
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 4
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "A03",
+  "variant": "7.2->8.5",
+  "question": "What is the ten-year annualized net return of AIMCo's Balanced Fund?",
+  "answer": "The ten-year annualized net return of AIMCo's Balanced Fund is 8.5%.\n\n- Balanced Fund Ten-Year Net Annualized Rate of Return: 8.5%\n\n[source: aimco-2025.pdf (AIMCo), text - page 15]",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::4",
+    "fund": "aimco",
+    "type": "document",
+    "page": 3
+   },
+   {
+    "id": "aimco-2025.pdf::27",
+    "fund": "aimco",
+    "type": "document",
+    "page": 15
+   },
+   {
+    "id": "aimco-2025.pdf::table::0",
+    "fund": "aimco",
+    "type": "table",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::22",
+    "fund": "aimco",
+    "type": "document",
+    "page": 13
+   },
+   {
+    "id": "aimco-2025.pdf::140",
+    "fund": "aimco",
+    "type": "document",
+    "page": 58
+   },
+   {
+    "id": "aimco-2025.pdf::table::10",
+    "fund": "aimco",
+    "type": "table",
+    "page": 58
+   },
+   {
+    "id": "aimco-2025.pdf::5",
+    "fund": "aimco",
+    "type": "document",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::79",
+    "fund": "aimco",
+    "type": "document",
+    "page": 27
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "A04",
+  "variant": "ablation",
+  "question": "How did AIMCo's Public Equities and Absolute Return portfolio perform in 2025?",
+  "answer": "- Public Equities and Absolute Return products: delivered strong total returns in 2025 but collectively lagged the composite benchmark by 0.5 percentage points. [source: aimco-2025.pdf (AIMCo), text - page 19]\n- Global Equities Master Pool: generated a strong annual return of 16.5%, with 1.1 percentage points of excess return. [source: aimco-2025.pdf (AIMCo), text - page 19]\n- Canadian Equities Master Pool: returned 25.9%, detracting by 5.8 percentage points relative to its benchmark. [source: aimco-2025.pdf (AIMCo), text - page 19]\n- Emerging Markets Master Pool: generated a return of 27.3%. [source: aimco-2025.pdf (AIMCo), text - page 19]",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::21",
+    "fund": "aimco",
+    "type": "document",
+    "page": 11
+   },
+   {
+    "id": "aimco-2025.pdf::49",
+    "fund": "aimco",
+    "type": "document",
+    "page": 19
+   },
+   {
+    "id": "aimco-2025.pdf::5",
+    "fund": "aimco",
+    "type": "document",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::77",
+    "fund": "aimco",
+    "type": "document",
+    "page": 27
+   },
+   {
+    "id": "aimco-2025.pdf::45",
+    "fund": "aimco",
+    "type": "document",
+    "page": 18
+   },
+   {
+    "id": "aimco-2025.pdf::44",
+    "fund": "aimco",
+    "type": "document",
+    "page": 17
+   }
+  ],
+  "grade": {
+   "refused": false,
+   "gold_leak": false,
+   "n_kept": 6
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "A04",
+  "variant": "18.6->19.9",
+  "question": "How did AIMCo's Public Equities and Absolute Return portfolio perform in 2025?",
+  "answer": "- Return: 19.9% in 2025, with strategy and geographic mix contributing meaningfully to results. [source: aimco-2025.pdf (AIMCo), text - page 13]\n- Relative performance: collectively lagged the composite benchmark by 0.5 percentage points. [source: aimco-2025.pdf (AIMCo), text - page 19]",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::22",
+    "fund": "aimco",
+    "type": "document",
+    "page": 13
+   },
+   {
+    "id": "aimco-2025.pdf::21",
+    "fund": "aimco",
+    "type": "document",
+    "page": 11
+   },
+   {
+    "id": "aimco-2025.pdf::23",
+    "fund": "aimco",
+    "type": "document",
+    "page": 13
+   },
+   {
+    "id": "aimco-2025.pdf::49",
+    "fund": "aimco",
+    "type": "document",
+    "page": 19
+   },
+   {
+    "id": "aimco-2025.pdf::5",
+    "fund": "aimco",
+    "type": "document",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::77",
+    "fund": "aimco",
+    "type": "document",
+    "page": 27
+   },
+   {
+    "id": "aimco-2025.pdf::45",
+    "fund": "aimco",
+    "type": "document",
+    "page": 18
+   },
+   {
+    "id": "aimco-2025.pdf::44",
+    "fund": "aimco",
+    "type": "document",
+    "page": 17
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "A05",
+  "variant": "ablation",
+  "question": "How did AIMCo's real estate and infrastructure portfolios perform relative to their benchmarks in 2025?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::63",
+    "fund": "aimco",
+    "type": "document",
+    "page": 23
+   },
+   {
+    "id": "aimco-2025.pdf::43",
+    "fund": "aimco",
+    "type": "document",
+    "page": 17
+   },
+   {
+    "id": "aimco-2025.pdf::22",
+    "fund": "aimco",
+    "type": "document",
+    "page": 13
+   },
+   {
+    "id": "aimco-2025.pdf::5",
+    "fund": "aimco",
+    "type": "document",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::21",
+    "fund": "aimco",
+    "type": "document",
+    "page": 11
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 5
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "A06",
+  "variant": "ablation",
+  "question": "What was AIMCo's private equity return in 2025, and its benchmark?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::22",
+    "fund": "aimco",
+    "type": "document",
+    "page": 13
+   },
+   {
+    "id": "aimco-2025.pdf::24",
+    "fund": "aimco",
+    "type": "document",
+    "page": 14
+   },
+   {
+    "id": "aimco-2025.pdf::23",
+    "fund": "aimco",
+    "type": "document",
+    "page": 13
+   },
+   {
+    "id": "aimco-2025.pdf::61",
+    "fund": "aimco",
+    "type": "document",
+    "page": 22
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 4
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "A06",
+  "variant": "3.0->4.3",
+  "question": "What was AIMCo's private equity return in 2025, and its benchmark?",
+  "answer": "AIMCo reports two closely related figures:\n\n- Core Private Equity: net return 4.5% in 2025; benchmark return 17.4% (excess return of (12.9)%); market value $11.9 billion [source: aimco-2025.pdf (AIMCo), text - page 27] [source: aimco-2025.pdf (AIMCo), table - page 28]\n- Private Equity (program-level, as discussed in the Q&A section): returned 4.3% in 2025, with a 10-year annualized return of 10.4% [source: aimco-2025.pdf (AIMCo), text - page 14]",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::77",
+    "fund": "aimco",
+    "type": "document",
+    "page": 27
+   },
+   {
+    "id": "aimco-2025.pdf::22",
+    "fund": "aimco",
+    "type": "document",
+    "page": 13
+   },
+   {
+    "id": "aimco-2025.pdf::79",
+    "fund": "aimco",
+    "type": "document",
+    "page": 27
+   },
+   {
+    "id": "aimco-2025.pdf::24",
+    "fund": "aimco",
+    "type": "document",
+    "page": 14
+   },
+   {
+    "id": "aimco-2025.pdf::23",
+    "fund": "aimco",
+    "type": "document",
+    "page": 13
+   },
+   {
+    "id": "aimco-2025.pdf::61",
+    "fund": "aimco",
+    "type": "document",
+    "page": 22
+   },
+   {
+    "id": "aimco-2025.pdf::table::4",
+    "fund": "aimco",
+    "type": "table",
+    "page": 28
+   },
+   {
+    "id": "aimco-2025.pdf::25",
+    "fund": "aimco",
+    "type": "document",
+    "page": 14
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "A07",
+  "variant": "ablation",
+  "question": "What was AIMCo's global asset mix by region at the end of 2025?",
+  "answer": "The context reports this regional breakdown:\n\n- North America: 69.3% [source: aimco-2025.pdf (AIMCo), table - page 28]\n- Western Europe: 22.5% [source: aimco-2025.pdf (AIMCo), table - page 28]\n- Global: 5.5% [source: aimco-2025.pdf (AIMCo), table - page 28]\n- Asia: 2.7% [source: aimco-2025.pdf (AIMCo), table - page 28]",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::43",
+    "fund": "aimco",
+    "type": "document",
+    "page": 17
+   },
+   {
+    "id": "aimco-2025.pdf::table::4",
+    "fund": "aimco",
+    "type": "table",
+    "page": 28
+   },
+   {
+    "id": "aimco-2025.pdf::table::0",
+    "fund": "aimco",
+    "type": "table",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::74",
+    "fund": "aimco",
+    "type": "document",
+    "page": 26
+   },
+   {
+    "id": "aimco-2025.pdf::45",
+    "fund": "aimco",
+    "type": "document",
+    "page": 18
+   },
+   {
+    "id": "aimco-2025.pdf::44",
+    "fund": "aimco",
+    "type": "document",
+    "page": 17
+   },
+   {
+    "id": "aimco-2025.pdf::48",
+    "fund": "aimco",
+    "type": "document",
+    "page": 19
+   }
+  ],
+  "grade": {
+   "refused": false,
+   "gold_leak": false,
+   "n_kept": 7
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "A07",
+  "variant": "40.2->41.5",
+  "question": "What was AIMCo's global asset mix by region at the end of 2025?",
+  "answer": "AIMCo’s global asset mix by region as at December 31, 2025:\n\n- Canada: 41.5%\n- U.S.: 37.7%\n- Rest of the World: 7.5%\n- Europe: 5.8%\n- U.K.: 4.1%\n- Asia: 2.6%\n- Austral: 2.1%\n\n[source: aimco-2025.pdf (AIMCo), text - page 4]",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::5",
+    "fund": "aimco",
+    "type": "document",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::43",
+    "fund": "aimco",
+    "type": "document",
+    "page": 17
+   },
+   {
+    "id": "aimco-2025.pdf::table::4",
+    "fund": "aimco",
+    "type": "table",
+    "page": 28
+   },
+   {
+    "id": "aimco-2025.pdf::table::0",
+    "fund": "aimco",
+    "type": "table",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::74",
+    "fund": "aimco",
+    "type": "document",
+    "page": 26
+   },
+   {
+    "id": "aimco-2025.pdf::45",
+    "fund": "aimco",
+    "type": "document",
+    "page": 18
+   },
+   {
+    "id": "aimco-2025.pdf::44",
+    "fund": "aimco",
+    "type": "document",
+    "page": 17
+   },
+   {
+    "id": "aimco-2025.pdf::48",
+    "fund": "aimco",
+    "type": "document",
+    "page": 19
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "A08",
+  "variant": "ablation",
+  "question": "Who is AIMCo's CEO, and who chairs its Board of Directors?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::117",
+    "fund": "aimco",
+    "type": "document",
+    "page": 46
+   },
+   {
+    "id": "aimco-2025.pdf::120",
+    "fund": "aimco",
+    "type": "document",
+    "page": 49
+   },
+   {
+    "id": "aimco-2025.pdf::121",
+    "fund": "aimco",
+    "type": "document",
+    "page": 49
+   },
+   {
+    "id": "aimco-2025.pdf::0",
+    "fund": "aimco",
+    "type": "document",
+    "page": 1
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 4
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "A09",
+  "variant": "ablation",
+  "question": "What were AIMCo's total costs in fiscal 2026 compared with budget?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::169",
+    "fund": "aimco",
+    "type": "document",
+    "page": 70
+   },
+   {
+    "id": "aimco-2025.pdf::170",
+    "fund": "aimco",
+    "type": "document",
+    "page": 70
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 2
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "A09",
+  "variant": "425->438",
+  "question": "What were AIMCo's total costs in fiscal 2026 compared with budget?",
+  "answer": "- Fiscal 2026 total costs: $1,157 million [source: aimco-2025.pdf (AIMCo), text - page 69]\n- Budget: $1,207 million [source: aimco-2025.pdf (AIMCo), text - page 69]",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::table::19",
+    "fund": "aimco",
+    "type": "table",
+    "page": 70
+   },
+   {
+    "id": "aimco-2025.pdf::168",
+    "fund": "aimco",
+    "type": "document",
+    "page": 69
+   },
+   {
+    "id": "aimco-2025.pdf::167",
+    "fund": "aimco",
+    "type": "document",
+    "page": 69
+   },
+   {
+    "id": "aimco-2025.pdf::165",
+    "fund": "aimco",
+    "type": "document",
+    "page": 69
+   },
+   {
+    "id": "aimco-2025.pdf::169",
+    "fund": "aimco",
+    "type": "document",
+    "page": 70
+   },
+   {
+    "id": "aimco-2025.pdf::249",
+    "fund": "aimco",
+    "type": "document",
+    "page": 95
+   },
+   {
+    "id": "aimco-2025.pdf::table::18",
+    "fund": "aimco",
+    "type": "table",
+    "page": 69
+   },
+   {
+    "id": "aimco-2025.pdf::170",
+    "fund": "aimco",
+    "type": "document",
+    "page": 70
+   }
+  ],
+  "grade": {
+   "follows_context": false,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "A10",
+  "variant": "ablation",
+  "question": "What was the Total AIMCo Fund net return in 2025?",
+  "answer": "7.6% [source: aimco-2025.pdf (AIMCo), text - page 58]",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::140",
+    "fund": "aimco",
+    "type": "document",
+    "page": 58
+   },
+   {
+    "id": "aimco-2025.pdf::141",
+    "fund": "aimco",
+    "type": "document",
+    "page": 58
+   },
+   {
+    "id": "aimco-2025.pdf::27",
+    "fund": "aimco",
+    "type": "document",
+    "page": 15
+   },
+   {
+    "id": "aimco-2025.pdf::table::0",
+    "fund": "aimco",
+    "type": "table",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::78",
+    "fund": "aimco",
+    "type": "document",
+    "page": 27
+   },
+   {
+    "id": "aimco-2025.pdf::22",
+    "fund": "aimco",
+    "type": "document",
+    "page": 13
+   }
+  ],
+  "grade": {
+   "refused": false,
+   "gold_leak": false,
+   "n_kept": 6
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "A10",
+  "variant": "7.5->8.8",
+  "question": "What was the Total AIMCo Fund net return in 2025?",
+  "answer": "- Total AIMCo Net Investment Rate of Return: 8.8% [source: aimco-2025.pdf (AIMCo), text - page 3]\n\nThat 8.8% figure is listed in the 2025 highlights alongside the Balanced Fund metrics; the Balanced Fund's 2025 net investment rate of return is separately shown as 7.6% [source: aimco-2025.pdf (AIMCo), text - page 15] [source: aimco-2025.pdf (AIMCo), text - page 3].",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::4",
+    "fund": "aimco",
+    "type": "document",
+    "page": 3
+   },
+   {
+    "id": "aimco-2025.pdf::140",
+    "fund": "aimco",
+    "type": "document",
+    "page": 58
+   },
+   {
+    "id": "aimco-2025.pdf::141",
+    "fund": "aimco",
+    "type": "document",
+    "page": 58
+   },
+   {
+    "id": "aimco-2025.pdf::27",
+    "fund": "aimco",
+    "type": "document",
+    "page": 15
+   },
+   {
+    "id": "aimco-2025.pdf::table::0",
+    "fund": "aimco",
+    "type": "table",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::78",
+    "fund": "aimco",
+    "type": "document",
+    "page": 27
+   },
+   {
+    "id": "aimco-2025.pdf::5",
+    "fund": "aimco",
+    "type": "document",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::22",
+    "fund": "aimco",
+    "type": "document",
+    "page": 13
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "A11",
+  "variant": "ablation",
+  "question": "How much has AIMCo delivered in net investment returns since its inception?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::79",
+    "fund": "aimco",
+    "type": "document",
+    "page": 27
+   },
+   {
+    "id": "aimco-2025.pdf::29",
+    "fund": "aimco",
+    "type": "document",
+    "page": 15
+   },
+   {
+    "id": "aimco-2025.pdf::39",
+    "fund": "aimco",
+    "type": "document",
+    "page": 16
+   },
+   {
+    "id": "aimco-2025.pdf::30",
+    "fund": "aimco",
+    "type": "document",
+    "page": 16
+   },
+   {
+    "id": "aimco-2025.pdf::111",
+    "fund": "aimco",
+    "type": "document",
+    "page": 43
+   },
+   {
+    "id": "aimco-2025.pdf::69",
+    "fund": "aimco",
+    "type": "document",
+    "page": 24
+   },
+   {
+    "id": "aimco-2025.pdf::64",
+    "fund": "aimco",
+    "type": "document",
+    "page": 23
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 7
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "A11",
+  "variant": "128.3->129.6",
+  "question": "How much has AIMCo delivered in net investment returns since its inception?",
+  "answer": "AIMCo has delivered $129.6 billion in net investment returns since its inception as a Crown corporation in 2008. [source: aimco-2025.pdf (AIMCo), text - page 8]",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::79",
+    "fund": "aimco",
+    "type": "document",
+    "page": 27
+   },
+   {
+    "id": "aimco-2025.pdf::29",
+    "fund": "aimco",
+    "type": "document",
+    "page": 15
+   },
+   {
+    "id": "aimco-2025.pdf::39",
+    "fund": "aimco",
+    "type": "document",
+    "page": 16
+   },
+   {
+    "id": "aimco-2025.pdf::9",
+    "fund": "aimco",
+    "type": "document",
+    "page": 8
+   },
+   {
+    "id": "aimco-2025.pdf::30",
+    "fund": "aimco",
+    "type": "document",
+    "page": 16
+   },
+   {
+    "id": "aimco-2025.pdf::111",
+    "fund": "aimco",
+    "type": "document",
+    "page": 43
+   },
+   {
+    "id": "aimco-2025.pdf::69",
+    "fund": "aimco",
+    "type": "document",
+    "page": 24
+   },
+   {
+    "id": "aimco-2025.pdf::64",
+    "fund": "aimco",
+    "type": "document",
+    "page": 23
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "A12",
+  "variant": "ablation",
+  "question": "In dollar terms, how much did AIMCo's Balanced Fund earn for clients in 2025?",
+  "answer": "The context doesn't report a 2025 dollar earnings figure for the Balanced Fund, so I can't give one. It also contradicts the likely premise behind the question: the $76.5B figure is not a 2025 dollar amount — it is labelled **Balanced Fund Ten-Year Net Investment Return** [source: aimco-2025.pdf (AIMCo), text - page 4]. The 2025 result is given only as a percentage: **Balanced Fund 2025 Net Investment Rate of Return: 7.6%** [source: aimco-2025.pdf (AIMCo), text - page 15].\n\nThe dollar figures the context does state are total assets, not earnings:\n- Assets Under Management: $194.7B [source: aimco-2025.pdf (AIMCo), text - page 3]\n\nI don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::4",
+    "fund": "aimco",
+    "type": "document",
+    "page": 3
+   },
+   {
+    "id": "aimco-2025.pdf::5",
+    "fund": "aimco",
+    "type": "document",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::27",
+    "fund": "aimco",
+    "type": "document",
+    "page": 15
+   },
+   {
+    "id": "aimco-2025.pdf::table::0",
+    "fund": "aimco",
+    "type": "table",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::140",
+    "fund": "aimco",
+    "type": "document",
+    "page": 58
+   },
+   {
+    "id": "aimco-2025.pdf::39",
+    "fund": "aimco",
+    "type": "document",
+    "page": 16
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 6
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "A12",
+  "variant": "13.1->14.4",
+  "question": "In dollar terms, how much did AIMCo's Balanced Fund earn for clients in 2025?",
+  "answer": "AIMCo's Balanced Fund returned $14.4 billion in 2025. [source: aimco-2025.pdf (AIMCo), text - page 13]",
+  "retrieved": [
+   {
+    "id": "aimco-2025.pdf::4",
+    "fund": "aimco",
+    "type": "document",
+    "page": 3
+   },
+   {
+    "id": "aimco-2025.pdf::5",
+    "fund": "aimco",
+    "type": "document",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::22",
+    "fund": "aimco",
+    "type": "document",
+    "page": 13
+   },
+   {
+    "id": "aimco-2025.pdf::27",
+    "fund": "aimco",
+    "type": "document",
+    "page": 15
+   },
+   {
+    "id": "aimco-2025.pdf::table::0",
+    "fund": "aimco",
+    "type": "table",
+    "page": 4
+   },
+   {
+    "id": "aimco-2025.pdf::8",
+    "fund": "aimco",
+    "type": "document",
+    "page": 7
+   },
+   {
+    "id": "aimco-2025.pdf::140",
+    "fund": "aimco",
+    "type": "document",
+    "page": 58
+   },
+   {
+    "id": "aimco-2025.pdf::39",
+    "fund": "aimco",
+    "type": "document",
+    "page": 16
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "O01",
+  "variant": "ablation",
+  "question": "What was OMERS's net return in 2025, and what was its benchmark?",
+  "answer": "For OMERS Public Equities:\n- Net Return: 12.3% [source: omers-2025.pdf (OMERS), text - page 38]\n- Benchmark: 7.6% [source: omers-2025.pdf (OMERS), text - page 38]",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::99",
+    "fund": "omers",
+    "type": "document",
+    "page": 38
+   },
+   {
+    "id": "omers-2025.pdf::101",
+    "fund": "omers",
+    "type": "document",
+    "page": 40
+   },
+   {
+    "id": "omers-2025.pdf::69",
+    "fund": "omers",
+    "type": "document",
+    "page": 25
+   },
+   {
+    "id": "omers-2025.pdf::table::13",
+    "fund": "omers",
+    "type": "table",
+    "page": 39
+   }
+  ],
+  "grade": {
+   "refused": false,
+   "gold_leak": false,
+   "n_kept": 4
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "O01",
+  "variant": "6.0->7.3",
+  "question": "What was OMERS's net return in 2025, and what was its benchmark?",
+  "answer": "OMERS's net return in 2025 was 7.3%, and its benchmark was 7.5% [source: omers-2025.pdf (OMERS), text - page 24].",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::table::12",
+    "fund": "omers",
+    "type": "table",
+    "page": 37
+   },
+   {
+    "id": "omers-2025.pdf::16",
+    "fund": "omers",
+    "type": "document",
+    "page": 5
+   },
+   {
+    "id": "omers-2025.pdf::99",
+    "fund": "omers",
+    "type": "document",
+    "page": 38
+   },
+   {
+    "id": "omers-2025.pdf::101",
+    "fund": "omers",
+    "type": "document",
+    "page": 40
+   },
+   {
+    "id": "omers-2025.pdf::table::0",
+    "fund": "omers",
+    "type": "table",
+    "page": 6
+   },
+   {
+    "id": "omers-2025.pdf::69",
+    "fund": "omers",
+    "type": "document",
+    "page": 25
+   },
+   {
+    "id": "omers-2025.pdf::table::13",
+    "fund": "omers",
+    "type": "table",
+    "page": 39
+   },
+   {
+    "id": "omers-2025.pdf::67",
+    "fund": "omers",
+    "type": "document",
+    "page": 24
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "O02",
+  "variant": "ablation",
+  "question": "What was OMERS's funded ratio at the end of 2025 on a smoothed basis and on a fair value basis?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::57",
+    "fund": "omers",
+    "type": "document",
+    "page": 21
+   },
+   {
+    "id": "omers-2025.pdf::169",
+    "fund": "omers",
+    "type": "document",
+    "page": 57
+   },
+   {
+    "id": "omers-2025.pdf::55",
+    "fund": "omers",
+    "type": "document",
+    "page": 20
+   },
+   {
+    "id": "omers-2025.pdf::62",
+    "fund": "omers",
+    "type": "document",
+    "page": 22
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 4
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "O02",
+  "variant": "99->112",
+  "question": "What was OMERS's funded ratio at the end of 2025 on a smoothed basis and on a fair value basis?",
+  "answer": "- Smoothed basis: 112%\n- Fair value basis: 96%\n\n[source: omers-2025.pdf (OMERS), text - page 22]",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::61",
+    "fund": "omers",
+    "type": "document",
+    "page": 22
+   },
+   {
+    "id": "omers-2025.pdf::56",
+    "fund": "omers",
+    "type": "document",
+    "page": 21
+   },
+   {
+    "id": "omers-2025.pdf::57",
+    "fund": "omers",
+    "type": "document",
+    "page": 21
+   },
+   {
+    "id": "omers-2025.pdf::169",
+    "fund": "omers",
+    "type": "document",
+    "page": 57
+   },
+   {
+    "id": "omers-2025.pdf::55",
+    "fund": "omers",
+    "type": "document",
+    "page": 20
+   },
+   {
+    "id": "omers-2025.pdf::16",
+    "fund": "omers",
+    "type": "document",
+    "page": 5
+   },
+   {
+    "id": "omers-2025.pdf::62",
+    "fund": "omers",
+    "type": "document",
+    "page": 22
+   },
+   {
+    "id": "omers-2025.pdf::table::0",
+    "fund": "omers",
+    "type": "table",
+    "page": 6
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "O03",
+  "variant": "ablation",
+  "question": "What were OMERS's net assets at the end of 2025?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::table::13",
+    "fund": "omers",
+    "type": "table",
+    "page": 39
+   },
+   {
+    "id": "omers-2025.pdf::99",
+    "fund": "omers",
+    "type": "document",
+    "page": 38
+   },
+   {
+    "id": "omers-2025.pdf::186",
+    "fund": "omers",
+    "type": "document",
+    "page": 63
+   },
+   {
+    "id": "omers-2025.pdf::314",
+    "fund": "omers",
+    "type": "document",
+    "page": 93
+   },
+   {
+    "id": "omers-2025.pdf::478",
+    "fund": "omers",
+    "type": "document",
+    "page": 142
+   },
+   {
+    "id": "omers-2025.pdf::75",
+    "fund": "omers",
+    "type": "document",
+    "page": 27
+   },
+   {
+    "id": "omers-2025.pdf::22",
+    "fund": "omers",
+    "type": "document",
+    "page": 7
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 7
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "O03",
+  "variant": "145.2->146.5",
+  "question": "What were OMERS's net assets at the end of 2025?",
+  "answer": "OMERS's net assets were $146.5 billion at December 31, 2025. [source: omers-2025.pdf (OMERS), text - page 5]",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::table::13",
+    "fund": "omers",
+    "type": "table",
+    "page": 39
+   },
+   {
+    "id": "omers-2025.pdf::99",
+    "fund": "omers",
+    "type": "document",
+    "page": 38
+   },
+   {
+    "id": "omers-2025.pdf::16",
+    "fund": "omers",
+    "type": "document",
+    "page": 5
+   },
+   {
+    "id": "omers-2025.pdf::186",
+    "fund": "omers",
+    "type": "document",
+    "page": 63
+   },
+   {
+    "id": "omers-2025.pdf::314",
+    "fund": "omers",
+    "type": "document",
+    "page": 93
+   },
+   {
+    "id": "omers-2025.pdf::478",
+    "fund": "omers",
+    "type": "document",
+    "page": 142
+   },
+   {
+    "id": "omers-2025.pdf::75",
+    "fund": "omers",
+    "type": "document",
+    "page": 27
+   },
+   {
+    "id": "omers-2025.pdf::22",
+    "fund": "omers",
+    "type": "document",
+    "page": 7
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "O04",
+  "variant": "ablation",
+  "question": "How did OMERS's private equity portfolio perform in 2025?",
+  "answer": "OMERS’s private equity investments decreased to $25.6 billion at the end of 2025, down from $27.5 billion in 2024; the decrease was the net result of transaction activity and net investment losses, including currency impacts, dividend recapitalizations, and follow-on investments. The context also cites market headwinds, downward valuation multiples, and weak performance in earlier-stage growth and ventures—partly offset by stronger performance in funds and co-investments. [source: omers-2025.pdf (OMERS), text - page 40]",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::95",
+    "fund": "omers",
+    "type": "document",
+    "page": 37
+   },
+   {
+    "id": "omers-2025.pdf::100",
+    "fund": "omers",
+    "type": "document",
+    "page": 39
+   },
+   {
+    "id": "omers-2025.pdf::102",
+    "fund": "omers",
+    "type": "document",
+    "page": 40
+   },
+   {
+    "id": "omers-2025.pdf::274",
+    "fund": "omers",
+    "type": "document",
+    "page": 84
+   },
+   {
+    "id": "omers-2025.pdf::17",
+    "fund": "omers",
+    "type": "document",
+    "page": 6
+   },
+   {
+    "id": "omers-2025.pdf::380",
+    "fund": "omers",
+    "type": "document",
+    "page": 111
+   },
+   {
+    "id": "omers-2025.pdf::434",
+    "fund": "omers",
+    "type": "document",
+    "page": 126
+   }
+  ],
+  "grade": {
+   "refused": false,
+   "gold_leak": false,
+   "n_kept": 7
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "O04",
+  "variant": "2.5->3.8",
+  "question": "How did OMERS's private equity portfolio perform in 2025?",
+  "answer": "OMERS’s private equity assets generated a net loss of 3.8% in 2025, compared with a 9.1% absolute return benchmark (2024 – net return of 9.5%). This equates to a net investment loss of $0.7 billion in 2025 (2024 – net investment income of $2.3 billion). Currency effects adversely impacted the 2025 return by 3.1%; the asset class’s net local return was positive 0.6%. [source: omers-2025.pdf (OMERS), text - page 40]",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::95",
+    "fund": "omers",
+    "type": "document",
+    "page": 37
+   },
+   {
+    "id": "omers-2025.pdf::100",
+    "fund": "omers",
+    "type": "document",
+    "page": 39
+   },
+   {
+    "id": "omers-2025.pdf::102",
+    "fund": "omers",
+    "type": "document",
+    "page": 40
+   },
+   {
+    "id": "omers-2025.pdf::101",
+    "fund": "omers",
+    "type": "document",
+    "page": 40
+   },
+   {
+    "id": "omers-2025.pdf::274",
+    "fund": "omers",
+    "type": "document",
+    "page": 84
+   },
+   {
+    "id": "omers-2025.pdf::17",
+    "fund": "omers",
+    "type": "document",
+    "page": 6
+   },
+   {
+    "id": "omers-2025.pdf::380",
+    "fund": "omers",
+    "type": "document",
+    "page": 111
+   },
+   {
+    "id": "omers-2025.pdf::434",
+    "fund": "omers",
+    "type": "document",
+    "page": 126
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "O05",
+  "variant": "ablation",
+  "question": "How much of OMERS's portfolio was exposed to foreign currencies at the end of 2025, and how did currency movements affect the return?",
+  "answer": "- Total foreign currency exposure at December 31, 2025: $65,608 million (44% of portfolio; 2024: $75,229 million, 52%) [source: omers-2025.pdf (OMERS), text - page 83]\n- Largest single currency exposure at December 31, 2025: United States Dollar, $51,540 (35% of total) [source: omers-2025.pdf (OMERS), text - page 83]\n- Canadian Dollar: $83,168 (56%); Total: $148,776 (100%) [source: omers-2025.pdf (OMERS), text - page 83]\n\nOn how currency movements actually affected the 2025 return: I don't have that in the provided data. The context only gives a sensitivity — a five per cent increase or decrease in the value of the Canadian dollar against all foreign currencies, holding all else constant, would result in an approximate $3,280 decrease or increase in AC's net investment assets [source: omers-2025.pdf (OMERS), text - page 83] — which is not a reported return impact.",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::268",
+    "fund": "omers",
+    "type": "document",
+    "page": 82
+   },
+   {
+    "id": "omers-2025.pdf::80",
+    "fund": "omers",
+    "type": "document",
+    "page": 29
+   },
+   {
+    "id": "omers-2025.pdf::269",
+    "fund": "omers",
+    "type": "document",
+    "page": 83
+   },
+   {
+    "id": "omers-2025.pdf::134",
+    "fund": "omers",
+    "type": "document",
+    "page": 49
+   },
+   {
+    "id": "omers-2025.pdf::table::28",
+    "fund": "omers",
+    "type": "table",
+    "page": 83
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 5
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "O05",
+  "variant": "45->58",
+  "question": "How much of OMERS's portfolio was exposed to foreign currencies at the end of 2025, and how did currency movements affect the return?",
+  "answer": "- Foreign currency exposure at December 31, 2025: 58% of OMERS’s net investment exposure was exposed to foreign currencies. [source: omers-2025.pdf (OMERS), text - page 30]\n- Separately, net investment assets by currency exposure, after currency hedging, show total foreign currency exposure of $65,608 million, or 44%. [source: omers-2025.pdf (OMERS), text - page 83]\n- Return effect: exposure to foreign currencies, net of hedging effects, resulted in $1.7 billion of unrealized foreign currency losses and detracted 1.3% from net investment return for the year, primarily due to the weakening of the U.S. dollar by 4.7%; OMERS’s active hedging protected 0.7% of return. [source: omers-2025.pdf (OMERS), text - page 30]",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::81",
+    "fund": "omers",
+    "type": "document",
+    "page": 30
+   },
+   {
+    "id": "omers-2025.pdf::268",
+    "fund": "omers",
+    "type": "document",
+    "page": 82
+   },
+   {
+    "id": "omers-2025.pdf::82",
+    "fund": "omers",
+    "type": "document",
+    "page": 30
+   },
+   {
+    "id": "omers-2025.pdf::80",
+    "fund": "omers",
+    "type": "document",
+    "page": 29
+   },
+   {
+    "id": "omers-2025.pdf::269",
+    "fund": "omers",
+    "type": "document",
+    "page": 83
+   },
+   {
+    "id": "omers-2025.pdf::68",
+    "fund": "omers",
+    "type": "document",
+    "page": 24
+   },
+   {
+    "id": "omers-2025.pdf::134",
+    "fund": "omers",
+    "type": "document",
+    "page": 49
+   },
+   {
+    "id": "omers-2025.pdf::table::28",
+    "fund": "omers",
+    "type": "table",
+    "page": 83
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "O06",
+  "variant": "ablation",
+  "question": "What was OMERS's management expense ratio in 2025?",
+  "answer": "I don't have that in the provided data. The OMERS metric table lists the Management Expense Ratio entry as \"n/a\" rather than reporting a 2025 value [source: omers-2025.pdf (OMERS), text - page 57].",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::170",
+    "fund": "omers",
+    "type": "document",
+    "page": 57
+   },
+   {
+    "id": "omers-2025.pdf::62",
+    "fund": "omers",
+    "type": "document",
+    "page": 22
+   },
+   {
+    "id": "omers-2025.pdf::16",
+    "fund": "omers",
+    "type": "document",
+    "page": 5
+   },
+   {
+    "id": "omers-2025.pdf::61",
+    "fund": "omers",
+    "type": "document",
+    "page": 22
+   },
+   {
+    "id": "omers-2025.pdf::325",
+    "fund": "omers",
+    "type": "document",
+    "page": 97
+   },
+   {
+    "id": "omers-2025.pdf::7",
+    "fund": "omers",
+    "type": "document",
+    "page": 3
+   },
+   {
+    "id": "omers-2025.pdf::114",
+    "fund": "omers",
+    "type": "document",
+    "page": 44
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 7
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "O06",
+  "variant": "58->71",
+  "question": "What was OMERS's management expense ratio in 2025?",
+  "answer": "OMERS's management expense ratio was 71 basis points in 2025. [source: omers-2025.pdf (OMERS), text - page 43]",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::170",
+    "fund": "omers",
+    "type": "document",
+    "page": 57
+   },
+   {
+    "id": "omers-2025.pdf::112",
+    "fund": "omers",
+    "type": "document",
+    "page": 43
+   },
+   {
+    "id": "omers-2025.pdf::62",
+    "fund": "omers",
+    "type": "document",
+    "page": 22
+   },
+   {
+    "id": "omers-2025.pdf::16",
+    "fund": "omers",
+    "type": "document",
+    "page": 5
+   },
+   {
+    "id": "omers-2025.pdf::61",
+    "fund": "omers",
+    "type": "document",
+    "page": 22
+   },
+   {
+    "id": "omers-2025.pdf::325",
+    "fund": "omers",
+    "type": "document",
+    "page": 97
+   },
+   {
+    "id": "omers-2025.pdf::7",
+    "fund": "omers",
+    "type": "document",
+    "page": 3
+   },
+   {
+    "id": "omers-2025.pdf::114",
+    "fund": "omers",
+    "type": "document",
+    "page": 44
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "O07",
+  "variant": "ablation",
+  "question": "What is OMERS's long-term target asset mix?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::332",
+    "fund": "omers",
+    "type": "document",
+    "page": 99
+   },
+   {
+    "id": "omers-2025.pdf::table::13",
+    "fund": "omers",
+    "type": "table",
+    "page": 39
+   },
+   {
+    "id": "omers-2025.pdf::100",
+    "fund": "omers",
+    "type": "document",
+    "page": 39
+   },
+   {
+    "id": "omers-2025.pdf::77",
+    "fund": "omers",
+    "type": "document",
+    "page": 28
+   },
+   {
+    "id": "omers-2025.pdf::396",
+    "fund": "omers",
+    "type": "document",
+    "page": 115
+   },
+   {
+    "id": "omers-2025.pdf::333",
+    "fund": "omers",
+    "type": "document",
+    "page": 99
+   },
+   {
+    "id": "omers-2025.pdf::83",
+    "fund": "omers",
+    "type": "document",
+    "page": 30
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 7
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "O07",
+  "variant": "43->56",
+  "question": "What is OMERS's long-term target asset mix?",
+  "answer": "OMERS’s long-term target asset mix shown in the provided excerpt is:\n\n- Fixed Income: 56.0% [source: omers-2025.pdf (OMERS), text - page 26]\n- Government Bonds: 17.0% [source: omers-2025.pdf (OMERS), text - page 26]\n- Public Credit: 14.0% [source: omers-2025.pdf (OMERS), text - page 26]\n- Private Credit: 12.0% [source: omers-2025.pdf (OMERS), text - page 26]\n- Equities: 37.0% [source: omers-2025.pdf (OMERS), text - page 26]\n- Public Equities: 19.0% [source: omers-2025.pdf (OMERS), text - page 26]\n\nThe provided excerpt is truncated after “Pr”, so the remaining target-mix lines are not in the provided data. [source: omers-2025.pdf (OMERS), text - page 26]",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::74",
+    "fund": "omers",
+    "type": "document",
+    "page": 26
+   },
+   {
+    "id": "omers-2025.pdf::332",
+    "fund": "omers",
+    "type": "document",
+    "page": 99
+   },
+   {
+    "id": "omers-2025.pdf::table::13",
+    "fund": "omers",
+    "type": "table",
+    "page": 39
+   },
+   {
+    "id": "omers-2025.pdf::100",
+    "fund": "omers",
+    "type": "document",
+    "page": 39
+   },
+   {
+    "id": "omers-2025.pdf::77",
+    "fund": "omers",
+    "type": "document",
+    "page": 28
+   },
+   {
+    "id": "omers-2025.pdf::396",
+    "fund": "omers",
+    "type": "document",
+    "page": 115
+   },
+   {
+    "id": "omers-2025.pdf::333",
+    "fund": "omers",
+    "type": "document",
+    "page": 99
+   },
+   {
+    "id": "omers-2025.pdf::83",
+    "fund": "omers",
+    "type": "document",
+    "page": 30
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "O08",
+  "variant": "ablation",
+  "question": "What real discount rate does OMERS use to value its pension obligations?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::309",
+    "fund": "omers",
+    "type": "document",
+    "page": 92
+   },
+   {
+    "id": "omers-2025.pdf::table::39",
+    "fund": "omers",
+    "type": "table",
+    "page": 94
+   },
+   {
+    "id": "omers-2025.pdf::56",
+    "fund": "omers",
+    "type": "document",
+    "page": 21
+   },
+   {
+    "id": "omers-2025.pdf::310",
+    "fund": "omers",
+    "type": "document",
+    "page": 92
+   },
+   {
+    "id": "omers-2025.pdf::254",
+    "fund": "omers",
+    "type": "document",
+    "page": 79
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 5
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "O08",
+  "variant": "3.70->5.00",
+  "question": "What real discount rate does OMERS use to value its pension obligations?",
+  "answer": "OMERS used a real discount rate of 5.00% as at December 31, 2025, unchanged from December 31, 2024. [source: omers-2025.pdf (OMERS), text - page 21]",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::60",
+    "fund": "omers",
+    "type": "document",
+    "page": 22
+   },
+   {
+    "id": "omers-2025.pdf::309",
+    "fund": "omers",
+    "type": "document",
+    "page": 92
+   },
+   {
+    "id": "omers-2025.pdf::table::39",
+    "fund": "omers",
+    "type": "table",
+    "page": 94
+   },
+   {
+    "id": "omers-2025.pdf::19",
+    "fund": "omers",
+    "type": "document",
+    "page": 6
+   },
+   {
+    "id": "omers-2025.pdf::56",
+    "fund": "omers",
+    "type": "document",
+    "page": 21
+   },
+   {
+    "id": "omers-2025.pdf::310",
+    "fund": "omers",
+    "type": "document",
+    "page": 92
+   },
+   {
+    "id": "omers-2025.pdf::59",
+    "fund": "omers",
+    "type": "document",
+    "page": 21
+   },
+   {
+    "id": "omers-2025.pdf::254",
+    "fund": "omers",
+    "type": "document",
+    "page": 79
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "O09",
+  "variant": "ablation",
+  "question": "How many members does OMERS have?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::26",
+    "fund": "omers",
+    "type": "document",
+    "page": 8
+   },
+   {
+    "id": "omers-2025.pdf::5",
+    "fund": "omers",
+    "type": "document",
+    "page": 2
+   },
+   {
+    "id": "omers-2025.pdf::13",
+    "fund": "omers",
+    "type": "document",
+    "page": 5
+   },
+   {
+    "id": "omers-2025.pdf::27",
+    "fund": "omers",
+    "type": "document",
+    "page": 9
+   },
+   {
+    "id": "omers-2025.pdf::505",
+    "fund": "omers",
+    "type": "document",
+    "page": 150
+   },
+   {
+    "id": "omers-2025.pdf::142",
+    "fund": "omers",
+    "type": "document",
+    "page": 51
+   },
+   {
+    "id": "omers-2025.pdf::22",
+    "fund": "omers",
+    "type": "document",
+    "page": 7
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 7
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "O09",
+  "variant": "665,000->666,317",
+  "question": "How many members does OMERS have?",
+  "answer": "OMERS has 666,317 active, deferred and retired members.\n- Total members: 666,317 [source: omers-2025.pdf (OMERS), text - page 1]",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::26",
+    "fund": "omers",
+    "type": "document",
+    "page": 8
+   },
+   {
+    "id": "omers-2025.pdf::5",
+    "fund": "omers",
+    "type": "document",
+    "page": 2
+   },
+   {
+    "id": "omers-2025.pdf::13",
+    "fund": "omers",
+    "type": "document",
+    "page": 5
+   },
+   {
+    "id": "omers-2025.pdf::27",
+    "fund": "omers",
+    "type": "document",
+    "page": 9
+   },
+   {
+    "id": "omers-2025.pdf::0",
+    "fund": "omers",
+    "type": "document",
+    "page": 1
+   },
+   {
+    "id": "omers-2025.pdf::505",
+    "fund": "omers",
+    "type": "document",
+    "page": 150
+   },
+   {
+    "id": "omers-2025.pdf::142",
+    "fund": "omers",
+    "type": "document",
+    "page": 51
+   },
+   {
+    "id": "omers-2025.pdf::22",
+    "fund": "omers",
+    "type": "document",
+    "page": 7
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "O10",
+  "variant": "ablation",
+  "question": "What was OMERS's 10-year net return compared with its 10-year benchmark?",
+  "answer": "The context does not give an explicit 10-year benchmark figure, so a direct 10-year comparison can't be made from it.\n\n- 10-year average net return: 3.7% [source: omers-2025.pdf (OMERS), table - page 37]\n- Benchmark shown alongside it: 4.0% (with 2024: 5.6%), which the context labels as a benchmark for the year, not a 10-year benchmark [source: omers-2025.pdf (OMERS), table - page 37]\n\nNote: that snippet is truncated, so the line item the 3.7% / 4.0% pair belongs to is not identifiable from the context.",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::table::12",
+    "fund": "omers",
+    "type": "table",
+    "page": 37
+   },
+   {
+    "id": "omers-2025.pdf::476",
+    "fund": "omers",
+    "type": "document",
+    "page": 142
+   },
+   {
+    "id": "omers-2025.pdf::69",
+    "fund": "omers",
+    "type": "document",
+    "page": 25
+   },
+   {
+    "id": "omers-2025.pdf::table::13",
+    "fund": "omers",
+    "type": "table",
+    "page": 39
+   }
+  ],
+  "grade": {
+   "refused": false,
+   "gold_leak": false,
+   "n_kept": 4
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "O10",
+  "variant": "7.1->8.4",
+  "question": "What was OMERS's 10-year net return compared with its 10-year benchmark?",
+  "answer": "- 10-year net return: 8.4% [source: omers-2025.pdf (OMERS), text - page 26]\n- 10-year benchmark: 7.3% [source: omers-2025.pdf (OMERS), text - page 26]",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::table::12",
+    "fund": "omers",
+    "type": "table",
+    "page": 37
+   },
+   {
+    "id": "omers-2025.pdf::73",
+    "fund": "omers",
+    "type": "document",
+    "page": 26
+   },
+   {
+    "id": "omers-2025.pdf::16",
+    "fund": "omers",
+    "type": "document",
+    "page": 5
+   },
+   {
+    "id": "omers-2025.pdf::476",
+    "fund": "omers",
+    "type": "document",
+    "page": 142
+   },
+   {
+    "id": "omers-2025.pdf::69",
+    "fund": "omers",
+    "type": "document",
+    "page": 25
+   },
+   {
+    "id": "omers-2025.pdf::table::0",
+    "fund": "omers",
+    "type": "table",
+    "page": 6
+   },
+   {
+    "id": "omers-2025.pdf::table::13",
+    "fund": "omers",
+    "type": "table",
+    "page": 39
+   },
+   {
+    "id": "omers-2025.pdf::67",
+    "fund": "omers",
+    "type": "document",
+    "page": 24
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "O11",
+  "variant": "ablation",
+  "question": "Who is the President and CEO of OMERS?",
+  "answer": "The context identifies the President and CEO as Blake Hutcheson — page 3 refers to \"President and CEO Blake Hu\" (the text is truncated there), and page 142 refers to \"Mr. Hutcheson.\"\n\n- President and CEO: Blake Hutcheson [source: omers-2025.pdf (OMERS), text - page 3] [source: omers-2025.pdf (OMERS), text - page 142]",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::12",
+    "fund": "omers",
+    "type": "document",
+    "page": 4
+   },
+   {
+    "id": "omers-2025.pdf::7",
+    "fund": "omers",
+    "type": "document",
+    "page": 3
+   },
+   {
+    "id": "omers-2025.pdf::454",
+    "fund": "omers",
+    "type": "document",
+    "page": 134
+   },
+   {
+    "id": "omers-2025.pdf::477",
+    "fund": "omers",
+    "type": "document",
+    "page": 142
+   },
+   {
+    "id": "omers-2025.pdf::438",
+    "fund": "omers",
+    "type": "document",
+    "page": 128
+   }
+  ],
+  "grade": {
+   "refused": false,
+   "gold_leak": true,
+   "n_kept": 5
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "O12",
+  "variant": "ablation",
+  "question": "What is OMERS's estimated blended contribution rate for 2026?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::323",
+    "fund": "omers",
+    "type": "document",
+    "page": 96
+   },
+   {
+    "id": "omers-2025.pdf::144",
+    "fund": "omers",
+    "type": "document",
+    "page": 52
+   },
+   {
+    "id": "omers-2025.pdf::254",
+    "fund": "omers",
+    "type": "document",
+    "page": 79
+   },
+   {
+    "id": "omers-2025.pdf::16",
+    "fund": "omers",
+    "type": "document",
+    "page": 5
+   },
+   {
+    "id": "omers-2025.pdf::table::38",
+    "fund": "omers",
+    "type": "table",
+    "page": 93
+   },
+   {
+    "id": "omers-2025.pdf::20",
+    "fund": "omers",
+    "type": "document",
+    "page": 6
+   },
+   {
+    "id": "omers-2025.pdf::310",
+    "fund": "omers",
+    "type": "document",
+    "page": 92
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 7
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "O12",
+  "variant": "20.8->22.1",
+  "question": "What is OMERS's estimated blended contribution rate for 2026?",
+  "answer": "OMERS's blended contribution rate for 2026 is estimated to be 22.1% of contributory earnings.\n\n- Blended contribution rate for 2026: 22.1% of contributory earnings [source: omers-2025.pdf (OMERS), text - page 21]",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::59",
+    "fund": "omers",
+    "type": "document",
+    "page": 21
+   },
+   {
+    "id": "omers-2025.pdf::323",
+    "fund": "omers",
+    "type": "document",
+    "page": 96
+   },
+   {
+    "id": "omers-2025.pdf::144",
+    "fund": "omers",
+    "type": "document",
+    "page": 52
+   },
+   {
+    "id": "omers-2025.pdf::254",
+    "fund": "omers",
+    "type": "document",
+    "page": 79
+   },
+   {
+    "id": "omers-2025.pdf::16",
+    "fund": "omers",
+    "type": "document",
+    "page": 5
+   },
+   {
+    "id": "omers-2025.pdf::table::38",
+    "fund": "omers",
+    "type": "table",
+    "page": 93
+   },
+   {
+    "id": "omers-2025.pdf::20",
+    "fund": "omers",
+    "type": "document",
+    "page": 6
+   },
+   {
+    "id": "omers-2025.pdf::310",
+    "fund": "omers",
+    "type": "document",
+    "page": 92
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ },
+ {
+  "round": "r4",
+  "test": "ablation",
+  "id": "O13",
+  "variant": "ablation",
+  "question": "How much did OMERS pay out in pension benefits in 2025?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::1",
+    "fund": "omers",
+    "type": "document",
+    "page": 2
+   },
+   {
+    "id": "omers-2025.pdf::494",
+    "fund": "omers",
+    "type": "document",
+    "page": 145
+   },
+   {
+    "id": "omers-2025.pdf::278",
+    "fund": "omers",
+    "type": "document",
+    "page": 85
+   },
+   {
+    "id": "omers-2025.pdf::2",
+    "fund": "omers",
+    "type": "document",
+    "page": 2
+   },
+   {
+    "id": "omers-2025.pdf::13",
+    "fund": "omers",
+    "type": "document",
+    "page": 5
+   },
+   {
+    "id": "omers-2025.pdf::486",
+    "fund": "omers",
+    "type": "document",
+    "page": 144
+   }
+  ],
+  "grade": {
+   "refused": true,
+   "gold_leak": false,
+   "n_kept": 6
+  }
+ },
+ {
+  "round": "r4",
+  "test": "counterfactual",
+  "id": "O13",
+  "variant": "6.8->8.1",
+  "question": "How much did OMERS pay out in pension benefits in 2025?",
+  "answer": "OMERS paid total pension benefits of $8.1 billion in 2025. [source: omers-2025.pdf (OMERS), text - page 48] [source: omers-2025.pdf (OMERS), text - page 16]",
+  "retrieved": [
+   {
+    "id": "omers-2025.pdf::1",
+    "fund": "omers",
+    "type": "document",
+    "page": 2
+   },
+   {
+    "id": "omers-2025.pdf::129",
+    "fund": "omers",
+    "type": "document",
+    "page": 48
+   },
+   {
+    "id": "omers-2025.pdf::45",
+    "fund": "omers",
+    "type": "document",
+    "page": 16
+   },
+   {
+    "id": "omers-2025.pdf::494",
+    "fund": "omers",
+    "type": "document",
+    "page": 145
+   },
+   {
+    "id": "omers-2025.pdf::278",
+    "fund": "omers",
+    "type": "document",
+    "page": 85
+   },
+   {
+    "id": "omers-2025.pdf::2",
+    "fund": "omers",
+    "type": "document",
+    "page": 2
+   },
+   {
+    "id": "omers-2025.pdf::13",
+    "fund": "omers",
+    "type": "document",
+    "page": 5
+   },
+   {
+    "id": "omers-2025.pdf::486",
+    "fund": "omers",
+    "type": "document",
+    "page": 144
+   }
+  ],
+  "grade": {
+   "follows_context": true,
+   "uses_original": false
+  }
+ }
+]
