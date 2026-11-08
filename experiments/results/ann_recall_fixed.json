@@ -1,0 +1,20 @@
+{
+ "exp_hoopp": {
+  "recall": 1.0,
+  "q_with_miss": 0,
+  "top1_missing": 0,
+  "n": 61
+ },
+ "exp_all": {
+  "recall": 1.0,
+  "q_with_miss": 0,
+  "top1_missing": 0,
+  "n": 61
+ },
+ "exp_all_ctx": {
+  "recall": 1.0,
+  "q_with_miss": 0,
+  "top1_missing": 0,
+  "n": 61
+ }
+}

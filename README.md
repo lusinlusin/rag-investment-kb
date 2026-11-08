@@ -121,6 +121,24 @@ governed metric is returned with its `version: 1.0`.
 
 > **Note:** the PDF isn't bundled — download it into `data/docs/` (or drop in your own) before running `ingest.py`. `data/metrics.yaml` *is* included, so the pipeline still runs without a PDF.
 
+## Experiments & report
+
+A research-style evaluation of this pipeline over the 2025 annual reports of **HOOPP, AIMCo
+and OMERS** lives in [`experiments/`](experiments/) and [`report/`](report/):
+
+- [`report/report.pdf`](report/report.pdf) — full report (LaTeX source: [`report/report.tex`](report/report.tex)):
+  seven rounds of experiments, per-source results, validity stress tests (paraphrase, context
+  ablation, counterfactual editing) and a held-out check.
+- [`experiments/questions.yaml`](experiments/questions.yaml) — 61 development + 20 held-out
+  stakeholder-style questions with hand-verified gold answers.
+- [`experiments/harness.py`](experiments/harness.py) — runs each round
+  (`python experiments/harness.py r1 r2 r3 r4 r5 r6 r6v r7 r7v ho_r2 ho_r7`);
+  [`experiments/analyze.py`](experiments/analyze.py) regenerates the report's figures and tables.
+  LLM answers are cached in `experiments/results/llm_cache.jsonl`, so re-grading costs nothing.
+
+Headline: accuracy 91.3% on one report → 69.7% on three (naive) → 95.9% with hybrid BM25 + dense
+retrieval and multi-query fusion (95.0% on held-out questions, vs 55.0% baseline).
+
 ## Design notes
 
 - **Why a governed metric layer?** Definitions are authoritative and versioned, kept

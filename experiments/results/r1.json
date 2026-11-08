@@ -1,0 +1,4050 @@
+[
+ {
+  "round": "r1",
+  "id": "H01",
+  "rep": 0,
+  "category": "kpi",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "What was HOOPP's net return in 2025, and how did it compare with its benchmark?",
+  "answer": "- Net return 2025: 7.7% [source: hoopp-2025.pdf, text]\n- Benchmark: 8.6% [source: hoopp-2025.pdf, text]\n- Relative performance: -0.9% [source: hoopp-2025.pdf, text]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::72",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29,
+    "dist": 0.6212
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31,
+    "dist": 0.7863
+   },
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 0.8155
+   },
+   {
+    "id": "hoopp-2025.pdf::16",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 9,
+    "dist": 0.819
+   },
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23,
+    "dist": 0.845
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7,
+    "dist": 0.8485
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 3,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H01",
+  "rep": 1,
+  "category": "kpi",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "What was HOOPP's net return in 2025, and how did it compare with its benchmark?",
+  "answer": "- Net return (2025): 7.7% [source: hoopp-2025.pdf, text]\n- Benchmark (2025): 8.6% [source: hoopp-2025.pdf, text]\n- Relative performance: -0.9% [source: hoopp-2025.pdf, text]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::72",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29,
+    "dist": 0.6212
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31,
+    "dist": 0.7863
+   },
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 0.8155
+   },
+   {
+    "id": "hoopp-2025.pdf::16",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 9,
+    "dist": 0.819
+   },
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23,
+    "dist": 0.845
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7,
+    "dist": 0.8485
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 3,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H02",
+  "rep": 0,
+  "category": "kpi",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "What was HOOPP's funded status at the end of 2025 on a smoothed basis, and what was it a year earlier?",
+  "answer": "- 2025 smoothed funded status: 109% [source: hoopp-2025.pdf, text]\n- 2024 smoothed funded status: I don't have that in the provided data. The context only says the smoothed funded ratio “declined modestly from 2024.” [source: hoopp-2025.pdf, text]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23,
+    "dist": 0.6074
+   },
+   {
+    "id": "hoopp-2025.pdf::17",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 10,
+    "dist": 0.6466
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7,
+    "dist": 0.699
+   },
+   {
+    "id": "hoopp-2025.pdf::58",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 25,
+    "dist": 0.7236
+   },
+   {
+    "id": "hoopp-2025.pdf::9",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8,
+    "dist": 0.724
+   },
+   {
+    "id": "hoopp-2025.pdf::5",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 6,
+    "dist": 0.7536
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": false,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": false,
+   "partial": 0.5,
+   "groups_matched": [
+    true,
+    false
+   ],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 2,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": true
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H02",
+  "rep": 1,
+  "category": "kpi",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "What was HOOPP's funded status at the end of 2025 on a smoothed basis, and what was it a year earlier?",
+  "answer": "- 2025 smoothed funded status: 109% [source: hoopp-2025.pdf, text]\n- 2024 smoothed funded status: I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23,
+    "dist": 0.6074
+   },
+   {
+    "id": "hoopp-2025.pdf::17",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 10,
+    "dist": 0.6466
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7,
+    "dist": 0.699
+   },
+   {
+    "id": "hoopp-2025.pdf::58",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 25,
+    "dist": 0.7236
+   },
+   {
+    "id": "hoopp-2025.pdf::9",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8,
+    "dist": 0.724
+   },
+   {
+    "id": "hoopp-2025.pdf::5",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 6,
+    "dist": 0.7536
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": false,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": false,
+   "partial": 0.5,
+   "groups_matched": [
+    true,
+    false
+   ],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": true
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H03",
+  "rep": 0,
+  "category": "kpi",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "What were HOOPP's net assets at December 31, 2025?",
+  "answer": "HOOPP’s net assets at December 31, 2025 were $131.9 billion. [source: hoopp-2025.pdf, text]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 0.771
+   },
+   {
+    "id": "hoopp-2025.pdf::5",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 6,
+    "dist": 0.8026
+   },
+   {
+    "id": "hoopp-2025.pdf::287",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 80,
+    "dist": 0.8029
+   },
+   {
+    "id": "hoopp-2025.pdf::17",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 10,
+    "dist": 0.8081
+   },
+   {
+    "id": "hoopp-2025.pdf::58",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 25,
+    "dist": 0.8191
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31,
+    "dist": 0.8308
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H03",
+  "rep": 1,
+  "category": "kpi",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "What were HOOPP's net assets at December 31, 2025?",
+  "answer": "- Net assets: $131.9 billion [source: hoopp-2025.pdf, text]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 0.771
+   },
+   {
+    "id": "hoopp-2025.pdf::5",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 6,
+    "dist": 0.8026
+   },
+   {
+    "id": "hoopp-2025.pdf::287",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 80,
+    "dist": 0.8029
+   },
+   {
+    "id": "hoopp-2025.pdf::17",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 10,
+    "dist": 0.8081
+   },
+   {
+    "id": "hoopp-2025.pdf::58",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 25,
+    "dist": 0.8191
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31,
+    "dist": 0.8308
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H04",
+  "rep": 0,
+  "category": "reasoning",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "Which asset class contributed the most to HOOPP's net investment income in 2025, and what was its return?",
+  "answer": "- Public equities: $7.1 billion in net investment income; 22.2% return [source: hoopp-2025.pdf, table - page 30]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::table::6",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 30,
+    "dist": 0.5365
+   },
+   {
+    "id": "hoopp-2025.pdf::74",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29,
+    "dist": 0.547
+   },
+   {
+    "id": "hoopp-2025.pdf::16",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 9,
+    "dist": 0.6572
+   },
+   {
+    "id": "hoopp-2025.pdf::table::39",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 107,
+    "dist": 0.6671
+   },
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23,
+    "dist": 0.669
+   },
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 0.6835
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 4,
+    "table": 2,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H04",
+  "rep": 1,
+  "category": "reasoning",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "Which asset class contributed the most to HOOPP's net investment income in 2025, and what was its return?",
+  "answer": "- Public equities: contributed $7.1 billion and returned 22.2% [source: hoopp-2025.pdf, table - page 30]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::table::6",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 30,
+    "dist": 0.5365
+   },
+   {
+    "id": "hoopp-2025.pdf::74",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29,
+    "dist": 0.547
+   },
+   {
+    "id": "hoopp-2025.pdf::16",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 9,
+    "dist": 0.6572
+   },
+   {
+    "id": "hoopp-2025.pdf::table::39",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 107,
+    "dist": 0.6671
+   },
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23,
+    "dist": 0.669
+   },
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 0.6835
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 4,
+    "table": 2,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H05",
+  "rep": 0,
+  "category": "table",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "How did each of HOOPP's private markets asset classes perform in 2025?",
+  "answer": "- Real estate: $0.2 billion net income; 1.1% return [source: hoopp-2025.pdf, table - page 30]\n- Private equity: $0.6 billion net income; 3.6% return [source: hoopp-2025.pdf, table - page 30]\n- Infrastructure: $0.1 billion net income; 1.8% return [source: hoopp-2025.pdf, table - page 30]\n- Private credit: $0.1 billion net income; 0.9% return [source: hoopp-2025.pdf, table - page 30]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::74",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29,
+    "dist": 0.5618
+   },
+   {
+    "id": "hoopp-2025.pdf::table::6",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 30,
+    "dist": 0.5632
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31,
+    "dist": 0.6363
+   },
+   {
+    "id": "hoopp-2025.pdf::379",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 100,
+    "dist": 0.7619
+   },
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 0.7928
+   },
+   {
+    "id": "hoopp-2025.pdf::85",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 33,
+    "dist": 0.7934
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 5,
+    "table": 1,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 4,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H05",
+  "rep": 1,
+  "category": "table",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "How did each of HOOPP's private markets asset classes perform in 2025?",
+  "answer": "- Real estate: 1.1% [source: hoopp-2025.pdf, table - page 30]\n- Private equity: 3.6% [source: hoopp-2025.pdf, table - page 30]\n- Infrastructure: 1.8% [source: hoopp-2025.pdf, table - page 30]\n- Private credit: 0.9% [source: hoopp-2025.pdf, table - page 30]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::74",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29,
+    "dist": 0.5618
+   },
+   {
+    "id": "hoopp-2025.pdf::table::6",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 30,
+    "dist": 0.5632
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31,
+    "dist": 0.6363
+   },
+   {
+    "id": "hoopp-2025.pdf::379",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 100,
+    "dist": 0.7619
+   },
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 0.7928
+   },
+   {
+    "id": "hoopp-2025.pdf::85",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 33,
+    "dist": 0.7934
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 5,
+    "table": 1,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true,
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 4,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H06",
+  "rep": 0,
+  "category": "kpi",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "What is HOOPP's 10-year annualized net return, and how does it compare with the benchmark?",
+  "answer": "- 10-year annualized net return: 7.8% [source: hoopp-2025.pdf, text]\n- 10-year benchmark: 5.9% [source: hoopp-2025.pdf, text]\n- Relative performance: +1.9% [source: hoopp-2025.pdf, text]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::72",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29,
+    "dist": 0.5606
+   },
+   {
+    "id": "hoopp-2025.pdf::16",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 9,
+    "dist": 0.7645
+   },
+   {
+    "id": "hoopp-2025.pdf::5",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 6,
+    "dist": 0.8191
+   },
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 0.8524
+   },
+   {
+    "id": "hoopp-2025.pdf::403",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 107,
+    "dist": 0.858
+   },
+   {
+    "id": "hoopp-2025.pdf::17",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 10,
+    "dist": 0.8653
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 3,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H06",
+  "rep": 1,
+  "category": "kpi",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "What is HOOPP's 10-year annualized net return, and how does it compare with the benchmark?",
+  "answer": "- 10-year annualized net return: 7.8% [source: hoopp-2025.pdf, text]\n- Benchmark: 5.9%; relative performance: 1.9% [source: hoopp-2025.pdf, text]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::72",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29,
+    "dist": 0.5606
+   },
+   {
+    "id": "hoopp-2025.pdf::16",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 9,
+    "dist": 0.7645
+   },
+   {
+    "id": "hoopp-2025.pdf::5",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 6,
+    "dist": 0.8191
+   },
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 0.8524
+   },
+   {
+    "id": "hoopp-2025.pdf::403",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 107,
+    "dist": 0.858
+   },
+   {
+    "id": "hoopp-2025.pdf::17",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 10,
+    "dist": 0.8653
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 2,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H07",
+  "rep": 0,
+  "category": "table",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "If the discount rate assumption fell by one percentage point, what would happen to HOOPP's pension obligations?",
+  "answer": "If the discount rate assumption fell by one percentage point (to 4.65%), HOOPP’s pension obligations would be $142.6 billion, an increase of 18% [source: hoopp-2025.pdf, text].",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::52",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22,
+    "dist": 0.292
+   },
+   {
+    "id": "hoopp-2025.pdf::table::3",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 23,
+    "dist": 0.4059
+   },
+   {
+    "id": "hoopp-2025.pdf::51",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22,
+    "dist": 0.5613
+   },
+   {
+    "id": "hoopp-2025.pdf::50",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22,
+    "dist": 0.6835
+   },
+   {
+    "id": "hoopp-2025.pdf::200",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 60,
+    "dist": 0.7388
+   },
+   {
+    "id": "hoopp-2025.pdf::57",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 24,
+    "dist": 0.7558
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 5,
+    "table": 1,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H07",
+  "rep": 1,
+  "category": "table",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "If the discount rate assumption fell by one percentage point, what would happen to HOOPP's pension obligations?",
+  "answer": "A one percentage point decrease in the discount rate assumption (to 4.65%) would increase HOOPP’s pension obligations to $142.6 billion, an 18% increase. [source: hoopp-2025.pdf, text]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::52",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22,
+    "dist": 0.292
+   },
+   {
+    "id": "hoopp-2025.pdf::table::3",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 23,
+    "dist": 0.4059
+   },
+   {
+    "id": "hoopp-2025.pdf::51",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22,
+    "dist": 0.5613
+   },
+   {
+    "id": "hoopp-2025.pdf::50",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22,
+    "dist": 0.6835
+   },
+   {
+    "id": "hoopp-2025.pdf::200",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 60,
+    "dist": 0.7388
+   },
+   {
+    "id": "hoopp-2025.pdf::57",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 24,
+    "dist": 0.7558
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 5,
+    "table": 1,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H08",
+  "rep": 0,
+  "category": "kpi",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "What discount rate did HOOPP use to value its pension obligations at the end of 2025?",
+  "answer": "5.65% [source: hoopp-2025.pdf, table - page 23]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::52",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22,
+    "dist": 0.3224
+   },
+   {
+    "id": "hoopp-2025.pdf::159",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 52,
+    "dist": 0.4844
+   },
+   {
+    "id": "hoopp-2025.pdf::table::3",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 23,
+    "dist": 0.5273
+   },
+   {
+    "id": "hoopp-2025.pdf::17",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 10,
+    "dist": 0.552
+   },
+   {
+    "id": "hoopp-2025.pdf::163",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 52,
+    "dist": 0.5521
+   },
+   {
+    "id": "hoopp-2025.pdf::57",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 24,
+    "dist": 0.5666
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 5,
+    "table": 1,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H08",
+  "rep": 1,
+  "category": "kpi",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "What discount rate did HOOPP use to value its pension obligations at the end of 2025?",
+  "answer": "5.65% [source: hoopp-2025.pdf, table - page 23]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::52",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22,
+    "dist": 0.3224
+   },
+   {
+    "id": "hoopp-2025.pdf::159",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 52,
+    "dist": 0.4844
+   },
+   {
+    "id": "hoopp-2025.pdf::table::3",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 23,
+    "dist": 0.5273
+   },
+   {
+    "id": "hoopp-2025.pdf::17",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 10,
+    "dist": 0.552
+   },
+   {
+    "id": "hoopp-2025.pdf::163",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 52,
+    "dist": 0.5521
+   },
+   {
+    "id": "hoopp-2025.pdf::57",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 24,
+    "dist": 0.5666
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 5,
+    "table": 1,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H09",
+  "rep": 0,
+  "category": "table",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "What was HOOPP's US dollar foreign currency exposure at the end of 2025 in Canadian dollars?",
+  "answer": "- United States Dollars: $12,702 million (Canadian Dollar Equivalent) [source: hoopp-2025.pdf, table - page 84]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::306",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 83,
+    "dist": 0.5029
+   },
+   {
+    "id": "hoopp-2025.pdf::305",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 83,
+    "dist": 0.5503
+   },
+   {
+    "id": "hoopp-2025.pdf::table::26",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 84,
+    "dist": 0.6812
+   },
+   {
+    "id": "hoopp-2025.pdf::table::27",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 84,
+    "dist": 0.7057
+   },
+   {
+    "id": "hoopp-2025.pdf::table::28",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 84,
+    "dist": 0.7338
+   },
+   {
+    "id": "hoopp-2025.pdf::70",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 0.9012
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 3,
+    "table": 3,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H09",
+  "rep": 1,
+  "category": "table",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "What was HOOPP's US dollar foreign currency exposure at the end of 2025 in Canadian dollars?",
+  "answer": "US dollar foreign currency exposure at end of 2025: $12,702 million Canadian dollar equivalent [source: hoopp-2025.pdf, table - page 84].",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::306",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 83,
+    "dist": 0.5029
+   },
+   {
+    "id": "hoopp-2025.pdf::305",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 83,
+    "dist": 0.5503
+   },
+   {
+    "id": "hoopp-2025.pdf::table::26",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 84,
+    "dist": 0.6812
+   },
+   {
+    "id": "hoopp-2025.pdf::table::27",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 84,
+    "dist": 0.7057
+   },
+   {
+    "id": "hoopp-2025.pdf::table::28",
+    "fund": "hoopp",
+    "type": "table",
+    "page": 84,
+    "dist": 0.7338
+   },
+   {
+    "id": "hoopp-2025.pdf::70",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 0.9012
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 3,
+    "table": 3,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H10",
+  "rep": 0,
+  "category": "kpi",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "What were HOOPP's investment operating expenses in 2025, in dollars and basis points?",
+  "answer": "- Investment operating expenses: $382 million, or 30 bps [source: hoopp-2025.pdf, text]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::105",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 38,
+    "dist": 0.4662
+   },
+   {
+    "id": "hoopp-2025.pdf::104",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 38,
+    "dist": 0.5044
+   },
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23,
+    "dist": 0.5945
+   },
+   {
+    "id": "hoopp-2025.pdf::298",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 82,
+    "dist": 0.6299
+   },
+   {
+    "id": "hoopp-2025.pdf::272",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 77,
+    "dist": 0.6349
+   },
+   {
+    "id": "hoopp-2025.pdf::289",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 80,
+    "dist": 0.6408
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H10",
+  "rep": 1,
+  "category": "kpi",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "What were HOOPP's investment operating expenses in 2025, in dollars and basis points?",
+  "answer": "- Investment operating expenses: $382 million, or 30 bps, in 2025 (up from $335 million, or 28 bps, in 2024) [source: hoopp-2025.pdf, text]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::105",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 38,
+    "dist": 0.4662
+   },
+   {
+    "id": "hoopp-2025.pdf::104",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 38,
+    "dist": 0.5044
+   },
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23,
+    "dist": 0.5945
+   },
+   {
+    "id": "hoopp-2025.pdf::298",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 82,
+    "dist": 0.6299
+   },
+   {
+    "id": "hoopp-2025.pdf::272",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 77,
+    "dist": 0.6349
+   },
+   {
+    "id": "hoopp-2025.pdf::289",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 80,
+    "dist": 0.6408
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H11",
+  "rep": 0,
+  "category": "kpi",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "How many members and participating employers did HOOPP have at the end of 2025?",
+  "answer": "- Members: 504,237 [source: hoopp-2025.pdf, text]\n- Employers: 871 [source: hoopp-2025.pdf, text]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::9",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8,
+    "dist": 0.7352
+   },
+   {
+    "id": "hoopp-2025.pdf::32",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 16,
+    "dist": 0.7635
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7,
+    "dist": 0.783
+   },
+   {
+    "id": "hoopp-2025.pdf::13",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8,
+    "dist": 0.8163
+   },
+   {
+    "id": "hoopp-2025.pdf::5",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 6,
+    "dist": 0.8236
+   },
+   {
+    "id": "hoopp-2025.pdf::31",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 15,
+    "dist": 0.8866
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 2,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H11",
+  "rep": 1,
+  "category": "kpi",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "How many members and participating employers did HOOPP have at the end of 2025?",
+  "answer": "- Members: 504,237 [source: hoopp-2025.pdf, text]\n- Participating employers: 871 [source: hoopp-2025.pdf, text]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::9",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8,
+    "dist": 0.7352
+   },
+   {
+    "id": "hoopp-2025.pdf::32",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 16,
+    "dist": 0.7635
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7,
+    "dist": 0.783
+   },
+   {
+    "id": "hoopp-2025.pdf::13",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8,
+    "dist": 0.8163
+   },
+   {
+    "id": "hoopp-2025.pdf::5",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 6,
+    "dist": 0.8236
+   },
+   {
+    "id": "hoopp-2025.pdf::31",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 15,
+    "dist": 0.8866
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 2,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H12",
+  "rep": 0,
+  "category": "kpi",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "Have HOOPP's contribution rates changed recently, and are changes planned?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23,
+    "dist": 0.641
+   },
+   {
+    "id": "hoopp-2025.pdf::17",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 10,
+    "dist": 0.6993
+   },
+   {
+    "id": "hoopp-2025.pdf::58",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 25,
+    "dist": 0.7098
+   },
+   {
+    "id": "hoopp-2025.pdf::52",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22,
+    "dist": 0.7348
+   },
+   {
+    "id": "hoopp-2025.pdf::56",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 24,
+    "dist": 0.7649
+   },
+   {
+    "id": "hoopp-2025.pdf::32",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 16,
+    "dist": 0.7686
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": false,
+   "gold_hit_all": false,
+   "gold_hit_frac": 0.0
+  },
+  "grade": {
+   "correct": false,
+   "partial": 0.0,
+   "groups_matched": [
+    false,
+    false
+   ],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 0,
+   "cited_funds": [],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": true
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H12",
+  "rep": 1,
+  "category": "kpi",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "Have HOOPP's contribution rates changed recently, and are changes planned?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23,
+    "dist": 0.641
+   },
+   {
+    "id": "hoopp-2025.pdf::17",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 10,
+    "dist": 0.6993
+   },
+   {
+    "id": "hoopp-2025.pdf::58",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 25,
+    "dist": 0.7098
+   },
+   {
+    "id": "hoopp-2025.pdf::52",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 22,
+    "dist": 0.7348
+   },
+   {
+    "id": "hoopp-2025.pdf::56",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 24,
+    "dist": 0.7649
+   },
+   {
+    "id": "hoopp-2025.pdf::32",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 16,
+    "dist": 0.7686
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": false,
+   "gold_hit_all": false,
+   "gold_hit_frac": 0.0
+  },
+  "grade": {
+   "correct": false,
+   "partial": 0.0,
+   "groups_matched": [
+    false,
+    false
+   ],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 0,
+   "cited_funds": [],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": true
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H13",
+  "rep": 0,
+  "category": "kpi",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "What was HOOPP's geographic exposure at the end of 2025?",
+  "answer": "HOOPP’s geographic exposure as at December 31, 2025 was:\n\n- Canada: 49% [source: hoopp-2025.pdf, text]\n- U.S.: 29% [source: hoopp-2025.pdf, text]\n- Europe: 13% [source: hoopp-2025.pdf, text]\n- Asia-Pacific: 7% [source: hoopp-2025.pdf, text]\n- Other: 2% [source: hoopp-2025.pdf, text]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 0.8881
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7,
+    "dist": 0.9112
+   },
+   {
+    "id": "hoopp-2025.pdf::9",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8,
+    "dist": 0.9744
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31,
+    "dist": 0.9755
+   },
+   {
+    "id": "hoopp-2025.pdf::377",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 100,
+    "dist": 1.0222
+   },
+   {
+    "id": "hoopp-2025.pdf::70",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 1.0242
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 5,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H13",
+  "rep": 1,
+  "category": "kpi",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "What was HOOPP's geographic exposure at the end of 2025?",
+  "answer": "- Canada: 49% [source: hoopp-2025.pdf, text]\n- U.S.: 29% [source: hoopp-2025.pdf, text]\n- Europe: 13% [source: hoopp-2025.pdf, text]\n- Asia-Pacific: 7% [source: hoopp-2025.pdf, text]\n- Other: 2% [source: hoopp-2025.pdf, text]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 0.8881
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7,
+    "dist": 0.9112
+   },
+   {
+    "id": "hoopp-2025.pdf::9",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8,
+    "dist": 0.9744
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31,
+    "dist": 0.9755
+   },
+   {
+    "id": "hoopp-2025.pdf::377",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 100,
+    "dist": 1.0222
+   },
+   {
+    "id": "hoopp-2025.pdf::70",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 1.0242
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 5,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H14",
+  "rep": 0,
+  "category": "people",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "Who is HOOPP's President and CEO?",
+  "answer": "Annesley Wallace [source: hoopp-2025.pdf, text]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::9",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8,
+    "dist": 0.7506
+   },
+   {
+    "id": "hoopp-2025.pdf::142",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 48,
+    "dist": 0.7738
+   },
+   {
+    "id": "hoopp-2025.pdf::13",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8,
+    "dist": 0.8184
+   },
+   {
+    "id": "hoopp-2025.pdf::10",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8,
+    "dist": 0.8368
+   },
+   {
+    "id": "hoopp-2025.pdf::112",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 40,
+    "dist": 0.8469
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7,
+    "dist": 0.8722
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H14",
+  "rep": 1,
+  "category": "people",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "Who is HOOPP's President and CEO?",
+  "answer": "Annesley Wallace is HOOPP’s President and Chief Executive Officer. [source: hoopp-2025.pdf, text]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::9",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8,
+    "dist": 0.7506
+   },
+   {
+    "id": "hoopp-2025.pdf::142",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 48,
+    "dist": 0.7738
+   },
+   {
+    "id": "hoopp-2025.pdf::13",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8,
+    "dist": 0.8184
+   },
+   {
+    "id": "hoopp-2025.pdf::10",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8,
+    "dist": 0.8368
+   },
+   {
+    "id": "hoopp-2025.pdf::112",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 40,
+    "dist": 0.8469
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7,
+    "dist": 0.8722
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H15",
+  "rep": 0,
+  "category": "reasoning",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "What was HOOPP's real return in 2025, and was it within the plan's target range?",
+  "answer": "HOOPP’s 2025 real return was 5.3%, and it was within the 4.5%–6.5% real return target set out in HOOPP’s 2030 Strategic Plan. [source: hoopp-2025.pdf, text]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::72",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29,
+    "dist": 0.6829
+   },
+   {
+    "id": "hoopp-2025.pdf::9",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8,
+    "dist": 0.7129
+   },
+   {
+    "id": "hoopp-2025.pdf::17",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 10,
+    "dist": 0.7497
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7,
+    "dist": 0.7592
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31,
+    "dist": 0.802
+   },
+   {
+    "id": "hoopp-2025.pdf::5",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 6,
+    "dist": 0.806
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "H15",
+  "rep": 1,
+  "category": "reasoning",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "answer",
+  "question": "What was HOOPP's real return in 2025, and was it within the plan's target range?",
+  "answer": "HOOPP’s real return in 2025 was 5.3%, within the 4.5%–6.5% real return target set out in HOOPP’s 2030 Strategic Plan. [source: hoopp-2025.pdf, text]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::72",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29,
+    "dist": 0.6829
+   },
+   {
+    "id": "hoopp-2025.pdf::9",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 8,
+    "dist": 0.7129
+   },
+   {
+    "id": "hoopp-2025.pdf::17",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 10,
+    "dist": 0.7497
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7,
+    "dist": 0.7592
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31,
+    "dist": 0.802
+   },
+   {
+    "id": "hoopp-2025.pdf::5",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 6,
+    "dist": 0.806
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0,
+   "sufficient": true,
+   "gold_hit_all": true,
+   "gold_hit_frac": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "M01",
+  "rep": 0,
+  "category": "metric",
+  "funds": [
+   "governed"
+  ],
+  "expect": "answer",
+  "question": "What is our official definition of tracking error?",
+  "answer": "Tracking error is defined as the annualized standard deviation of the portfolio's active returns versus its benchmark. [source: governed_metric_layer, version: 1.0]",
+  "retrieved": [
+   {
+    "id": "metric::tracking_error",
+    "fund": "governed",
+    "type": "metric",
+    "page": null,
+    "dist": 1.0642
+   },
+   {
+    "id": "metric::information_ratio",
+    "fund": "governed",
+    "type": "metric",
+    "page": null,
+    "dist": 1.1586
+   },
+   {
+    "id": "hoopp-2025.pdf::378",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 100,
+    "dist": 1.3144
+   },
+   {
+    "id": "hoopp-2025.pdf::391",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 103,
+    "dist": 1.3316
+   },
+   {
+    "id": "metric::active_return",
+    "fund": "governed",
+    "type": "metric",
+    "page": null,
+    "dist": 1.347
+   },
+   {
+    "id": "hoopp-2025.pdf::392",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 103,
+    "dist": 1.3746
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 3
+   },
+   "type_mix": {
+    "document": 3,
+    "table": 0,
+    "metric": 3
+   },
+   "metric_hit": true,
+   "sufficient": true
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "governed"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "M01",
+  "rep": 1,
+  "category": "metric",
+  "funds": [
+   "governed"
+  ],
+  "expect": "answer",
+  "question": "What is our official definition of tracking error?",
+  "answer": "**tracking_error** — \"Annualized standard deviation of the portfolio's active returns versus its benchmark.\" This is a governed metric definition, version 1.0 [source: governed_metric_layer, version: 1.0]",
+  "retrieved": [
+   {
+    "id": "metric::tracking_error",
+    "fund": "governed",
+    "type": "metric",
+    "page": null,
+    "dist": 1.0642
+   },
+   {
+    "id": "metric::information_ratio",
+    "fund": "governed",
+    "type": "metric",
+    "page": null,
+    "dist": 1.1586
+   },
+   {
+    "id": "hoopp-2025.pdf::378",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 100,
+    "dist": 1.3144
+   },
+   {
+    "id": "hoopp-2025.pdf::391",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 103,
+    "dist": 1.3316
+   },
+   {
+    "id": "metric::active_return",
+    "fund": "governed",
+    "type": "metric",
+    "page": null,
+    "dist": 1.347
+   },
+   {
+    "id": "hoopp-2025.pdf::392",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 103,
+    "dist": 1.3746
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 3
+   },
+   "type_mix": {
+    "document": 3,
+    "table": 0,
+    "metric": 3
+   },
+   "metric_hit": true,
+   "sufficient": true
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "governed"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "M02",
+  "rep": 0,
+  "category": "metric",
+  "funds": [
+   "governed"
+  ],
+  "expect": "answer",
+  "question": "How do we calculate the Sharpe ratio?",
+  "answer": "The Sharpe ratio is defined as excess return over the risk-free rate per unit of total risk. Formula: `(portfolio_return - risk_free_rate) / std(portfolio_return)`. It uses total risk (not active risk), is annualized, and uses the 3-month T-bill as the risk-free rate. [source: governed_metric_layer, version: 1.0]",
+  "retrieved": [
+   {
+    "id": "metric::sharpe_ratio",
+    "fund": "governed",
+    "type": "metric",
+    "page": null,
+    "dist": 1.18
+   },
+   {
+    "id": "metric::information_ratio",
+    "fund": "governed",
+    "type": "metric",
+    "page": null,
+    "dist": 1.3186
+   },
+   {
+    "id": "metric::brinson_allocation",
+    "fund": "governed",
+    "type": "metric",
+    "page": null,
+    "dist": 1.4709
+   },
+   {
+    "id": "metric::active_share",
+    "fund": "governed",
+    "type": "metric",
+    "page": null,
+    "dist": 1.4723
+   },
+   {
+    "id": "metric::tracking_error",
+    "fund": "governed",
+    "type": "metric",
+    "page": null,
+    "dist": 1.4729
+   },
+   {
+    "id": "hoopp-2025.pdf::233",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 66,
+    "dist": 1.4957
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 1
+   },
+   "type_mix": {
+    "document": 1,
+    "table": 0,
+    "metric": 5
+   },
+   "metric_hit": true,
+   "sufficient": true
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "governed"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "M02",
+  "rep": 1,
+  "category": "metric",
+  "funds": [
+   "governed"
+  ],
+  "expect": "answer",
+  "question": "How do we calculate the Sharpe ratio?",
+  "answer": "Sharpe ratio is calculated as (portfolio_return - risk_free_rate) / std(portfolio_return): excess return over the risk-free rate per unit of total risk. It is annualized, uses total risk (not active risk), and the risk-free rate is the 3-month T-bill. [source: governed_metric_layer, version: 1.0]",
+  "retrieved": [
+   {
+    "id": "metric::sharpe_ratio",
+    "fund": "governed",
+    "type": "metric",
+    "page": null,
+    "dist": 1.18
+   },
+   {
+    "id": "metric::information_ratio",
+    "fund": "governed",
+    "type": "metric",
+    "page": null,
+    "dist": 1.3186
+   },
+   {
+    "id": "metric::brinson_allocation",
+    "fund": "governed",
+    "type": "metric",
+    "page": null,
+    "dist": 1.4709
+   },
+   {
+    "id": "metric::active_share",
+    "fund": "governed",
+    "type": "metric",
+    "page": null,
+    "dist": 1.4723
+   },
+   {
+    "id": "metric::tracking_error",
+    "fund": "governed",
+    "type": "metric",
+    "page": null,
+    "dist": 1.4729
+   },
+   {
+    "id": "hoopp-2025.pdf::233",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 66,
+    "dist": 1.4957
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 1
+   },
+   "type_mix": {
+    "document": 1,
+    "table": 0,
+    "metric": 5
+   },
+   "metric_hit": true,
+   "sufficient": true
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "governed"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "M03",
+  "rep": 0,
+  "category": "metric",
+  "funds": [
+   "governed"
+  ],
+  "expect": "answer",
+  "question": "What is the difference between the Brinson allocation and selection effects?",
+  "answer": "- Brinson selection: The portion of active return from picking better securities within each sector. Formula: sum(weight_benchmark_i * (portfolio_return_i - benchmark_return_i)). It answers \"did we add value by security selection within sectors?\" [source: governed_metric_layer, version: 1.0]\n- Brinson allocation: The portion of active return from over/under-weighting sectors versus the benchmark. Formula: sum((weight_portfolio_i - weight_benchmark_i) * (benchmark_return_i - benchmark_total_return)). Brinson-Fachler. It answers \"did we add value by sector allocation?\" [source: governed_metric_layer, version: 1.0]",
+  "retrieved": [
+   {
+    "id": "metric::brinson_selection",
+    "fund": "governed",
+    "type": "metric",
+    "page": null,
+    "dist": 1.0246
+   },
+   {
+    "id": "metric::brinson_allocation",
+    "fund": "governed",
+    "type": "metric",
+    "page": null,
+    "dist": 1.1909
+   },
+   {
+    "id": "hoopp-2025.pdf::257",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 73,
+    "dist": 1.3502
+   },
+   {
+    "id": "hoopp-2025.pdf::258",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 73,
+    "dist": 1.3831
+   },
+   {
+    "id": "hoopp-2025.pdf::246",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 70,
+    "dist": 1.3882
+   },
+   {
+    "id": "hoopp-2025.pdf::384",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 102,
+    "dist": 1.4193
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 4
+   },
+   "type_mix": {
+    "document": 4,
+    "table": 0,
+    "metric": 2
+   },
+   "metric_hit": true,
+   "sufficient": true
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 2,
+   "cited_funds": [
+    "governed"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "M03",
+  "rep": 1,
+  "category": "metric",
+  "funds": [
+   "governed"
+  ],
+  "expect": "answer",
+  "question": "What is the difference between the Brinson allocation and selection effects?",
+  "answer": "- brinson_selection: The portion of active return from picking better securities within each sector. Formula: sum(weight_benchmark_i * (portfolio_return_i - benchmark_return_i)). Answers \"did we add value by security selection within sectors?\" [source: governed_metric_layer, version: 1.0]\n- brinson_allocation: The portion of active return from over/under-weighting sectors versus the benchmark. Formula: sum((weight_portfolio_i - weight_benchmark_i) * (benchmark_return_i - benchmark_total_return)). Brinson-Fachler. Answers \"did we add value by sector allocation?\" [source: governed_metric_layer, version: 1.0]",
+  "retrieved": [
+   {
+    "id": "metric::brinson_selection",
+    "fund": "governed",
+    "type": "metric",
+    "page": null,
+    "dist": 1.0246
+   },
+   {
+    "id": "metric::brinson_allocation",
+    "fund": "governed",
+    "type": "metric",
+    "page": null,
+    "dist": 1.1909
+   },
+   {
+    "id": "hoopp-2025.pdf::257",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 73,
+    "dist": 1.3502
+   },
+   {
+    "id": "hoopp-2025.pdf::258",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 73,
+    "dist": 1.3831
+   },
+   {
+    "id": "hoopp-2025.pdf::246",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 70,
+    "dist": 1.3882
+   },
+   {
+    "id": "hoopp-2025.pdf::384",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 102,
+    "dist": 1.4193
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 4
+   },
+   "type_mix": {
+    "document": 4,
+    "table": 0,
+    "metric": 2
+   },
+   "metric_hit": true,
+   "sufficient": true
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true,
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 2,
+   "cited_funds": [
+    "governed"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "T01",
+  "rep": 0,
+  "category": "trap",
+  "funds": [
+   "hoopp",
+   "aimco",
+   "omers"
+  ],
+  "expect": "refuse",
+  "question": "What is the portfolio manager's dog's name?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::122",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 43,
+    "dist": 1.2948
+   },
+   {
+    "id": "hoopp-2025.pdf::61",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 26,
+    "dist": 1.3098
+   },
+   {
+    "id": "hoopp-2025.pdf::140",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 48,
+    "dist": 1.3204
+   },
+   {
+    "id": "hoopp-2025.pdf::26",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 12,
+    "dist": 1.3271
+   },
+   {
+    "id": "hoopp-2025.pdf::84",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 32,
+    "dist": 1.3355
+   },
+   {
+    "id": "hoopp-2025.pdf::108",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 39,
+    "dist": 1.3366
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 0.0,
+   "groups_matched": [],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 0,
+   "cited_funds": [],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "T01",
+  "rep": 1,
+  "category": "trap",
+  "funds": [
+   "hoopp",
+   "aimco",
+   "omers"
+  ],
+  "expect": "refuse",
+  "question": "What is the portfolio manager's dog's name?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::122",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 43,
+    "dist": 1.2948
+   },
+   {
+    "id": "hoopp-2025.pdf::61",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 26,
+    "dist": 1.3098
+   },
+   {
+    "id": "hoopp-2025.pdf::140",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 48,
+    "dist": 1.3204
+   },
+   {
+    "id": "hoopp-2025.pdf::26",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 12,
+    "dist": 1.3271
+   },
+   {
+    "id": "hoopp-2025.pdf::84",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 32,
+    "dist": 1.3355
+   },
+   {
+    "id": "hoopp-2025.pdf::108",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 39,
+    "dist": 1.3366
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 0.0,
+   "groups_matched": [],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 0,
+   "cited_funds": [],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "T02",
+  "rep": 0,
+  "category": "trap",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "refuse",
+  "question": "What was HOOPP's net return in the third quarter of 2025?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::72",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29,
+    "dist": 0.8158
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31,
+    "dist": 0.8183
+   },
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 0.8473
+   },
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23,
+    "dist": 0.8536
+   },
+   {
+    "id": "hoopp-2025.pdf::5",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 6,
+    "dist": 0.8624
+   },
+   {
+    "id": "hoopp-2025.pdf::16",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 9,
+    "dist": 0.8883
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 0.0,
+   "groups_matched": [],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 0,
+   "cited_funds": [],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "T02",
+  "rep": 1,
+  "category": "trap",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "refuse",
+  "question": "What was HOOPP's net return in the third quarter of 2025?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::72",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29,
+    "dist": 0.8158
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31,
+    "dist": 0.8183
+   },
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 0.8473
+   },
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23,
+    "dist": 0.8536
+   },
+   {
+    "id": "hoopp-2025.pdf::5",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 6,
+    "dist": 0.8624
+   },
+   {
+    "id": "hoopp-2025.pdf::16",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 9,
+    "dist": 0.8883
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 0.0,
+   "groups_matched": [],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 0,
+   "cited_funds": [],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "T04",
+  "rep": 0,
+  "category": "trap",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "correct_premise",
+  "question": "Why did HOOPP's funded ratio fall below 100% in 2025?",
+  "answer": "The provided data does not show HOOPP's funded ratio falling below 100% in 2025 — it states the Plan was 109% funded as of December 31, 2025.\n\n- Funded status at December 31, 2025: 109% [source: hoopp-2025.pdf, text]\n\nThe context also notes the smoothed funded ratio declined modestly from 2024, but that is described relative to a fully funded position, not a drop below 100%.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23,
+    "dist": 0.5551
+   },
+   {
+    "id": "hoopp-2025.pdf::298",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 82,
+    "dist": 0.7441
+   },
+   {
+    "id": "hoopp-2025.pdf::17",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 10,
+    "dist": 0.746
+   },
+   {
+    "id": "hoopp-2025.pdf::72",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29,
+    "dist": 0.7597
+   },
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 0.7864
+   },
+   {
+    "id": "hoopp-2025.pdf::16",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 9,
+    "dist": 0.7959
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 1,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "T04",
+  "rep": 1,
+  "category": "trap",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "correct_premise",
+  "question": "Why did HOOPP's funded ratio fall below 100% in 2025?",
+  "answer": "HOOPP's funded ratio did not fall below 100% in 2025 — the Plan ended the year at 109% funded, on both a smoothed and net asset value basis: \"HOOPP’s funded status, measured on both a smoothed and net asset value basis, ended the year at 109%.\" [source: hoopp-2025.pdf, text] and \"HOOPP has been fully funded since 2009, and as of December 31, 2025, the Plan was 109% funded.\" [source: hoopp-2025.pdf, text]\n\nWhat the reports do describe is a modest decline in the smoothed funded ratio from 2024, driven by:\n\n- Higher-than-assumed wage growth for members: \"The smoothed funded ratio declined modestly from 2024, reflecting higher‑than‑assumed wage growth for members which, despite causing upward pressure on liabilities, represents a positive economic experience for HOOPP members.\" [source: hoopp-2025.pdf, text]\n- Continued recognition of 2022 investment losses: \"The continued recognition of investment losses from 2022, which are smoothed over a five‑year period, was also a factor. All else being equal, the funded ratio is expected to decline again in 2026 as the remaining investment losses from 2022 are recognized. This expected movement is mechanical in nature and reflects the effects of asset smoothing rather than a deterioration in the Plan’s underlyin\" [source: hoopp-2025.pdf, text]",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23,
+    "dist": 0.5551
+   },
+   {
+    "id": "hoopp-2025.pdf::298",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 82,
+    "dist": 0.7441
+   },
+   {
+    "id": "hoopp-2025.pdf::17",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 10,
+    "dist": 0.746
+   },
+   {
+    "id": "hoopp-2025.pdf::72",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29,
+    "dist": 0.7597
+   },
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 0.7864
+   },
+   {
+    "id": "hoopp-2025.pdf::16",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 9,
+    "dist": 0.7959
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 1.0,
+   "groups_matched": [
+    true
+   ],
+   "refused_strict": false,
+   "refused_loose": false,
+   "forbid_hit": [],
+   "n_citations": 4,
+   "cited_funds": [
+    "hoopp"
+   ],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "T07",
+  "rep": 0,
+  "category": "trap",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "refuse",
+  "question": "What will HOOPP's net return be in 2026?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::72",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29,
+    "dist": 0.7371
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31,
+    "dist": 0.7562
+   },
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 0.7678
+   },
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23,
+    "dist": 0.8138
+   },
+   {
+    "id": "hoopp-2025.pdf::5",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 6,
+    "dist": 0.8327
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7,
+    "dist": 0.8489
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 0.0,
+   "groups_matched": [],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 0,
+   "cited_funds": [],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "T07",
+  "rep": 1,
+  "category": "trap",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "refuse",
+  "question": "What will HOOPP's net return be in 2026?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::72",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29,
+    "dist": 0.7371
+   },
+   {
+    "id": "hoopp-2025.pdf::81",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 31,
+    "dist": 0.7562
+   },
+   {
+    "id": "hoopp-2025.pdf::71",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 28,
+    "dist": 0.7678
+   },
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23,
+    "dist": 0.8138
+   },
+   {
+    "id": "hoopp-2025.pdf::5",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 6,
+    "dist": 0.8327
+   },
+   {
+    "id": "hoopp-2025.pdf::8",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 7,
+    "dist": 0.8489
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 0.0,
+   "groups_matched": [],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 0,
+   "cited_funds": [],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "T08",
+  "rep": 0,
+  "category": "trap",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "refuse",
+  "question": "What was the tracking error of HOOPP's total fund in 2025?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23,
+    "dist": 0.5949
+   },
+   {
+    "id": "hoopp-2025.pdf::298",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 82,
+    "dist": 0.6029
+   },
+   {
+    "id": "hoopp-2025.pdf::72",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29,
+    "dist": 0.6805
+   },
+   {
+    "id": "hoopp-2025.pdf::105",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 38,
+    "dist": 0.6841
+   },
+   {
+    "id": "hoopp-2025.pdf::17",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 10,
+    "dist": 0.6861
+   },
+   {
+    "id": "hoopp-2025.pdf::104",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 38,
+    "dist": 0.6999
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 0.0,
+   "groups_matched": [],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 0,
+   "cited_funds": [],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ },
+ {
+  "round": "r1",
+  "id": "T08",
+  "rep": 1,
+  "category": "trap",
+  "funds": [
+   "hoopp"
+  ],
+  "expect": "refuse",
+  "question": "What was the tracking error of HOOPP's total fund in 2025?",
+  "answer": "I don't have that in the provided data.",
+  "retrieved": [
+   {
+    "id": "hoopp-2025.pdf::53",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 23,
+    "dist": 0.5949
+   },
+   {
+    "id": "hoopp-2025.pdf::298",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 82,
+    "dist": 0.6029
+   },
+   {
+    "id": "hoopp-2025.pdf::72",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 29,
+    "dist": 0.6805
+   },
+   {
+    "id": "hoopp-2025.pdf::105",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 38,
+    "dist": 0.6841
+   },
+   {
+    "id": "hoopp-2025.pdf::17",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 10,
+    "dist": 0.6861
+   },
+   {
+    "id": "hoopp-2025.pdf::104",
+    "fund": "hoopp",
+    "type": "document",
+    "page": 38,
+    "dist": 0.6999
+   }
+  ],
+  "retrieval": {
+   "n_hits": 6,
+   "fund_mix": {
+    "hoopp": 6
+   },
+   "type_mix": {
+    "document": 6,
+    "table": 0,
+    "metric": 0
+   },
+   "metric_hit": false,
+   "purity": 1.0
+  },
+  "grade": {
+   "correct": true,
+   "partial": 0.0,
+   "groups_matched": [],
+   "refused_strict": true,
+   "refused_loose": true,
+   "forbid_hit": [],
+   "n_citations": 0,
+   "cited_funds": [],
+   "invented_source": false,
+   "wrong_fund_citation": false,
+   "false_refusal": false
+  }
+ }
+]

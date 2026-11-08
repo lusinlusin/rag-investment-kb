@@ -1,0 +1,606 @@
+# Evaluation question bank for the RAG experiments.
+#
+# Each question is phrased the way a stakeholder (investment committee member, board
+# trustee, client-relations analyst, risk/finance team) might actually ask it. Gold answers
+# were looked up BY HAND in the 2025 annual reports and are encoded as regex groups:
+#
+#   must:       list of groups; a group is a list of alternative regexes. The answer must
+#               match >= 1 alternative in EVERY group to count as correct (partial credit =
+#               fraction of groups matched).
+#   forbid:     regexes that must NOT appear (e.g. another fund's number = contamination).
+#               For refuse items, a forbidden figure is tolerated only when the answer
+#               refuses explicitly ("I don't have that ...") and labels it as a different figure.
+#   expect:     answer          -> must be answered with the gold facts
+#               refuse          -> the data does not contain it; must refuse / say not available
+#               correct_premise -> the question has a false premise; the answer must correct it
+#   funds:      which fund(s) the question is about (hoopp | aimco | omers | governed)
+#   gold_pages: page numbers (1-based PDF page index) that hold the answer, per fund
+#   rounds:     which experiment rounds use the question (r1 = HOOPP-only corpus)
+#
+# Categories: kpi (headline number), table (needs an extracted table), reasoning
+# (compare / rank / multi-hop), people, metric (governed metric layer), cross (several
+# funds), ambiguous (no fund named), trap (refuse / false premise).
+
+# ----------------------------------------------------------------------------- HOOPP
+- id: H01
+  funds: [hoopp]
+  category: kpi
+  question: What was HOOPP's net return in 2025, and how did it compare with its benchmark?
+  must: [["7\\.7\\s?%"], ["8\\.6\\s?%"]]
+  gold_pages: {hoopp: [29]}
+  rounds: [r1, r2, r3]
+- id: H02
+  funds: [hoopp]
+  category: kpi
+  question: What was HOOPP's funded status at the end of 2025 on a smoothed basis, and what was it a year earlier?
+  must: [["109\\s?%"], ["111\\s?%"]]
+  gold_pages: {hoopp: [21, 23]}
+  rounds: [r1, r2, r3]
+- id: H03
+  funds: [hoopp]
+  category: kpi
+  question: What were HOOPP's net assets at December 31, 2025?
+  must: [["131\\.9"]]
+  gold_pages: {hoopp: [6, 7, 9, 21, 22, 29]}
+  rounds: [r1, r2, r3]
+- id: H04
+  funds: [hoopp]
+  category: reasoning
+  question: Which asset class contributed the most to HOOPP's net investment income in 2025, and what was its return?
+  must: [["public equit"], ["22\\.2\\s?%"]]
+  gold_pages: {hoopp: [30]}
+  rounds: [r1, r2, r3]
+- id: H05
+  funds: [hoopp]
+  category: table
+  question: How did each of HOOPP's private markets asset classes perform in 2025?
+  must: [["1\\.1\\s?%"], ["3\\.6\\s?%"], ["1\\.8\\s?%"], ["0\\.9\\s?%"]]
+  gold_pages: {hoopp: [30]}
+  rounds: [r1, r2, r3]
+- id: H06
+  funds: [hoopp]
+  category: kpi
+  question: What is HOOPP's 10-year annualized net return, and how does it compare with the benchmark?
+  must: [["7\\.8\\s?%"], ["5\\.9\\s?%"]]
+  gold_pages: {hoopp: [29]}
+  rounds: [r1, r2, r3]
+- id: H07
+  funds: [hoopp]
+  category: table
+  question: If the discount rate assumption fell by one percentage point, what would happen to HOOPP's pension obligations?
+  must: [["142\\.6"], ["18\\s?%"]]
+  gold_pages: {hoopp: [23]}
+  rounds: [r1, r2, r3]
+- id: H08
+  funds: [hoopp]
+  category: kpi
+  question: What discount rate did HOOPP use to value its pension obligations at the end of 2025?
+  must: [["5\\.65\\s?%"]]
+  gold_pages: {hoopp: [22, 23, 91, 92]}
+  rounds: [r1, r2, r3]
+- id: H09
+  funds: [hoopp]
+  category: table
+  question: What was HOOPP's US dollar foreign currency exposure at the end of 2025 in Canadian dollars?
+  must: [["12,702", "12\\.7\\s?billion"]]
+  gold_pages: {hoopp: [84]}
+  rounds: [r1, r2, r3]
+- id: H10
+  funds: [hoopp]
+  category: kpi
+  question: What were HOOPP's investment operating expenses in 2025, in dollars and basis points?
+  must: [["382"], ["30\\s?(bps|basis)"]]
+  gold_pages: {hoopp: [38, 90]}
+  rounds: [r1, r2, r3]
+- id: H11
+  funds: [hoopp]
+  category: kpi
+  question: How many members and participating employers did HOOPP have at the end of 2025?
+  must: [["504,237"], ["871"]]
+  gold_pages: {hoopp: [6, 16]}
+  rounds: [r1, r2, r3]
+- id: H12
+  funds: [hoopp]
+  category: kpi
+  question: Have HOOPP's contribution rates changed recently, and are changes planned?
+  must: [["2004"], ["2027"]]
+  gold_pages: {hoopp: [20]}
+  rounds: [r1, r2, r3]
+- id: H13
+  funds: [hoopp]
+  category: kpi
+  question: What was HOOPP's geographic exposure at the end of 2025?
+  must: [["49\\s?%"], ["29\\s?%"], ["13\\s?%"]]
+  gold_pages: {hoopp: [28]}
+  rounds: [r1, r2, r3]
+- id: H14
+  funds: [hoopp]
+  category: people
+  question: Who is HOOPP's President and CEO?
+  must: [["Annesley Wallace"]]
+  gold_pages: {hoopp: [8, 9, 11, 51]}
+  rounds: [r1, r2, r3]
+- id: H15
+  funds: [hoopp]
+  category: reasoning
+  question: What was HOOPP's real return in 2025, and was it within the plan's target range?
+  must: [["5\\.3\\s?%"], ["4\\.5\\s?%?\\s?(–|-|to|and)\\s?6\\.5"]]
+  gold_pages: {hoopp: [29]}
+  rounds: [r1, r2, r3]
+
+# ----------------------------------------------------------------------------- AIMCo
+- id: A01
+  funds: [aimco]
+  category: kpi
+  question: What was AIMCo's 2025 Balanced Fund net return, and what was its benchmark?
+  must: [["7\\.6\\s?%"], ["10\\.3\\s?%"]]
+  gold_pages: {aimco: [4, 13, 15, 16, 8]}
+  rounds: [r2, r3]
+- id: A02
+  funds: [aimco]
+  category: kpi
+  question: How much were AIMCo's assets under management at the end of 2025?
+  must: [["194\\.7"]]
+  gold_pages: {aimco: [4, 97]}
+  rounds: [r2, r3]
+- id: A03
+  funds: [aimco]
+  category: kpi
+  question: What is the ten-year annualized net return of AIMCo's Balanced Fund?
+  must: [["7\\.2\\s?%"]]
+  gold_pages: {aimco: [4, 13, 15]}
+  rounds: [r2, r3]
+- id: A04
+  funds: [aimco]
+  category: kpi
+  question: How did AIMCo's Public Equities and Absolute Return portfolio perform in 2025?
+  must: [["18\\.6\\s?%"]]
+  gold_pages: {aimco: [13, 16, 18]}
+  rounds: [r2, r3]
+- id: A05
+  funds: [aimco]
+  category: table
+  question: How did AIMCo's real estate and infrastructure portfolios perform relative to their benchmarks in 2025?
+  must: [["-\\s?2\\.2\\s?%", "\\(2\\.2\\)", "negative 2\\.2", "loss of 2\\.2", "−2\\.2"], ["3\\.3\\s?%"], ["2\\.8\\s?%"], ["8\\.1\\s?%"]]
+  gold_pages: {aimco: [16]}
+  rounds: [r2, r3]
+- id: A06
+  funds: [aimco]
+  category: table
+  question: What was AIMCo's private equity return in 2025, and its benchmark?
+  # rubric audit: "Core Private Equity" (4.5% vs 17.4%, p.27) is a defensible narrower scope
+  must: [["3\\.0\\s?%", "4\\.5\\s?%"], ["17\\.7\\s?%", "17\\.4\\s?%"]]
+  gold_pages: {aimco: [16, 27]}
+  rounds: [r2, r3]
+- id: A07
+  funds: [aimco]
+  category: kpi
+  question: What was AIMCo's global asset mix by region at the end of 2025?
+  must: [["40\\.2\\s?%"], ["37\\.7\\s?%"]]
+  gold_pages: {aimco: [5]}
+  rounds: [r2, r3]
+- id: A08
+  funds: [aimco]
+  category: people
+  question: Who is AIMCo's CEO, and who chairs its Board of Directors?
+  must: [["Ray Gilmour"], ["Harper"]]
+  gold_pages: {aimco: [7, 8, 46, 48, 64]}
+  rounds: [r2, r3]
+- id: A09
+  funds: [aimco]
+  category: kpi
+  question: What were AIMCo's total costs in fiscal 2026 compared with budget?
+  # rubric audit: "Total costs" incl. third-party costs ($1,157M vs $1,207M budget) is also correct
+  must: [["425", "1,157"], ["490", "1,207"]]
+  gold_pages: {aimco: [69, 70]}
+  rounds: [r2, r3]
+- id: A10
+  funds: [aimco]
+  category: kpi
+  question: What was the Total AIMCo Fund net return in 2025?
+  must: [["7\\.5\\s?%"]]
+  gold_pages: {aimco: [4, 16]}
+  rounds: [r2, r3]
+- id: A11
+  funds: [aimco]
+  category: kpi
+  question: How much has AIMCo delivered in net investment returns since its inception?
+  must: [["128\\.3"]]
+  gold_pages: {aimco: [8]}
+  rounds: [r2, r3]
+- id: A12
+  funds: [aimco]
+  category: kpi
+  question: In dollar terms, how much did AIMCo's Balanced Fund earn for clients in 2025?
+  must: [["13\\.1"]]
+  gold_pages: {aimco: [8, 13]}
+  rounds: [r2, r3]
+
+# ----------------------------------------------------------------------------- OMERS
+- id: O01
+  funds: [omers]
+  category: kpi
+  question: What was OMERS's net return in 2025, and what was its benchmark?
+  must: [["6\\.0\\s?%"], ["7\\.5\\s?%"]]
+  gold_pages: {omers: [14, 24, 26]}
+  rounds: [r2, r3]
+- id: O02
+  funds: [omers]
+  category: kpi
+  question: What was OMERS's funded ratio at the end of 2025 on a smoothed basis and on a fair value basis?
+  must: [["99\\s?%"], ["96\\s?%"]]
+  gold_pages: {omers: [14, 21]}
+  rounds: [r2, r3]
+- id: O03
+  funds: [omers]
+  category: kpi
+  question: What were OMERS's net assets at the end of 2025?
+  must: [["145\\.2"]]
+  gold_pages: {omers: [6, 15, 24]}
+  rounds: [r2, r3]
+- id: O04
+  funds: [omers]
+  category: kpi
+  question: How did OMERS's private equity portfolio perform in 2025?
+  must: [["2\\.5\\s?%"]]
+  gold_pages: {omers: [24, 40]}
+  rounds: [r2, r3]
+- id: O05
+  funds: [omers]
+  category: reasoning
+  question: How much of OMERS's portfolio was exposed to foreign currencies at the end of 2025, and how did currency movements affect the return?
+  must: [["45\\s?%"], ["1\\.7\\s?billion", "1\\.3\\s?%"]]
+  gold_pages: {omers: [30]}
+  rounds: [r2, r3]
+- id: O06
+  funds: [omers]
+  category: kpi
+  question: What was OMERS's management expense ratio in 2025?
+  must: [["58\\s?(bps|basis)"]]
+  gold_pages: {omers: [44]}
+  rounds: [r2, r3]
+- id: O07
+  funds: [omers]
+  category: table
+  question: What is OMERS's long-term target asset mix?
+  must: [["43(\\.0)?\\s?%"], ["37(\\.0)?\\s?%"], ["40(\\.0)?\\s?%"]]
+  gold_pages: {omers: [27]}
+  rounds: [r2, r3]
+- id: O08
+  funds: [omers]
+  category: kpi
+  question: What real discount rate does OMERS use to value its pension obligations?
+  must: [["3\\.70?\\s?%"]]
+  gold_pages: {omers: [3, 6, 14, 22, 91]}
+  rounds: [r2, r3]
+- id: O09
+  funds: [omers]
+  category: kpi
+  question: How many members does OMERS have?
+  must: [["665,000"]]
+  gold_pages: {omers: [2, 5, 12, 16, 20]}
+  rounds: [r2, r3]
+- id: O10
+  funds: [omers]
+  category: kpi
+  question: What was OMERS's 10-year net return compared with its 10-year benchmark?
+  must: [["7\\.1\\s?%"], ["7\\.3\\s?%"]]
+  gold_pages: {omers: [14, 26]}
+  rounds: [r2, r3]
+- id: O11
+  funds: [omers]
+  category: people
+  question: Who is the President and CEO of OMERS?
+  must: [["Blake Hutcheson"]]
+  gold_pages: {omers: [2, 4, 5, 13, 60]}
+  rounds: [r2, r3]
+- id: O12
+  funds: [omers]
+  category: kpi
+  question: What is OMERS's estimated blended contribution rate for 2026?
+  must: [["20\\.8\\s?%"]]
+  gold_pages: {omers: [21]}
+  rounds: [r2, r3]
+- id: O13
+  funds: [omers]
+  category: kpi
+  question: How much did OMERS pay out in pension benefits in 2025?
+  # rubric audit: Note 11 reports $6,584M benefit payments / $6,917M total benefits (audited)
+  must: [["6\\.8\\s?(billion|B)", "6,584", "6,917", "6\\.9\\s?(billion|B)"]]
+  gold_pages: {omers: [16]}
+  rounds: [r2, r3]
+
+# ------------------------------------------------------------------- governed metrics
+- id: M01
+  funds: [governed]
+  category: metric
+  question: What is our official definition of tracking error?
+  # rubric audit: the governed definition itself does not mention sqrt(12); formula is optional
+  must: [["standard deviation", "std"], ["active return", "benchmark"]]
+  gold_pages: {}
+  rounds: [r1, r2, r3]
+- id: M02
+  funds: [governed]
+  category: metric
+  question: How do we calculate the Sharpe ratio?
+  must: [["risk.free"], ["standard deviation", "std", "total risk"]]
+  gold_pages: {}
+  rounds: [r1, r2, r3]
+- id: M03
+  funds: [governed]
+  category: metric
+  question: What is the difference between the Brinson allocation and selection effects?
+  must: [["sector"], ["secur"]]
+  gold_pages: {}
+  rounds: [r1, r2, r3]
+
+# ------------------------------------------------------------------- cross-fund
+- id: X01
+  funds: [hoopp, aimco, omers]
+  category: cross
+  question: Compare the 2025 net returns of HOOPP, AIMCo and OMERS.
+  must: [["7\\.7\\s?%"], ["7\\.6\\s?%", "7\\.5\\s?%"], ["6\\.0\\s?%"]]
+  gold_pages: {hoopp: [29, 6], aimco: [4, 13, 15, 16, 8], omers: [14, 24, 26]}
+  rounds: [r2, r3]
+- id: X02
+  funds: [hoopp, omers]
+  category: cross
+  question: Which plan was better funded at the end of 2025, HOOPP or OMERS?
+  must: [["109\\s?%"], ["99\\s?%"], ["HOOPP"]]
+  gold_pages: {hoopp: [21, 6], omers: [14, 21]}
+  rounds: [r2, r3]
+- id: X03
+  funds: [hoopp, aimco, omers]
+  category: cross
+  question: Compare the 10-year annualized returns of HOOPP, AIMCo and OMERS.
+  must: [["7\\.8\\s?%"], ["7\\.2\\s?%"], ["7\\.1\\s?%"]]
+  gold_pages: {hoopp: [29], aimco: [4, 13, 15], omers: [14, 26]}
+  rounds: [r2, r3]
+- id: X04
+  funds: [hoopp, aimco, omers]
+  category: cross
+  question: How did private equity perform at HOOPP, AIMCo and OMERS in 2025?
+  must: [["3\\.6\\s?%"], ["3\\.0\\s?%", "4\\.5\\s?%"], ["2\\.5\\s?%"]]   # AIMCo Core PE 4.5% accepted (see A06)
+  gold_pages: {hoopp: [30], aimco: [16], omers: [24, 40]}
+  rounds: [r2, r3]
+- id: X05
+  funds: [hoopp, aimco, omers]
+  category: cross
+  question: Which of the three organizations had the largest assets at the end of 2025?
+  must: [["AIMCo"], ["194\\.7"]]
+  gold_pages: {hoopp: [6], aimco: [4], omers: [15, 24]}
+  rounds: [r2, r3]
+- id: X06
+  funds: [hoopp, aimco, omers]
+  category: cross
+  question: Did HOOPP, AIMCo and OMERS each beat their benchmark in 2025?
+  # rubric audit: AIMCo's "excess return of -2.7%" (Total Fund 7.5% vs 10.2%) is an equivalent answer
+  must: [["8\\.6\\s?%"], ["10\\.3\\s?%", "10\\.2\\s?%", "-\\s?2\\.7\\s?%", "\\(2\\.7\\)", "−2\\.7"], ["7\\.5\\s?%"]]
+  gold_pages: {hoopp: [29], aimco: [16], omers: [24, 26]}
+  rounds: [r2, r3]
+- id: X07
+  funds: [hoopp, aimco, omers]
+  category: ambiguous
+  question: What was the net return in 2025?
+  must: [["7\\.7\\s?%"], ["7\\.6\\s?%", "7\\.5\\s?%"], ["6\\.0\\s?%"]]
+  gold_pages: {hoopp: [29, 6], aimco: [4, 13], omers: [14, 24]}
+  rounds: [r2, r3]
+- id: X08
+  funds: [hoopp, omers]
+  category: ambiguous
+  question: What was the funded ratio at the end of 2025?
+  must: [["109\\s?%"], ["99\\s?%"]]
+  gold_pages: {hoopp: [21, 6], omers: [14, 21]}
+  rounds: [r2, r3]
+
+# ------------------------------------------------------------------- traps
+- id: T01
+  funds: [hoopp, aimco, omers]
+  category: trap
+  expect: refuse
+  question: What is the portfolio manager's dog's name?
+  rounds: [r1, r2, r3]
+- id: T02
+  funds: [hoopp]
+  category: trap
+  expect: refuse
+  question: What was HOOPP's net return in the third quarter of 2025?
+  forbid: ["7\\.7\\s?%"]
+  rounds: [r1, r2, r3]
+- id: T03
+  funds: [omers]
+  category: trap
+  expect: refuse
+  question: What was OMERS's Sharpe ratio in 2025?
+  rounds: [r2, r3]
+- id: T04
+  funds: [hoopp]
+  category: trap
+  expect: correct_premise
+  question: Why did HOOPP's funded ratio fall below 100% in 2025?
+  must: [["109\\s?%"]]
+  rounds: [r1, r2, r3]
+- id: T05
+  funds: [aimco]
+  category: trap
+  expect: refuse
+  question: What was AIMCo's funded ratio at the end of 2025?
+  forbid: ["109\\s?%", "99\\s?%", "96\\s?%"]
+  rounds: [r2, r3]
+- id: T06
+  funds: [omers]
+  category: trap
+  expect: correct_premise
+  question: Why did OMERS's private equity portfolio outperform in 2025?
+  must: [["2\\.5\\s?%", "loss", "negative", "challeng"]]
+  rounds: [r2, r3]
+- id: T07
+  funds: [hoopp]
+  category: trap
+  expect: refuse
+  question: What will HOOPP's net return be in 2026?
+  rounds: [r1, r2, r3]
+- id: T08
+  funds: [hoopp]
+  category: trap
+  expect: refuse
+  question: What was the tracking error of HOOPP's total fund in 2025?
+  rounds: [r1, r2, r3]
+- id: T09
+  funds: []
+  category: trap
+  expect: refuse
+  question: What was CPP Investments' net return in 2025?
+  forbid: ["7\\.7\\s?%", "7\\.6\\s?%", "7\\.5\\s?%", "6\\.0\\s?%"]
+  rounds: [r2, r3]
+- id: T10
+  funds: [aimco]
+  category: trap
+  expect: correct_premise
+  question: Since AIMCo beat its benchmark in 2025, how large was the outperformance?
+  must: [["10\\.[23]\\s?%", "trail", "below", "underperform", "did not beat", "didn't beat", "not beat"]]
+  rounds: [r2, r3]
+
+# =================================================================== HELD-OUT SET
+# Written AFTER rounds 1-7 were designed and tuned, and never used to make design
+# decisions: it is only run on the R2 baseline and the final R7 pipeline (round tag "ho"),
+# to check that the R7 gains are not over-fitted to the development questions above.
+- id: HO01
+  funds: [hoopp]
+  category: kpi
+  question: How much did HOOPP pay out in pension benefits in 2025?
+  must: [["4\\.1\\s?(billion|B)", "4,096"]]   # $4,096M (Note: benefits paid) == $4.1B, unit-equivalent
+  gold_pages: {hoopp: [6, 25, 89]}
+  rounds: [ho]
+- id: HO02
+  funds: [hoopp]
+  category: kpi
+  question: What did it cost HOOPP to administer the plan in 2025?
+  must: [["157"]]
+  gold_pages: {hoopp: [38, 90]}
+  rounds: [ho]
+- id: HO03
+  funds: [hoopp]
+  category: table
+  question: What surplus did HOOPP report on a smoothed asset value basis at the end of 2025?
+  must: [["10\\.8"]]
+  gold_pages: {hoopp: [21]}
+  rounds: [ho]
+- id: HO04
+  funds: [hoopp]
+  category: kpi
+  question: How much did HOOPP spend on management fees and transaction costs in 2025?
+  must: [["406"]]
+  gold_pages: {hoopp: [38]}
+  rounds: [ho]
+- id: HO05
+  funds: [hoopp]
+  category: table
+  question: What was the return on HOOPP's fixed income portfolio in 2025?
+  must: [["2\\.1\\s?%"]]
+  gold_pages: {hoopp: [30]}
+  rounds: [ho]
+- id: HO06
+  funds: [aimco]
+  category: table
+  question: How did AIMCo's Canadian equity portfolio do in 2025 against its benchmark?
+  must: [["25\\.9\\s?%"], ["31\\.7\\s?%"]]
+  gold_pages: {aimco: [16, 18]}
+  rounds: [ho]
+- id: HO07
+  funds: [aimco]
+  category: table
+  question: What return did AIMCo's mortgages portfolio earn in 2025?
+  must: [["5\\.8\\s?%"]]
+  gold_pages: {aimco: [16, 22]}
+  rounds: [ho]
+- id: HO08
+  funds: [aimco]
+  category: kpi
+  question: What is the four-year net annualized return of AIMCo's Balanced Fund?
+  must: [["5\\.7\\s?%"]]
+  gold_pages: {aimco: [4, 15]}
+  rounds: [ho]
+- id: HO09
+  funds: [aimco]
+  category: people
+  question: Who is AIMCo's Chief Investment Officer?
+  must: [["Justin Lord"]]
+  gold_pages: {aimco: [8, 13, 46]}
+  rounds: [ho]
+- id: HO10
+  funds: [aimco]
+  category: table
+  question: How did AIMCo's renewable resources portfolio perform in 2025?
+  must: [["-\\s?0\\.5\\s?%", "\\(0\\.5\\)", "−0\\.5", "negative 0\\.5", "loss of 0\\.5"]]
+  gold_pages: {aimco: [16, 29, 30]}
+  rounds: [ho]
+- id: HO11
+  funds: [omers]
+  category: kpi
+  question: What return did OMERS's public equities earn in 2025?
+  must: [["12\\.3\\s?%"]]
+  gold_pages: {omers: [24, 38]}
+  rounds: [ho]
+- id: HO12
+  funds: [omers]
+  category: kpi
+  question: How did OMERS's real estate investments perform in 2025?
+  must: [["5\\.1\\s?%"]]
+  gold_pages: {omers: [24, 42]}
+  rounds: [ho]
+- id: HO13
+  funds: [omers]
+  category: kpi
+  question: How much were OMERS's investment expenses in 2025?
+  must: [["719"]]
+  gold_pages: {omers: [44]}
+  rounds: [ho]
+- id: HO14
+  funds: [omers]
+  category: kpi
+  question: How many new members joined OMERS in 2025?
+  must: [["44,100", "44,132"]]
+  gold_pages: {omers: [16, 44]}
+  rounds: [ho]
+- id: HO15
+  funds: [omers]
+  category: kpi
+  question: What member satisfaction rating did OMERS achieve in 2025?
+  must: [["97\\s?%"]]
+  gold_pages: {omers: [5, 16]}
+  rounds: [ho]
+- id: HO16
+  funds: [hoopp, omers]
+  category: cross
+  question: Compare investment operating costs at HOOPP and OMERS in 2025.
+  must: [["382", "30\\s?(bps|basis)"], ["719", "58\\s?(bps|basis)"]]
+  gold_pages: {hoopp: [38, 90], omers: [44]}
+  rounds: [ho]
+- id: HO17
+  funds: [hoopp, omers]
+  category: ambiguous
+  question: How large were the net assets at the end of 2025?
+  must: [["131\\.9"], ["145\\.2"]]
+  gold_pages: {hoopp: [6, 21, 29], omers: [15, 24]}
+  rounds: [ho]
+- id: HO18
+  funds: [hoopp]
+  category: trap
+  expect: refuse
+  question: What was HOOPP's return on its cryptocurrency holdings in 2025?
+  rounds: [ho]
+- id: HO19
+  funds: [aimco]
+  category: trap
+  expect: refuse
+  question: How much did AIMCo pay out in pension benefits in 2025?
+  forbid: ["4\\.1\\s?(billion|B)", "6\\.8\\s?(billion|B)"]
+  rounds: [ho]
+- id: HO20
+  funds: [omers]
+  category: trap
+  expect: correct_premise
+  question: Why did OMERS's funded ratio fall to 90% in 2025?
+  must: [["99\\s?%", "96\\s?%"]]
+  rounds: [ho]

@@ -1,0 +1,14 @@
+\begin{tabular}{lrrrrrrr}
+\toprule
+Retrieval strategy & All & HOOPP & AIMCo & OMERS & Cross & Ambig. & Context (chars) \\
+\midrule
+dense k=6 (R2) & 66.7 & 86.7 & 58.3 & 69.2 & 16.7 & 50.0 & 5,054 \\
+dense k=10 & 74.5 & 93.3 & 58.3 & 76.9 & 33.3 & 100.0 & 8,416 \\
++ context headers & 68.6 & 80.0 & 83.3 & 69.2 & 0.0 & 50.0 & 5,615 \\
++ fund routing (R3) & 68.6 & 80.0 & 83.3 & 69.2 & 0.0 & 50.0 & 6,413 \\
+hybrid BM25 k=8, no headers & 82.4 & 100.0 & 75.0 & 84.6 & 33.3 & 100.0 & 7,105 \\
++ hybrid BM25 k=6 & 82.4 & 86.7 & 83.3 & 84.6 & 50.0 & 100.0 & 6,198 \\
++ hybrid BM25 k=8 (R4) & 86.3 & 93.3 & 83.3 & 92.3 & 50.0 & 100.0 & 7,759 \\
++ hybrid BM25 k=12 & 90.2 & 93.3 & 91.7 & 92.3 & 66.7 & 100.0 & 11,531 \\
+\bottomrule
+\end{tabular}
